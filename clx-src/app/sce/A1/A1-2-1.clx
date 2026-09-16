@@ -370,15 +370,7 @@
           <cl:combobox std:sid="c-box-36d95b67" id="cmbUploadFile" fieldLabel="업로드 파일 다운로드" preventinput="true">
             <cl:attribute name="required" value="Y"/>
             <cl:formdata std:sid="f-data-97735ec3" row="0" col="0"/>
-            <cl:item std:sid="t-item-9af98359" label="[XLSX] 10,000건" value="PoC 항목 체크리스트_샘플데이터_1만건.xlsx"/>
-            <cl:item std:sid="t-item-4dcef464" label="[XLSX] 50,000건" value="PoC 항목 체크리스트_샘플데이터_5만건.xlsx"/>
-            <cl:item std:sid="t-item-534fef38" label="[XLSX] 100,000건" value="PoC 항목 체크리스트_샘플데이터_10만건.xlsx"/>
-            <cl:item std:sid="t-item-6d019835" label="[XLSX] 200,000건" value="PoC 항목 체크리스트_샘플데이터_20만건.xlsx"/>
             <cl:item std:sid="t-item-ddcf431a" label="[XLSX] 300,000건" value="PoC 항목 체크리스트_샘플데이터_30만건.xlsx"/>
-            <cl:item std:sid="t-item-67d6c811" label="[CSV] 10,000건" value="PoC 항목 체크리스트_샘플데이터_1만건.csv"/>
-            <cl:item std:sid="t-item-41856adf" label="[CSV] 50,000건" value="PoC 항목 체크리스트_샘플데이터_5만건.csv"/>
-            <cl:item std:sid="t-item-47928226" label="[CSV] 100,000건" value="PoC 항목 체크리스트_샘플데이터_10만건.csv"/>
-            <cl:item std:sid="t-item-fa164800" label="[CSV] 200,000건" value="PoC 항목 체크리스트_샘플데이터_20만건.csv"/>
             <cl:item std:sid="t-item-8957913b" label="[CSV] 300,000건" value="PoC 항목 체크리스트_샘플데이터_30만건.csv"/>
           </cl:combobox>
           <cl:button std:sid="button-5df84ab4" id="btn5" class="secondary" value="다운로드">
@@ -433,10 +425,6 @@
         <cl:formdata std:sid="f-data-7191fe61" row="1" col="0"/>
         <cl:radiobutton std:sid="r-button-a8969c9c" id="rdbCnt" value="app/sce/A1/data/A1-2_10000.tsv" hspacing="5">
           <cl:flowlayoutdata std:sid="f-data-bf86528f" width="192px" height="28px" autosize="width"/>
-          <cl:item std:sid="item-10d853e9" label="1만건" value="app/sce/A1/data/A1-2_10000.tsv"/>
-          <cl:item std:sid="item-80d02870" label="5만건" value="app/sce/A1/data/A1-2_50000.tsv"/>
-          <cl:item std:sid="item-03bceaa4" label="10만건" value="app/sce/A1/data/A1-2_100000.tsv"/>
-          <cl:item std:sid="item-ae4b9196" label="20만건" value="app/sce/A1/data/A1-2_200000.tsv"/>
           <cl:item std:sid="item-980674b0" label="30만건" value="app/sce/A1/data/A1-2_300000.tsv"/>
         </cl:radiobutton>
         <cl:output std:sid="output-68ea3c6e" id="opt2" class="label" value="조회 방법">

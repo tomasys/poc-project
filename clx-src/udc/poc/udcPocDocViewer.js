@@ -45,21 +45,21 @@ function getFileUrl() {
 	
 	if(ValueUtil.isNull(vsFileUrl)) return false;
 	
-	if (AppProperties.DOCS_VIEW_TYPE == "pdf") {
+//	if (AppProperties.DOCS_VIEW_TYPE == "pdf") {
 		vsViewType = "pdf";
-	} else {
-		vsViewType = "image";
-	}
-	
-	if (AppProperties.SCREEN_DEFAULT_NM.indexOf(app.targetScreen.name) == -1 || cpr.utils.Util.detectBrowser().name == "ie") {
-		vsViewType = "image";
-	}
+//	} else {
+//		vsViewType = "image";
+//	}
+//	
+//	if (AppProperties.SCREEN_DEFAULT_NM.indexOf(app.targetScreen.name) == -1 || cpr.utils.Util.detectBrowser().name == "ie") {
+//		vsViewType = "image";
+//	}
 		
 	msVeiwType = vsViewType;
 	
-	if (vsViewType == "image") {
-		vsViewType = "png";
-	}
+//	if (vsViewType == "image") {
+//		vsViewType = "png";
+//	}
 		
 	var vaFilePath = vsFileUrl.split(".");
 	
@@ -231,18 +231,18 @@ function onEmpPdfViewerLoad(e) {
 function onBodyScreenChange(e) {
 	var vcEmpPdfViewer = app.lookup("empPdfViewer");
 	var vcImgViewer = app.lookup("imgViewer");
-	
-	mbScreenChange = true;
-	if(AppProperties.SCREEN_DEFAULT_NM.indexOf(e.screen.name) > -1){		
+//	
+//	mbScreenChange = true;
+//	if(AppProperties.SCREEN_DEFAULT_NM.indexOf(e.screen.name) > -1){		
 		if(ValueUtil.isNull(vcEmpPdfViewer.src)){
 			setViewer();
 		}
 		vcEmpPdfViewer.visible = true;
 		vcImgViewer.visible = false;
-	} else {
-		vcEmpPdfViewer.visible = false;
-		vcImgViewer.visible = true;
-	}
+//	} else {
+//		vcEmpPdfViewer.visible = false;
+//		vcImgViewer.visible = true;
+//	}
 }
 
 function redrawViewer(){

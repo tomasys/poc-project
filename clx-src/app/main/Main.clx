@@ -17,13 +17,179 @@
         </cl:datacolumnlist>
         <cl:datarowlist>
           <cl:datarow>
-            <cl:datavalue columnname="MENU_NM"><![CDATA[eXBuilder6]]></cl:datavalue>
-            <cl:datavalue columnname="MENU_ID"><![CDATA[LEVEL00-00]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[POC]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
           </cl:datarow>
           <cl:datarow>
-            <cl:datavalue columnname="MENU_NM"><![CDATA[0. 체크리스트]]></cl:datavalue>
-            <cl:datavalue columnname="MENU_ID"><![CDATA[A99]]></cl:datavalue>
-            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[LEVEL00-00]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[화면개발/관리도구]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W1]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[POC]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[변환(공통)]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W2]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[POC]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[변환(거래화면)]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W3]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[POC]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[리소스 버전관리]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W1-1]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W1]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W1/W1-1.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[변경내용 비교]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W1-2]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W1]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W1/W1-2.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[디버깅(Step-by-Step)]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W1-3]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W1]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W1/W1-3.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[시범점 배포 기능]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W1-4]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W1]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W1/W1-4.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[오픈소스 호환성]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W1-5]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W1]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W1/W1-5.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[디버깅(성능측정)]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W1-6]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W1]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W1/W1-6.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[사용자조작 추적로그]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W1-7]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W1]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W1/W1-7.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[ActiveX 모듈 변환]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W2-1]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W2]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W2/W2-1.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[주변기기 통신 및 이벤트 화면 연계]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W2-2]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W2]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W2/W2-2.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[화면 공통기능]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W2-3]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W2]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W2/W2-3.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[그리드 출력 처리성능]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W2-4]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W2]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W2/W2-4.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[01300 고객 기본 정보 관리]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W3-1]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W3]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W3/W3-1.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[12200 수신지급]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W3-2]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W3]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W3/W3-2.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[CC500 여신 및 담보 통합 VIEW]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W3-3]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W3]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W3/W3-3.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[06310 개인성글류 [판독 불확실]]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[W3-4]]></cl:datavalue>
+            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[W3]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_FAV"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_WORK"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/sce/W3/W3-4.clx]]></cl:datavalue>
+            <cl:datavalue columnname="USE_YN"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="MENU_NM"><![CDATA[eXBuilder6]]></cl:datavalue>
+            <cl:datavalue columnname="MENU_ID"><![CDATA[LEVEL00-00]]></cl:datavalue>
           </cl:datarow>
           <cl:datarow>
             <cl:datavalue columnname="MENU_NM"><![CDATA[1. 시나리오]]></cl:datavalue>
@@ -108,12 +274,6 @@
             <cl:datavalue columnname="MENU_NM"><![CDATA[16. 웹단말]]></cl:datavalue>
             <cl:datavalue columnname="MENU_ID"><![CDATA[A16]]></cl:datavalue>
             <cl:datavalue columnname="UP_MENU_ID"><![CDATA[LEVEL00-00]]></cl:datavalue>
-          </cl:datarow>
-          <cl:datarow>
-            <cl:datavalue columnname="MENU_NM"><![CDATA[PoC 체크리스트]]></cl:datavalue>
-            <cl:datavalue columnname="MENU_ID"><![CDATA[A99-1]]></cl:datavalue>
-            <cl:datavalue columnname="UP_MENU_ID"><![CDATA[A99]]></cl:datavalue>
-            <cl:datavalue columnname="CALL_PAGE"><![CDATA[app/main/CheckList.clx]]></cl:datavalue>
           </cl:datarow>
           <cl:datarow>
             <cl:datavalue columnname="MENU_NM"><![CDATA[1.1 시나리오 S1]]></cl:datavalue>
