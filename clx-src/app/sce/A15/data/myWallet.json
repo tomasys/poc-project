@@ -1,0 +1,170 @@
+{
+    "LAST_NEXT_KEY": "",
+    "outRec1_count": "15",
+    "outRec1": [
+        {
+            "PRDT_SE_NM": "예수금/CMA",
+            "PCHS_AMT": "0",
+            "EVL_AMT": "2993456596389",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "2993580266389",
+            "EVL_PFLS_AMT": "0",
+            "PFLS_RT": "0.0000000",
+            "ASST_RTE": "99.8960862"
+        },
+        {
+            "PRDT_SE_NM": "주식",
+            "PCHS_AMT": "2047617256",
+            "EVL_AMT": "1085111582",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "-962505674",
+            "PFLS_RT": "-47.0100000",
+            "ASST_RTE": "0.0362118"
+        },
+        {
+            "PRDT_SE_NM": "신용/대출",
+            "PCHS_AMT": "0",
+            "EVL_AMT": "0",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "0",
+            "PFLS_RT": "0.0000000",
+            "ASST_RTE": "0.0000000"
+        },
+        {
+            "PRDT_SE_NM": "채권/CD/CP/RP",
+            "PCHS_AMT": "0",
+            "EVL_AMT": "0",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "0",
+            "PFLS_RT": "0.0000000",
+            "ASST_RTE": "0.0000000"
+        },
+        {
+            "PRDT_SE_NM": "ELS/DLS",
+            "PCHS_AMT": "0",
+            "EVL_AMT": "0",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "0",
+            "PFLS_RT": "0.0000000",
+            "ASST_RTE": "0.0000000"
+        },
+        {
+            "PRDT_SE_NM": "수익증권",
+            "PCHS_AMT": "10000000",
+            "EVL_AMT": "10546822",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "546822",
+            "PFLS_RT": "5.4600000",
+            "ASST_RTE": "0.0003520"
+        },
+        {
+            "PRDT_SE_NM": "선물/옵션",
+            "PCHS_AMT": "0",
+            "EVL_AMT": "0",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "0",
+            "PFLS_RT": "0.0000000",
+            "ASST_RTE": "0.0000000"
+        },
+        {
+            "PRDT_SE_NM": "신탁",
+            "PCHS_AMT": "0",
+            "EVL_AMT": "0",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "0",
+            "PFLS_RT": "0.0000000",
+            "ASST_RTE": "0.0000000"
+        },
+        {
+            "PRDT_SE_NM": "WRAP",
+            "PCHS_AMT": "0",
+            "EVL_AMT": "0",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "0",
+            "PFLS_RT": "0.0000000",
+            "ASST_RTE": "0.0000000"
+        },
+        {
+            "PRDT_SE_NM": "외화예수금",
+            "PCHS_AMT": "0",
+            "EVL_AMT": "228757540",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "0",
+            "PFLS_RT": "0.0000000",
+            "ASST_RTE": "0.0076340"
+        },
+        {
+            "PRDT_SE_NM": "해외주식",
+            "PCHS_AMT": "1107163413",
+            "EVL_AMT": "1732128195",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "624964782",
+            "PFLS_RT": "56.4500000",
+            "ASST_RTE": "0.0578037"
+        },
+        {
+            "PRDT_SE_NM": "해외주식대출",
+            "PCHS_AMT": "46408185",
+            "EVL_AMT": "57306594",
+            "LOAN_AMT": "50000000",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "60898409",
+            "PFLS_RT": "131.2200000",
+            "ASST_RTE": "0.0019124"
+        },
+        {
+            "PRDT_SE_NM": "퇴직연금",
+            "PCHS_AMT": "0",
+            "EVL_AMT": "0",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "0",
+            "PFLS_RT": "0.0000000",
+            "ASST_RTE": "0.0000000"
+        },
+        {
+            "PRDT_SE_NM": "외화ELS/DLS",
+            "PCHS_AMT": "0",
+            "EVL_AMT": "0",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "0",
+            "PFLS_RT": "0.0000000",
+            "ASST_RTE": "0.0000000"
+        },
+        {
+            "PRDT_SE_NM": "소수점",
+            "PCHS_AMT": "0",
+            "EVL_AMT": "0",
+            "LOAN_AMT": "0",
+            "DRWG_PSBL_AMT": "0",
+            "EVL_PFLS_AMT": "0",
+            "PFLS_RT": "0.0000000",
+            "ASST_RTE": "0.0000000"
+        }
+    ],
+    "outRec2": [
+        {
+            "TOT_PCHS_AMT": "3211188854",
+            "TOT_EVL_AMT": "2996570447122",
+            "TOT_LOAN_AMT": "50000000",
+            "TOT_DRWG_PSBL_AMT": "2993580266389",
+            "TOT_EVL_PFLS_AMT": "-276095661",
+            "TOT_PFLS_RT": "-8.5979266"
+        }
+    ],
+    "H_MSG_COD": "BNBC00002",
+    "H_MSG_CTNS": "조회가 완료되었습니다.",
+    "errorF": "2",
+    "MSG": "조회가 완료되었습니다."
+}

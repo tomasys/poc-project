@@ -1,0 +1,94 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9db54824" version="1.0.6087">
+  <head std:sid="head-cbdb0edc">
+    <screen std:sid="screen-ca10828a" id="default" name="default" width="1640px" height="984px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-b01002d4" id="tablet" name="tablet" width="1280px" height="767px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-9a690d76" id="mobile" name="mobile" width="0px" height="767px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-9cf4b8b4"/>
+    <cl:appspec title="나의할일"/>
+  </head>
+  <body std:sid="body-a614cfe7" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:attribute name="mobile-index" value="3"/>
+    <cl:attribute name="tablet-index" value="3"/>
+    <cl:group std:sid="group-28f4246f" class="group" clipcontent="false">
+      <cl:attribute name="needs-auto-height" value="true"/>
+      <cl:attribute name="mobile-index" value="3"/>
+      <cl:attribute name="tablet-index" value="3"/>
+      <cl:formdata std:sid="f-data-8d6b589e" row="0" col="0"/>
+      <cl:group std:sid="group-9595fce8" clipcontent="false">
+        <cl:formdata std:sid="f-data-bf71d288" row="0" col="0" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-1c5d5f6d" class="tit-blue" value="나의 할 일">
+          <cl:formdata std:sid="f-data-f7848da4" row="0" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-564295db" clipcontent="false">
+          <cl:formdata std:sid="f-data-8cdd9305" valign="CENTER" height="24" row="0" col="1" rowspan="1" colspan="1"/>
+          <cl:button std:sid="button-d75fb808" class="btn-reset" value="" icon="0">
+            <cl:flowlayoutdata std:sid="f-data-3dcdc87f" width="24px" height="24px"/>
+          </cl:button>
+          <cl:flowlayout std:sid="f-layout-c4badb96" halign="right"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-16ce015e" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-e951eca6" class="to-do-list" clipcontent="false">
+        <cl:formdata std:sid="f-data-c42efb50" row="1" col="0"/>
+        <cl:button std:sid="button-c0e0f704" id="btn3" class="btn-status" value="받은민원" displayexp="text + sstr(userAttr(&quot;count&quot;), [&quot;count&quot;]) + sstr(&quot;건&quot;, [&quot;font-normal&quot;])">
+          <cl:attribute name="count" value="3"/>
+          <cl:formdata std:sid="f-data-cbefd842" row="0" col="0"/>
+        </cl:button>
+        <cl:button std:sid="button-9d8133ab" id="btn2" class="btn-status" value="부서민원" displayexp="text + sstr(userAttr(&quot;count&quot;), [&quot;count&quot;]) + sstr(&quot;건&quot;, [&quot;font-normal&quot;])">
+          <cl:attribute name="count" value="3"/>
+          <cl:formdata std:sid="f-data-ff782a82" row="0" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-246c7af2" id="btn5" class="btn-status" value="연계접수민원" displayexp="text + sstr(userAttr(&quot;count&quot;), [&quot;count&quot;]) + sstr(&quot;건&quot;, [&quot;font-normal&quot;])">
+          <cl:attribute name="count" value="0/0"/>
+          <cl:formdata std:sid="f-data-0b4aa1f7" row="1" col="0"/>
+        </cl:button>
+        <cl:button std:sid="button-00d0b0a6" id="btn9" class="btn-status" value="예고독촉" displayexp="text + sstr(userAttr(&quot;count&quot;), [&quot;count&quot;]) + sstr(&quot;건&quot;, [&quot;font-normal&quot;])">
+          <cl:attribute name="count" value="3"/>
+          <cl:formdata std:sid="f-data-55f7a08f" row="1" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-8e969e86" id="btn6" class="btn-status" value="지시사항" displayexp="text + sstr(userAttr(&quot;count&quot;), [&quot;count&quot;]) + sstr(&quot;건&quot;, [&quot;font-normal&quot;])">
+          <cl:attribute name="count" value="3"/>
+          <cl:formdata std:sid="f-data-b44cbcfa" row="2" col="0"/>
+        </cl:button>
+        <cl:button std:sid="button-a5b3c86c" id="btn8" class="btn-status" value="상담민원" displayexp="text + sstr(userAttr(&quot;count&quot;), [&quot;count&quot;]) + sstr(&quot;건&quot;, [&quot;font-normal&quot;])">
+          <cl:attribute name="count" value="3"/>
+          <cl:formdata std:sid="f-data-f0b80857" row="2" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-4d5679d2" id="btn7" class="btn-status" value="사전심사청구" displayexp="text + sstr(userAttr(&quot;count&quot;), [&quot;count&quot;]) + sstr(&quot;건&quot;, [&quot;font-normal&quot;])">
+          <cl:attribute name="count" value="3"/>
+          <cl:formdata std:sid="f-data-6bfa272c" row="3" col="0"/>
+        </cl:button>
+        <cl:button std:sid="button-b9aa1ae5" id="btn21" class="btn-status" value="사전심의협의" displayexp="text + sstr(userAttr(&quot;count&quot;), [&quot;count&quot;]) + sstr(&quot;건&quot;, [&quot;font-normal&quot;])">
+          <cl:attribute name="count" value="3"/>
+          <cl:formdata std:sid="f-data-d9abca16" row="3" col="1"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-38d303b9" scrollable="false" hspace="8px" vspace="4px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-9ce93c0d" scrollable="false" hspace="8px" vspace="16px">
+        <cl:rows length="27" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" syncminlength="true"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" syncminlength="true"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-3f2d70d5" scrollable="true">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

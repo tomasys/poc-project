@@ -1,0 +1,130 @@
+h1{
+	text-align: center;
+	padding-bottom: 40px;
+}
+table {
+	border: solid 1px black;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+	font-size: 12px;
+}
+.background-logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(50deg);
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.background-logo img {
+  min-width: 150px;
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.background-logo .background-text {
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: right;
+}
+td {
+	border: solid 1px black;
+	overflow: hidden;
+	text-align: center;
+	font-size: 12px;
+}
+
+.approval_table {
+	&.left{
+		float: left;
+	}
+	&.right{
+		float: right;
+	}
+	width: 260px;
+	margin-bottom: 30px;
+	font-size: 12px;
+}
+
+.approval_table td {
+	height: 30px;
+	text-align: center;
+}
+.info_group{
+	width: auto;
+	&.left{
+		float: left;
+	}
+	&.right{
+		float: right;
+	}
+}
+.info_group p{
+	padding: 0;
+	margin: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.page {
+	width: 100%;
+	padding: 2cm;
+	margin: 1cm auto;
+	font-size: 12px;
+}
+
+.content {
+	padding: 1cm;
+	font-size: 12px;
+}
+
+@page {
+	size: A4;
+	margin: 0;
+}
+@media print {
+	html, body {
+		margin: 0;
+		padding: 0;
+		page-break-after: avoid;
+		page-break-before: avoid;
+		font-size: 10px;
+	}
+	body, .page {
+		font-size: 10px;
+		margin-top: -1px
+	} /*서브픽셀 해결1*/
+	.page:first-child {
+		page-break-before: auto;
+		page-break-inside: avoid
+	}
+	.page {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		page-break-before: always;
+		padding: 1cm;
+		font-size: 10px;
+	}
+	table {
+		font-size: 10px;
+	}
+	
+	td {
+		font-size: 10px;
+		text-align: center;
+	}
+
+}

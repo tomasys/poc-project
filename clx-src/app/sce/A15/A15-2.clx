@@ -1,0 +1,317 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-279132c9" version="1.0.5186">
+  <head std:sid="head-03dc3db3">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반화면/1.그리드/F_그리드_페이징.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-c88bcf0c" id="EXB-FULL" name="EXB-FULL" width="1580px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-f9873c6e" id="EXB-DIV" name="EXB-DIV" width="1128px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-303436c8" id="EXB-PART" name="EXB-PART" width="672px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-2a220fa7">
+      <cl:dataset comment="프로세스 목록" std:sid="d-set-a8ad33a6" id="dsProcess">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="" std:sid="d-column-b00f655c" name="TITLE"/>
+          <cl:datacolumn std:sid="d-column-c90318c3" name="TITLE_RIGHT_TEXT"/>
+          <cl:datacolumn comment="" std:sid="d-column-2937d6ac" name="SUB_TITLE"/>
+          <cl:datacolumn comment="" std:sid="d-column-3b52a77c" name="DELIMITER" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-2aab6075" name="CONT" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-31b092db" name="KEY_CODE"/>
+          <cl:datacolumn std:sid="d-column-0ead2b08" name="SUB_CODE"/>
+          <cl:datacolumn comment="" std:sid="d-column-35d6a102" name="TARGET_CTRL"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">목적</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[게시물 관리 및 발행 관리 기능을 제공한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">검증 조건</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[예약 발행 관리]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[공개 조회 관리]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[조회수 조회]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[삭제]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[체크박스 선택시 선택삭제 버튼 활성화, 복수선택 가능]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[글쓰기]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+            <cl:datavalue columnname="TARGET_CTRL"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[글쓰기 버튼 클릭시 편집 페이지로 이동한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[글쓰기]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"/>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[btnEdit]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[타이틀 클릭시 편집 화면으로 들어가서 값을 수정할 수 있다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[타이틀 클릭시]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[값을 수정]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[공개 토글]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[편집 페이지에서 저장시 토글 off 상태로 리스트에 등록되며, 토글 on으로 변경 시 채널에 즉시 컨텐츠가 공개되어야 한다.]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[토글]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[예약이 걸려있는 상태에서는 토글이 비활성화 되어야한다.]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[비활성화]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[예약 설정 및 수정 버튼을 통해 날짜 지정 팝업이 호출된다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[날짜 지정 팝업이 호출]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[삭제버튼 클릭 시 팝업이 호출되어 예약을 삭제한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[예약을 삭제]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-ba73043c" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-e3fc4f3a" name="penname"/>
+          <cl:datacolumn comment="저장일시" std:sid="d-column-342d6c4b" name="dt_regdate"/>
+          <cl:datacolumn std:sid="d-column-0ae626d7" name="sname"/>
+          <cl:datacolumn comment="타이틀" std:sid="d-column-ec905fd0" name="title"/>
+          <cl:datacolumn comment="조회수" std:sid="d-column-b2b9333c" name="viewcnt"/>
+          <cl:datacolumn comment="" std:sid="d-column-e85f3288" name="cc_viewtype"/>
+          <cl:datacolumn std:sid="d-column-9008188e" name="dir"/>
+          <cl:datacolumn std:sid="d-column-55a1963a" name="seq" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-db3bc196" name="file_url"/>
+          <cl:datacolumn std:sid="d-column-6f77adbc" name="fname"/>
+          <cl:datacolumn std:sid="d-column-68c0b84f" name="reserve_time"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-babf5417" id="sub1" action="app/sce/A15/data/CMSample.json"/>
+    </cl:model>
+    <cl:appspec title="CMS 리스트 페이지"/>
+  </head>
+  <body std:sid="body-8b55795a" class="wrap" clipcontent="true" childcombinatorclass="f_base">
+    <cl:listener std:sid="listener-f5e7d577" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-b918820a" name="init" handler="onBodyInit"/>
+    <cl:udc std:sid="ud-control-81187a41" id="udccomappheader1" type="udc.com.udcComAppHeader">
+      <cl:formdata std:sid="f-data-dae6ff83" row="0" col="0"/>
+    </cl:udc>
+    <cl:group std:sid="group-3536da3a" id="grpData" class="conts-area">
+      <cl:formdata std:sid="f-data-05824a66" row="1" col="0"/>
+      <cl:group std:sid="group-7fafe6d8" class="conts-wrap">
+        <cl:formdata std:sid="f-data-a5891848" row="0" col="0"/>
+        <cl:group std:sid="group-f75cd45a" class="content-title-box">
+          <cl:formdata std:sid="f-data-0f14060b" row="0" col="0"/>
+          <cl:group std:sid="group-319101d3" class="title-button-group">
+            <cl:formdata std:sid="f-data-459f4d77" row="0" col="1"/>
+            <cl:button std:sid="button-f7a4e9e0" id="btnDelete" class="tertiary ico-minus" value="선택삭제">
+              <cl:listener std:sid="listener-c9cf82e6" name="click" handler="onButtonClick2"/>
+              <cl:expbind property="enabled" category="PROPERTY" expression="#grdList.getCheckRowIndices().length > 0"/>
+              <cl:flowlayoutdata std:sid="f-data-118d93c7" width="137px" height="32px" autosize="width" allownewline="false"/>
+            </cl:button>
+            <cl:button std:sid="button-1ab3e6a9" id="btnEdit" class="tertiary ico-plus" value="글쓰기">
+              <cl:listener std:sid="listener-023769be" name="click" handler="onButtonClick"/>
+              <cl:flowlayoutdata std:sid="f-data-0d824c9b" width="63px" height="32px" autosize="width" allownewline="false"/>
+            </cl:button>
+            <cl:button std:sid="button-87957842" class="btn-search" value="조회" icon="0">
+              <cl:listener std:sid="listener-a8d7d646" name="click" handler="onButtonClick3"/>
+              <cl:flowlayoutdata std:sid="f-data-4e77174e" width="63px" height="32px" autosize="width"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-a1f5aa04" scrollable="false" halign="right"/>
+          </cl:group>
+          <cl:button std:sid="button-a959b657" id="btn1" value="샘플 데이터 구성">
+            <cl:listener std:sid="listener-2b7c21d0" name="click" handler="onBtn1Click"/>
+            <cl:formdata std:sid="f-data-0fe28798" row="0" col="0"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-b735756d" scrollable="false" hspace="4px" vspace="4px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:grid std:sid="grid-9bbf308a" id="grdList" class="table-unchanged" readonly="true" datasetid="dsList" autofit="1, 2, 6, 7" autorowheight="1">
+          <cl:listener std:sid="listener-de7f34c0" name="cell-click" handler="onGrdListCellClick"/>
+          <cl:listener std:sid="listener-b2c33cab" name="row-check" handler="onGrdListRowCheck"/>
+          <cl:listener std:sid="listener-c5cd3bc0" name="row-uncheck" handler="onGrdListRowCheck"/>
+          <cl:formdata std:sid="f-data-80c44752" row="1" col="0"/>
+          <cl:gridcolumn std:sid="g-column-311eca73" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-93621fe6" width="287px"/>
+          <cl:gridcolumn std:sid="g-column-81957a78"/>
+          <cl:gridcolumn std:sid="g-column-6ee1a156" width="160px"/>
+          <cl:gridcolumn std:sid="g-column-bb4d2d4c" width="70px"/>
+          <cl:gridcolumn std:sid="g-column-695c55e9" width="70px"/>
+          <cl:gridcolumn std:sid="g-column-278f8437"/>
+          <cl:gridcolumn std:sid="g-column-eb75062a"/>
+          <cl:gridheader std:sid="gh-band-70613d44">
+            <cl:gridrow std:sid="g-row-9cbf7a85" height="44px"/>
+            <cl:gridcell std:sid="gh-cell-8b3d9247" rowindex="0" colindex="1" targetcolumnname="title" sortable="false" filterable="false" text="Title"/>
+            <cl:gridcell std:sid="gh-cell-d9407bca" rowindex="0" colindex="2" targetcolumnname="dt_regdate" sortable="false" filterable="false" text="저장일시"/>
+            <cl:gridcell std:sid="gh-cell-3795975b" rowindex="0" colindex="3" rowspan="1" colspan="3" targetcolumnname="reservation" sortable="false" filterable="false" text="예약 게시"/>
+            <cl:gridcell std:sid="gh-cell-19b1ca12" rowindex="0" colindex="6" targetcolumnname="viewcnt" sortable="false" filterable="false" text="조회"/>
+            <cl:gridcell std:sid="gh-cell-768876cc" rowindex="0" colindex="7" targetcolumnname="cc_viewtype" sortable="false" filterable="false" text="공개"/>
+            <cl:gridcell std:sid="gh-cell-e2aa3eaa" rowindex="0" colindex="0" text="선택"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-abae5ed9">
+            <cl:gridrow std:sid="g-row-7b5c0e07" height="45px"/>
+            <cl:gridcell std:sid="gd-cell-5673087e" rowindex="0" colindex="1" class="pt-1 pb-1" columnname="title"/>
+            <cl:gridcell std:sid="gd-cell-4db23ffd" rowindex="0" colindex="2" columnname="dt_regdate"/>
+            <cl:gridcell std:sid="gd-cell-189c16cc" rowindex="0" colindex="6" columnname="viewcnt"/>
+            <cl:gridcell std:sid="gd-cell-f62e2764" rowindex="0" colindex="7" columnname="cc_viewtype">
+              <cl:checkbox std:sid="c-box-95244641" id="cbx1" truevalue="J" falsevalue="N">
+                <cl:listener std:sid="listener-f32bae64" name="value-change" handler="onCbx1ValueChange"/>
+                <cl:expbind property="enabled" category="PROPERTY" expression="RESERVE_TIME? false : true"/>
+                <cl:celldata std:sid="c-data-1e02db32"/>
+              </cl:checkbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-4ac2b8cd" rowindex="0" colindex="0" columntype="checkbox"/>
+            <cl:gridcell std:sid="gd-cell-06783156" rowindex="0" colindex="3" mergetoindexexpr="cc_viewtype == &quot;J&quot; ? 5 : reserve_time ? 3 : 5" keepmerged="true">
+              <cl:button std:sid="button-0aca6be9">
+                <cl:expbind property="value" category="PROPERTY" expression="cc_viewtype == &quot;J&quot;?  &quot;-&quot; : reserve_time ? reserve_time : &quot;예약 설정&quot;"/>
+                <cl:expbind property="class" category="CLASS" expression="cc_viewtype == &quot;J&quot;?  &quot;btn-text&quot; : reserve_time ? &quot;btn-text&quot; : &quot;tertiary&quot;"/>
+                <cl:celldata std:sid="c-data-4d59671d" halign="CENTER" valign="CENTER" width="150" height="25"/>
+              </cl:button>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-70256622" rowindex="0" colindex="4">
+              <cl:button std:sid="button-1896fd07" class="primary" value="수정">
+                <cl:celldata std:sid="c-data-ef496062" valign="CENTER" height="25" topSpacing="4.0" bottomSpacing="4.0" leftSpacing="4.0" rightSpacing="4.0"/>
+              </cl:button>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-abae5cac" rowindex="0" colindex="5">
+              <cl:button std:sid="button-de4d1593" class="primary" value="삭제">
+                <cl:celldata std:sid="c-data-de96ca62" valign="CENTER" height="25" topSpacing="4.0" bottomSpacing="4.0" leftSpacing="4.0" rightSpacing="4.0"/>
+              </cl:button>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:pageindexer std:sid="p-indexer-5abdef12" id="pgi1" pagerowcount="10">
+          <cl:listener std:sid="listener-9ee9c6d8" name="selection-change" handler="onPgi1SelectionChange"/>
+          <cl:formdata std:sid="f-data-9498a16e" row="2" col="0"/>
+        </cl:pageindexer>
+        <cl:formlayout std:sid="f-layout-e9c30f59" scrollable="false" hspace="0px" vspace="8px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+          <cl:rows length="32" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="26" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-4e7d7dce" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-ec756d32" id="grpFooter" class="conts-footer">
+      <cl:formdata std:sid="f-data-742e15a6" row="2" col="0"/>
+      <cl:group std:sid="group-89d9707e" class="footer-button-group">
+        <cl:verticaldata std:sid="v-data-27fb65cf" width="1532px" height="32px" autosize="height"/>
+        <cl:group std:sid="group-2361c433">
+          <cl:formdata std:sid="f-data-7dcb312f" row="0" col="0"/>
+          <cl:button std:sid="button-87ab91d6" class="btn-base" value="버튼">
+            <cl:flowlayoutdata std:sid="f-data-e76d3559" width="48px" height="32px" autosize="width"/>
+          </cl:button>
+          <cl:button std:sid="button-b87baf25" class="btn-base" value="버튼">
+            <cl:flowlayoutdata std:sid="f-data-17f39cb5" width="48px" height="32px" autosize="width"/>
+          </cl:button>
+          <cl:flowlayout std:sid="f-layout-ab89fe4d" halign="left"/>
+        </cl:group>
+        <cl:group std:sid="group-98ea6c41">
+          <cl:formdata std:sid="f-data-06ffa68a" row="0" col="1"/>
+          <cl:button std:sid="button-3830a058" class="btn-submit" value="버튼">
+            <cl:flowlayoutdata std:sid="f-data-7093ec89" width="48px" height="32px" autosize="width"/>
+          </cl:button>
+          <cl:button std:sid="button-d3506684" class="btn-submit" value="버튼">
+            <cl:flowlayoutdata std:sid="f-data-d896051a" width="48px" height="32px" autosize="width"/>
+          </cl:button>
+          <cl:button std:sid="button-0833fb34" class="btn-base" value="버튼">
+            <cl:flowlayoutdata std:sid="f-data-44e8d7f8" width="48px" height="32px" autosize="width"/>
+          </cl:button>
+          <cl:flowlayout std:sid="f-layout-6d32a134" halign="right"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-877f6ca0" scrollable="false" hspace="1fr" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="765" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="765" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-3f36ca99" spacing="16"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-c9ad2d4b" scrollable="true" hspace="0px" vspace="16px" top-margin="16px" right-margin="24px" bottom-margin="24px" left-margin="24px">
+      <cl:rows length="25" unit="PIXEL" autoSizing="true" hidden="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="50" unit="PIXEL" autoSizing="true" hidden="true" syncminlength="false"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

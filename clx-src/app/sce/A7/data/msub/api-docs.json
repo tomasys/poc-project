@@ -1,0 +1,4739 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "OpenAPI definition",
+        "version": "v0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8080",
+            "description": "Generated server url"
+        }
+    ],
+    "paths": {
+        "/rest/ws/create/{groupId}/{imageId}": {
+            "put": {
+                "tags": [
+                    "workspace-service-controller"
+                ],
+                "operationId": "create",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "imageId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectWsInfoWsBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/ws/changeideurl/{groupId}": {
+            "put": {
+                "tags": [
+                    "workspace-service-controller"
+                ],
+                "operationId": "changeIdeUrl",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/WsUrlSpec"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectWsInfoWsBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrpmbr/updatestatus/{groupId}": {
+            "put": {
+                "tags": [
+                    "workgroup-member-service-controller"
+                ],
+                "operationId": "updateStatus",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/GroupMemberBean"
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrpmbr/invite/{groupId}": {
+            "put": {
+                "tags": [
+                    "workgroup-member-service-controller"
+                ],
+                "operationId": "invite",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/UserBean"
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrpmbr/accept/{groupId}": {
+            "put": {
+                "tags": [
+                    "workgroup-member-service-controller"
+                ],
+                "operationId": "accept",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/join/{groupId}": {
+            "put": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "join",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/changestate/{groupId}/{state}": {
+            "put": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "changeState",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "state",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectWorkgroupInfoGroupMemberBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/changecmmt/{groupId}": {
+            "put": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "changeCmmt",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/WorkgroupBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/apply": {
+            "put": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "apply",
+                "parameters": [
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/WorkgroupBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/user/withdraw": {
+            "put": {
+                "tags": [
+                    "user-service-controller"
+                ],
+                "operationId": "withdraw",
+                "parameters": [
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UserBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/user/update": {
+            "put": {
+                "tags": [
+                    "user-service-controller"
+                ],
+                "operationId": "update",
+                "parameters": [
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UserBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/user/deleteall": {
+            "put": {
+                "tags": [
+                    "user-service-controller"
+                ],
+                "operationId": "deleteAll",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/UserBean"
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/user/changepwd": {
+            "put": {
+                "tags": [
+                    "user-service-controller"
+                ],
+                "operationId": "changePassword",
+                "parameters": [
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ChangePwdBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/user/approveall": {
+            "put": {
+                "tags": [
+                    "user-service-controller"
+                ],
+                "operationId": "approveAll",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/UserBean"
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/tlssec/apply/{secId}": {
+            "put": {
+                "tags": [
+                    "tls-sec-service-controller"
+                ],
+                "operationId": "apply_1",
+                "parameters": [
+                    {
+                        "name": "secId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/tlssec/add": {
+            "put": {
+                "tags": [
+                    "tls-sec-service-controller"
+                ],
+                "operationId": "add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/TlsSecBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/res/update/{resId}": {
+            "put": {
+                "tags": [
+                    "res-service-controller"
+                ],
+                "operationId": "update_1",
+                "parameters": [
+                    {
+                        "name": "resId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ResBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/res/add": {
+            "put": {
+                "tags": [
+                    "res-service-controller"
+                ],
+                "operationId": "add_1",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "attachedFile",
+                                    "data"
+                                ],
+                                "type": "object",
+                                "properties": {
+                                    "data": {
+                                        "$ref": "#/components/schemas/ResBean"
+                                    },
+                                    "attachedFile": {
+                                        "type": "string",
+                                        "format": "binary"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/reg/add": {
+            "put": {
+                "tags": [
+                    "image-service-controller"
+                ],
+                "operationId": "regAdd",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ImageRegBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/mailtmpl/update": {
+            "put": {
+                "tags": [
+                    "mail-tmpl-service-controller"
+                ],
+                "operationId": "update_2",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/MailTmplBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/image/build": {
+            "put": {
+                "tags": [
+                    "image-build-service-controller"
+                ],
+                "operationId": "buildImage",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ImageBuildInfo"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/rest/image/add/{regId}": {
+            "put": {
+                "tags": [
+                    "image-service-controller"
+                ],
+                "operationId": "imageAdd",
+                "parameters": [
+                    {
+                        "name": "regId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ImageBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/ide/changeUrl/{wsId}": {
+            "put": {
+                "tags": [
+                    "ide-support-controller"
+                ],
+                "operationId": "changeUrl",
+                "parameters": [
+                    {
+                        "name": "wsId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/IDEWorkspacePath"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectWsInfoWsBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/evtmsg/save": {
+            "put": {
+                "tags": [
+                    "evt-msg-service-controller"
+                ],
+                "operationId": "save",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EvtMsgBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/evtmsg/preview": {
+            "put": {
+                "tags": [
+                    "evt-msg-service-controller"
+                ],
+                "operationId": "preview",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EvtMsgBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectMailPreviewInfo"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/dckfle/update/{tmplId}": {
+            "put": {
+                "tags": [
+                    "dckfle-tmpl-service-controller"
+                ],
+                "operationId": "update_3",
+                "parameters": [
+                    {
+                        "name": "tmplId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "data"
+                                ],
+                                "type": "object",
+                                "properties": {
+                                    "data": {
+                                        "$ref": "#/components/schemas/DckfleTmplInfo"
+                                    },
+                                    "attachedFiles": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string",
+                                            "format": "binary"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectString"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/dckfle/add": {
+            "put": {
+                "tags": [
+                    "dckfle-tmpl-service-controller"
+                ],
+                "operationId": "add_2",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "data"
+                                ],
+                                "type": "object",
+                                "properties": {
+                                    "data": {
+                                        "$ref": "#/components/schemas/DckfleTmplInfo"
+                                    },
+                                    "attachedFiles": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string",
+                                            "format": "binary"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectString"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/signup/sign": {
+            "post": {
+                "tags": [
+                    "login-controller"
+                ],
+                "operationId": "signup",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/SignUpBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/mailtmpl/add": {
+            "post": {
+                "tags": [
+                    "mail-tmpl-service-controller"
+                ],
+                "operationId": "add_3",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/MailTmplBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/login": {
+            "post": {
+                "tags": [
+                    "login-controller"
+                ],
+                "operationId": "login",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/LoginBean"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/ide/ws/deactivate/{wsHost}/{actKey}": {
+            "post": {
+                "tags": [
+                    "ide-support-controller"
+                ],
+                "operationId": "deactivateWs",
+                "parameters": [
+                    {
+                        "name": "wsHost",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "actKey",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/ide/ws/activate/{wsHost}": {
+            "post": {
+                "tags": [
+                    "ide-support-controller"
+                ],
+                "operationId": "activateWs",
+                "parameters": [
+                    {
+                        "name": "wsHost",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectWsActivatedInfoWsBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wsact/get/{groupId}": {
+            "get": {
+                "tags": [
+                    "workspace-act-service-controller"
+                ],
+                "operationId": "getWeekAct",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectWsGrpActTimeBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/ws/recent": {
+            "get": {
+                "tags": [
+                    "workspace-service-controller"
+                ],
+                "operationId": "getRecentWorkspaces",
+                "parameters": [
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectMemberWorkspaceListMemberWorkspace"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/ownlist": {
+            "get": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "ownList",
+                "parameters": [
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectWorkgroupListWorkgroupBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/nonmbrgrps": {
+            "get": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "nonMemberGroupList",
+                "parameters": [
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectWorkgroupListWorkgroupBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/mygroups": {
+            "get": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "getMyWorkgroups",
+                "parameters": [
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectAffiliatedWorkgroupListAffiliatedWorkgroup"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/mygroupinfo/{groupId}": {
+            "get": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "getMyGroupInfo",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectAffiliatedWorkgroupInfoGroupMemberBeanWsBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/list": {
+            "get": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "list",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectWorkgroupListWorkgroupBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/groupinfo/{groupId}": {
+            "get": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "getGroupInfo",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectWorkgroupInfoGroupMemberBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/exist/{groupId}": {
+            "get": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "exist",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/user/whoami": {
+            "get": {
+                "tags": [
+                    "user-service-controller"
+                ],
+                "operationId": "whoAmI",
+                "parameters": [
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectUserInfoUserBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/user/search": {
+            "get": {
+                "tags": [
+                    "user-service-controller"
+                ],
+                "operationId": "search",
+                "parameters": [
+                    {
+                        "name": "div",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "v",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "sts",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListUserBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/user/nonmembers/{groupId}": {
+            "get": {
+                "tags": [
+                    "user-service-controller"
+                ],
+                "operationId": "listNonMember",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectUserListUserBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/user/list": {
+            "get": {
+                "tags": [
+                    "user-service-controller"
+                ],
+                "operationId": "list_1",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectUserListUserBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/user/code": {
+            "get": {
+                "tags": [
+                    "user-service-controller"
+                ],
+                "operationId": "code",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectUserCode"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/user/add/{id}/{sysRole}": {
+            "get": {
+                "tags": [
+                    "user-service-controller"
+                ],
+                "operationId": "add_4",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "sysRole",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UserBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/tlssec/list": {
+            "get": {
+                "tags": [
+                    "tls-sec-service-controller"
+                ],
+                "operationId": "list_2",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListTlsSecBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/tlssec/get/{secId}": {
+            "get": {
+                "tags": [
+                    "tls-sec-service-controller"
+                ],
+                "operationId": "get",
+                "parameters": [
+                    {
+                        "name": "secId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectTlsSecBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/signup/exist/{webId}": {
+            "get": {
+                "tags": [
+                    "login-controller"
+                ],
+                "operationId": "exist_1",
+                "parameters": [
+                    {
+                        "name": "webId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/res/list/": {
+            "get": {
+                "tags": [
+                    "res-service-controller"
+                ],
+                "operationId": "getList",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListResBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/res/list/{name}": {
+            "get": {
+                "tags": [
+                    "res-service-controller"
+                ],
+                "operationId": "getList_1",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListResBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/res/info/{resId}": {
+            "get": {
+                "tags": [
+                    "res-service-controller"
+                ],
+                "operationId": "getInfo",
+                "parameters": [
+                    {
+                        "name": "resId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectResBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/regimage/list": {
+            "get": {
+                "tags": [
+                    "image-service-controller"
+                ],
+                "operationId": "regImageList",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListRegImageBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/reg/list": {
+            "get": {
+                "tags": [
+                    "image-service-controller"
+                ],
+                "operationId": "regList",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListImageRegBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/reg/info/{regId}": {
+            "get": {
+                "tags": [
+                    "image-service-controller"
+                ],
+                "operationId": "regInfo",
+                "parameters": [
+                    {
+                        "name": "regId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectImageRegBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/menu/list": {
+            "get": {
+                "tags": [
+                    "menu-service-controller"
+                ],
+                "operationId": "list_3",
+                "parameters": [
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListMenuItem"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/mailtmpl/list": {
+            "get": {
+                "tags": [
+                    "mail-tmpl-service-controller"
+                ],
+                "operationId": "getList_2",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListMailTmplBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/mailtmpl/info/{tmplId}": {
+            "get": {
+                "tags": [
+                    "mail-tmpl-service-controller"
+                ],
+                "operationId": "getInfo_1",
+                "parameters": [
+                    {
+                        "name": "tmplId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectMailTmplBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/logout": {
+            "get": {
+                "tags": [
+                    "login-controller"
+                ],
+                "operationId": "logout",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/image/listinfo": {
+            "get": {
+                "tags": [
+                    "image-service-controller"
+                ],
+                "operationId": "imageInfoList",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListImageInfo"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/image/list/{regId}": {
+            "get": {
+                "tags": [
+                    "image-service-controller"
+                ],
+                "operationId": "imageList",
+                "parameters": [
+                    {
+                        "name": "regId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListImageBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/image/info/{imageId}": {
+            "get": {
+                "tags": [
+                    "image-service-controller"
+                ],
+                "operationId": "imageInfo",
+                "parameters": [
+                    {
+                        "name": "imageId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectImageBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/ide/info/{wsHost}": {
+            "get": {
+                "tags": [
+                    "ide-support-controller"
+                ],
+                "operationId": "getInfo_2",
+                "parameters": [
+                    {
+                        "name": "wsHost",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectWsInfoWsBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/ide/extension/list": {
+            "get": {
+                "tags": [
+                    "ide-support-controller"
+                ],
+                "operationId": "listExtension",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListResBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/ide/extension/download/{resId}": {
+            "get": {
+                "tags": [
+                    "ide-support-controller"
+                ],
+                "operationId": "extensionDownload",
+                "parameters": [
+                    {
+                        "name": "resId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/rest/evtmsg/list": {
+            "get": {
+                "tags": [
+                    "evt-msg-service-controller"
+                ],
+                "operationId": "getList_3",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListEvtMsgInfo"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/evtmsg/delete/{evtId}": {
+            "get": {
+                "tags": [
+                    "evt-msg-service-controller"
+                ],
+                "operationId": "delete",
+                "parameters": [
+                    {
+                        "name": "evtId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/docker/list": {
+            "get": {
+                "tags": [
+                    "docker-service-controller"
+                ],
+                "operationId": "getDocker",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectInfo"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/docker/info": {
+            "get": {
+                "tags": [
+                    "docker-service-controller"
+                ],
+                "operationId": "getDockerInfo",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectInfo"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/dckfle/list/": {
+            "get": {
+                "tags": [
+                    "dckfle-tmpl-service-controller"
+                ],
+                "operationId": "getList_4",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListDckfleTmplBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/dckfle/list/{name}": {
+            "get": {
+                "tags": [
+                    "dckfle-tmpl-service-controller"
+                ],
+                "operationId": "getList_5",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectListDckfleTmplBean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/dckfle/info/{tmplId}": {
+            "get": {
+                "tags": [
+                    "dckfle-tmpl-service-controller"
+                ],
+                "operationId": "getInfo_3",
+                "parameters": [
+                    {
+                        "name": "tmplId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseObjectDckfleTmplInfo"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/ws/delete/{groupId}": {
+            "delete": {
+                "tags": [
+                    "workspace-service-controller"
+                ],
+                "operationId": "delete_1",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrpmbr/leave/{groupId}": {
+            "delete": {
+                "tags": [
+                    "workgroup-member-service-controller"
+                ],
+                "operationId": "leave",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "auth",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/Authentication"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/retire/{groupId}": {
+            "delete": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "retire",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/wrkgrp/remove/{groupId}": {
+            "delete": {
+                "tags": [
+                    "workgroup-service-controller"
+                ],
+                "operationId": "remove",
+                "parameters": [
+                    {
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/tlssec/delete/{secId}": {
+            "delete": {
+                "tags": [
+                    "tls-sec-service-controller"
+                ],
+                "operationId": "delete_2",
+                "parameters": [
+                    {
+                        "name": "secId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/res/delete/{resId}": {
+            "delete": {
+                "tags": [
+                    "res-service-controller"
+                ],
+                "operationId": "delete_3",
+                "parameters": [
+                    {
+                        "name": "resId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/reg/delete/{regId}": {
+            "delete": {
+                "tags": [
+                    "image-service-controller"
+                ],
+                "operationId": "regDelete",
+                "parameters": [
+                    {
+                        "name": "regId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/mailtmpl/delete/{tmplId}": {
+            "delete": {
+                "tags": [
+                    "mail-tmpl-service-controller"
+                ],
+                "operationId": "delete_4",
+                "parameters": [
+                    {
+                        "name": "tmplId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/image/delete/{imageId}": {
+            "delete": {
+                "tags": [
+                    "image-service-controller"
+                ],
+                "operationId": "imageDelete",
+                "parameters": [
+                    {
+                        "name": "imageId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/rest/dckfle/delete/{tmplId}": {
+            "delete": {
+                "tags": [
+                    "dckfle-tmpl-service-controller"
+                ],
+                "operationId": "delete_5",
+                "parameters": [
+                    {
+                        "name": "tmplId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Authentication": {
+                "type": "object",
+                "properties": {
+                    "webId": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "deptName": {
+                        "type": "string"
+                    },
+                    "sysRole": {
+                        "type": "string"
+                    },
+                    "accessKey": {
+                        "type": "string"
+                    },
+                    "acceptHosts": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectWsInfoWsBean": {
+                "type": "object",
+                "comment" : "응답 파라미터",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string",
+                        "comment" : "redirect URL"
+                    },
+                    "message": {
+                        "type": "string",
+                        "comment" : "메세지"
+                    },
+                    "success": {
+                        "type": "boolean",
+                        "comment" : "성공여부"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/WsInfoWsBean"
+                    }
+                }
+            },
+            "URLType": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string",
+                        "comment" : "코드 값"
+                    },
+                    "label": {
+                        "type": "string",
+                        "comment" : "코드 명"
+                    }
+                }
+            },
+            "WsBean": {
+                "type": "object",
+                "comment" : "WS Bean 정보",
+                "properties": {
+                    "groupId": {
+                        "type": "string",
+                        "comment" : "그룹 ID"
+                    },
+                    "webId": {
+                        "type": "string",
+                         "comment" : "웹 ID"
+                    },
+                    "wsId": {
+                        "type": "string",
+                         "comment" : "WS ID"
+                    },
+                    "imageId": {
+                        "type": "string",
+                         "comment" : "이미지 ID"
+                    },
+                    "lastVisitDate": {
+                        "type": "string",
+                         "comment" : "마지막 방문 일시"
+                    },
+                    "creDate": {
+                        "type": "string",
+                         "comment" : "생셩일시"
+                    }
+                }
+            },
+            "WsInfoWsBean": {
+                "type": "object",
+                "comment" : "Body",
+                "properties": {
+                    "ws": {
+                    	"comment" : "WS 정보",
+                        "$ref": "#/components/schemas/WsBean"
+                    },
+                    "wsUrls": {
+                        "type": "array",
+                        "comment" : "URL 정보목록",
+                        "items": {
+                            "$ref": "#/components/schemas/WsUrlBean"
+                        }
+                    },
+                    "urlType": {
+                        "type": "array",
+                        "comment" : "URL 타입목록",
+                        "items": {
+                            "$ref": "#/components/schemas/URLType"
+                        }
+                    }
+                }
+            },
+            "WsUrlBean": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "type": "string",
+                        "comment" : "그룹 ID"
+                    },
+                    "webId": {
+                        "type": "string",
+                        "comment" : "웹 ID"
+                    },
+                    "urlSeq": {
+                        "type": "integer",
+                        "format": "int32",
+                        "comment" : "URL Key"
+                    },
+                    "wsUrl": {
+                        "type": "string",
+                        "comment" : "WS URL"
+                    },
+                    "urlType": {
+                        "type": "string",
+                        "comment" : "URL Type"
+                    },
+                    "creDate": {
+                        "type": "string",
+                        "comment" : "생성일시"
+                    },
+                    "cntnrPort": {
+                        "type": "string",
+                        "comment" : "포트 번호"
+                    }
+                }
+            },
+            "WsUrlSpec": {
+                "type": "object",
+                "comment" : "요청 파라미터",
+                "properties": {
+                    "urlSeq": {
+                        "type": "integer",
+                        "format": "int32",
+                        "comment": "URL Key"
+                    },
+                    "wsUrl": {
+                        "type": "string",
+                        "comment" : "URL 리스트"
+                    },
+                    "queryString": {
+                        "type": "string",
+                        "comment" : "URL 쿼리"
+                    }
+                }
+            },
+            "GroupMemberBean": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "type": "string"
+                    },
+                    "webId": {
+                        "type": "string"
+                    },
+                    "stateCd": {
+                        "type": "string"
+                    },
+                    "roleCd": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    },
+                    "aprDate": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ResponseMessage": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    }
+                }
+            },
+            "UserBean": {
+                "type": "object",
+                "properties": {
+                    "webId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "deptName": {
+                        "type": "string"
+                    },
+                    "mailAddr": {
+                        "type": "string"
+                    },
+                    "webPwd": {
+                        "type": "string"
+                    },
+                    "roleCd": {
+                        "type": "string"
+                    },
+                    "stateCd": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    },
+                    "aprDate": {
+                        "type": "string"
+                    }
+                }
+            },
+            "MemberRole": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "label": {
+                        "type": "string"
+                    }
+                }
+            },
+            "MemberState": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "label": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ResponseObjectWorkgroupInfoGroupMemberBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/WorkgroupInfoGroupMemberBean"
+                    }
+                }
+            },
+            "WorkgroupBean": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "leaderId": {
+                        "type": "string"
+                    },
+                    "stateCd": {
+                        "type": "string"
+                    },
+                    "cmmt": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    },
+                    "aprDate": {
+                        "type": "string"
+                    }
+                }
+            },
+            "WorkgroupInfoGroupMemberBean": {
+                "type": "object",
+                "properties": {
+                    "workgroup": {
+                        "$ref": "#/components/schemas/WorkgroupBean"
+                    },
+                    "members": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/GroupMemberBean"
+                        }
+                    },
+                    "groupRole": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/MemberRole"
+                        }
+                    },
+                    "memberState": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/MemberState"
+                        }
+                    },
+                    "groupState": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/WorkgroupState"
+                        }
+                    }
+                }
+            },
+            "WorkgroupState": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "label": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ChangePwdBean": {
+                "type": "object",
+                "properties": {
+                    "oldPwd": {
+                        "type": "string"
+                    },
+                    "newPwd": {
+                        "type": "string"
+                    },
+                    "renewPwd": {
+                        "type": "string"
+                    }
+                }
+            },
+            "TlsSecBean": {
+                "type": "object",
+                "properties": {
+                    "secId": {
+                        "type": "string"
+                    },
+                    "tlsHost": {
+                        "type": "string"
+                    },
+                    "secKey": {
+                        "type": "string"
+                    },
+                    "secCrt": {
+                        "type": "string"
+                    },
+                    "applied": {
+                        "type": "string"
+                    },
+                    "notBefore": {
+                        "type": "string"
+                    },
+                    "notAfter": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ResBean": {
+                "type": "object",
+                "properties": {
+                    "resId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "tag": {
+                        "type": "string"
+                    },
+                    "uid": {
+                        "type": "string"
+                    },
+                    "cmmt": {
+                        "type": "string"
+                    },
+                    "fileName": {
+                        "type": "string"
+                    },
+                    "serverPath": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ImageRegBean": {
+                "type": "object",
+                "properties": {
+                    "regId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "host": {
+                        "type": "string"
+                    },
+                    "port": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    },
+                    "regHost": {
+                        "type": "string"
+                    },
+                    "regUser": {
+                        "type": "string"
+                    },
+                    "regPwd": {
+                        "type": "string"
+                    },
+                    "regMail": {
+                        "type": "string"
+                    }
+                }
+            },
+            "MailTmplBean": {
+                "type": "object",
+                "properties": {
+                    "tmplId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "tmplCtnt": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    }
+                }
+            },
+            "DckfleTmplBean": {
+                "type": "object",
+                "properties": {
+                    "tmplId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "tag": {
+                        "type": "string"
+                    },
+                    "cmmt": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ImageBean": {
+                "type": "object",
+                "properties": {
+                    "imageId": {
+                        "type": "string"
+                    },
+                    "regId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "repoPath": {
+                        "type": "string"
+                    },
+                    "tag": {
+                        "type": "string"
+                    },
+                    "defQstr": {
+                        "type": "string"
+                    },
+                    "portNumbers": {
+                        "type": "string"
+                    },
+                    "cmmt": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    },
+                    "regImageId": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ImageBuildInfo": {
+                "type": "object",
+                "properties": {
+                    "dckfleTmpl": {
+                        "$ref": "#/components/schemas/DckfleTmplBean"
+                    },
+                    "dockerfile": {
+                        "type": "string"
+                    },
+                    "args": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/TmplArgBean"
+                        }
+                    },
+                    "files": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/TmplFileBean"
+                        }
+                    },
+                    "imageBean": {
+                        "$ref": "#/components/schemas/ImageBean"
+                    },
+                    "noCache": {
+                        "type": "boolean"
+                    }
+                }
+            },
+            "TmplArgBean": {
+                "type": "object",
+                "properties": {
+                    "tmplId": {
+                        "type": "string"
+                    },
+                    "arg": {
+                        "type": "string"
+                    },
+                    "cmmt": {
+                        "type": "string"
+                    },
+                    "sample": {
+                        "type": "string"
+                    }
+                }
+            },
+            "TmplFileBean": {
+                "type": "object",
+                "properties": {
+                    "tmplId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "cmmt": {
+                        "type": "string"
+                    }
+                }
+            },
+            "IDEWorkspacePath": {
+                "type": "object",
+                "properties": {
+                    "currentUrl": {
+                        "type": "string"
+                    },
+                    "urlType": {
+                        "type": "string"
+                    },
+                    "path": {
+                        "type": "string"
+                    }
+                }
+            },
+            "EvtMsgBean": {
+                "type": "object",
+                "properties": {
+                    "evtId": {
+                        "type": "string"
+                    },
+                    "evtTtl": {
+                        "type": "string"
+                    },
+                    "evtMsg": {
+                        "type": "string"
+                    },
+                    "tmplId": {
+                        "type": "string"
+                    }
+                }
+            },
+            "MailPreviewInfo": {
+                "type": "object",
+                "properties": {
+                    "previewHtml": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ResponseObjectMailPreviewInfo": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/MailPreviewInfo"
+                    }
+                }
+            },
+            "DckfleTmplInfo": {
+                "type": "object",
+                "properties": {
+                    "dckfleTmpl": {
+                        "$ref": "#/components/schemas/DckfleTmplBean"
+                    },
+                    "dockerfile": {
+                        "type": "string"
+                    },
+                    "args": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/TmplArgBean"
+                        }
+                    },
+                    "files": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/TmplFileBean"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectString": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "string"
+                    }
+                }
+            },
+            "SignUpBean": {
+                "type": "object",
+                "properties": {
+                    "webId": {
+                        "type": "string"
+                    },
+                    "password": {
+                        "type": "string"
+                    },
+                    "rePassword": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "deptName": {
+                        "type": "string"
+                    },
+                    "mailAddr": {
+                        "type": "string"
+                    }
+                }
+            },
+            "LoginBean": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "password": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ResponseObjectWsActivatedInfoWsBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/WsActivatedInfoWsBean"
+                    }
+                }
+            },
+            "WsActivatedInfoWsBean": {
+                "type": "object",
+                "properties": {
+                    "wsInfo": {
+                        "$ref": "#/components/schemas/WsInfoWsBean"
+                    },
+                    "activatedKey": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ResponseObjectWsGrpActTimeBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/WsGrpActTimeBean"
+                    }
+                }
+            },
+            "WsActDateBean": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "type": "string"
+                    }
+                }
+            },
+            "WsActTimeBean": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "$ref": "#/components/schemas/WsActDateBean"
+                    },
+                    "time": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "WsGrpActTimeBean": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "type": "string"
+                    },
+                    "actDateList": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/WsActDateBean"
+                        }
+                    },
+                    "memActTimeList": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/WsMemActTimeBean"
+                        }
+                    }
+                }
+            },
+            "WsMemActTimeBean": {
+                "type": "object",
+                "properties": {
+                    "webId": {
+                        "type": "string"
+                    },
+                    "actTimeList": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/WsActTimeBean"
+                        }
+                    }
+                }
+            },
+            "MemberWorkspace": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "type": "string"
+                    },
+                    "webId": {
+                        "type": "string"
+                    },
+                    "wsId": {
+                        "type": "string"
+                    },
+                    "imageId": {
+                        "type": "string"
+                    },
+                    "lastVisitDate": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    },
+                    "groupName": {
+                        "type": "string"
+                    },
+                    "groupLeaderId": {
+                        "type": "string"
+                    },
+                    "groupCmmt": {
+                        "type": "string"
+                    },
+                    "memberStateCd": {
+                        "type": "string"
+                    },
+                    "memberRoleCd": {
+                        "type": "string"
+                    },
+                    "imageName": {
+                        "type": "string"
+                    },
+                    "joinDate": {
+                        "type": "string"
+                    },
+                    "wsUrl": {
+                        "type": "string"
+                    }
+                }
+            },
+            "MemberWorkspaceListMemberWorkspace": {
+                "type": "object",
+                "properties": {
+                    "workspaces": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/MemberWorkspace"
+                        }
+                    },
+                    "memberRole": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/MemberRole"
+                        }
+                    },
+                    "memberState": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/MemberState"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectMemberWorkspaceListMemberWorkspace": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/MemberWorkspaceListMemberWorkspace"
+                    }
+                }
+            },
+            "ResponseObjectWorkgroupListWorkgroupBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/WorkgroupListWorkgroupBean"
+                    }
+                }
+            },
+            "WorkgroupListWorkgroupBean": {
+                "type": "object",
+                "properties": {
+                    "list": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/WorkgroupBean"
+                        }
+                    },
+                    "state": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/WorkgroupState"
+                        }
+                    }
+                }
+            },
+            "AffiliatedWorkgroup": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "leaderId": {
+                        "type": "string"
+                    },
+                    "stateCd": {
+                        "type": "string"
+                    },
+                    "cmmt": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    },
+                    "aprDate": {
+                        "type": "string"
+                    },
+                    "groupRole": {
+                        "type": "string"
+                    },
+                    "memberState": {
+                        "type": "string"
+                    }
+                }
+            },
+            "AffiliatedWorkgroupListAffiliatedWorkgroup": {
+                "type": "object",
+                "properties": {
+                    "list": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/AffiliatedWorkgroup"
+                        }
+                    },
+                    "memberState": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/MemberState"
+                        }
+                    },
+                    "groupRole": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/MemberRole"
+                        }
+                    },
+                    "state": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/WorkgroupState"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectAffiliatedWorkgroupListAffiliatedWorkgroup": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/AffiliatedWorkgroupListAffiliatedWorkgroup"
+                    }
+                }
+            },
+            "AffiliatedWorkgroupInfoGroupMemberBeanWsBean": {
+                "type": "object",
+                "properties": {
+                    "workgroup": {
+                        "$ref": "#/components/schemas/WorkgroupBean"
+                    },
+                    "members": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/GroupMemberBean"
+                        }
+                    },
+                    "groupRole": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/MemberRole"
+                        }
+                    },
+                    "memberState": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/MemberState"
+                        }
+                    },
+                    "affiliatedInfo": {
+                        "$ref": "#/components/schemas/GroupMemberBean"
+                    },
+                    "ws": {
+                        "$ref": "#/components/schemas/WsInfoWsBean"
+                    },
+                    "groupState": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/WorkgroupState"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectAffiliatedWorkgroupInfoGroupMemberBeanWsBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/AffiliatedWorkgroupInfoGroupMemberBeanWsBean"
+                    }
+                }
+            },
+            "ResponseObjectUserInfoUserBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/UserInfoUserBean"
+                    }
+                }
+            },
+            "UserInfoUserBean": {
+                "type": "object",
+                "properties": {
+                    "user": {
+                        "$ref": "#/components/schemas/UserBean"
+                    },
+                    "state": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/UserState"
+                        }
+                    },
+                    "role": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/UserRole"
+                        }
+                    }
+                }
+            },
+            "UserRole": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "label": {
+                        "type": "string"
+                    }
+                }
+            },
+            "UserState": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "label": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ResponseObjectListUserBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/UserBean"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectUserListUserBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/UserListUserBean"
+                    }
+                }
+            },
+            "UserListUserBean": {
+                "type": "object",
+                "properties": {
+                    "state": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/UserState"
+                        }
+                    },
+                    "list": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/UserBean"
+                        }
+                    },
+                    "role": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/UserRole"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectUserCode": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/UserCode"
+                    }
+                }
+            },
+            "UserCode": {
+                "type": "object",
+                "properties": {
+                    "state": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/UserState"
+                        }
+                    },
+                    "role": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/UserRole"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectListTlsSecBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/TlsSecBean"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectTlsSecBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/TlsSecBean"
+                    }
+                }
+            },
+            "ResponseObjectListResBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ResBean"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectResBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/ResBean"
+                    }
+                }
+            },
+            "RegImageBean": {
+                "type": "object",
+                "properties": {
+                    "regId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "host": {
+                        "type": "string"
+                    },
+                    "port": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    },
+                    "regHost": {
+                        "type": "string"
+                    },
+                    "regUser": {
+                        "type": "string"
+                    },
+                    "regPwd": {
+                        "type": "string"
+                    },
+                    "regMail": {
+                        "type": "string"
+                    },
+                    "images": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ImageBean"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectListRegImageBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/RegImageBean"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectListImageRegBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ImageRegBean"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectImageRegBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/ImageRegBean"
+                    }
+                }
+            },
+            "MenuItem": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "label": {
+                        "type": "string"
+                    },
+                    "actionType": {
+                        "type": "string"
+                    },
+                    "action": {
+                        "type": "string"
+                    },
+                    "parentId": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ResponseObjectListMenuItem": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/MenuItem"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectListMailTmplBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/MailTmplBean"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectMailTmplBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/MailTmplBean"
+                    }
+                }
+            },
+            "ImageInfo": {
+                "type": "object",
+                "properties": {
+                    "imageId": {
+                        "type": "string"
+                    },
+                    "regId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "repoPath": {
+                        "type": "string"
+                    },
+                    "tag": {
+                        "type": "string"
+                    },
+                    "defQstr": {
+                        "type": "string"
+                    },
+                    "portNumbers": {
+                        "type": "string"
+                    },
+                    "cmmt": {
+                        "type": "string"
+                    },
+                    "creDate": {
+                        "type": "string"
+                    },
+                    "regImageId": {
+                        "type": "string"
+                    },
+                    "regName": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ResponseObjectListImageInfo": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ImageInfo"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectListImageBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ImageBean"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectImageBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/ImageBean"
+                    }
+                }
+            },
+            "EvtMsgInfo": {
+                "type": "object",
+                "properties": {
+                    "evtMsgBean": {
+                        "$ref": "#/components/schemas/EvtMsgBean"
+                    },
+                    "tmplName": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ResponseObjectListEvtMsgInfo": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/EvtMsgInfo"
+                        }
+                    }
+                }
+            },
+            "ClusterInfo": {
+                "type": "object",
+                "properties": {
+                    "CreatedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "Spec": {
+                        "$ref": "#/components/schemas/SwarmSpec"
+                    },
+                    "ID": {
+                        "type": "string"
+                    },
+                    "UpdatedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "Version": {
+                        "$ref": "#/components/schemas/ResourceVersion"
+                    }
+                }
+            },
+            "Driver": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Options": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "ExternalCA": {
+                "type": "object",
+                "properties": {
+                    "Protocol": {
+                        "type": "string",
+                        "enum": [
+                            "cfssl"
+                        ]
+                    },
+                    "URL": {
+                        "type": "string"
+                    },
+                    "Options": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "IndexConfig": {
+                "type": "object",
+                "properties": {
+                    "Mirrors": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Official": {
+                        "type": "boolean"
+                    },
+                    "Secure": {
+                        "type": "boolean"
+                    }
+                }
+            },
+            "Info": {
+                "type": "object",
+                "properties": {
+                    "ngoroutines": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "neventsListener": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "Architecture": {
+                        "type": "string"
+                    },
+                    "Containers": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "ContainersStopped": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "ContainersPaused": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "ContainersRunning": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "CpuCfsPeriod": {
+                        "type": "boolean"
+                    },
+                    "CpuCfsQuota": {
+                        "type": "boolean"
+                    },
+                    "CPUShares": {
+                        "type": "boolean"
+                    },
+                    "CPUSet": {
+                        "type": "boolean"
+                    },
+                    "Debug": {
+                        "type": "boolean"
+                    },
+                    "DiscoveryBackend": {
+                        "type": "string"
+                    },
+                    "DockerRootDir": {
+                        "type": "string"
+                    },
+                    "Driver": {
+                        "type": "string"
+                    },
+                    "DriverStatus": {
+                        "type": "array",
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "SystemStatus": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "Plugins": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "ExecutionDriver": {
+                        "type": "string"
+                    },
+                    "LoggingDriver": {
+                        "type": "string"
+                    },
+                    "ExperimentalBuild": {
+                        "type": "boolean"
+                    },
+                    "HttpProxy": {
+                        "type": "string"
+                    },
+                    "HttpsProxy": {
+                        "type": "string"
+                    },
+                    "ID": {
+                        "type": "string"
+                    },
+                    "IPv4Forwarding": {
+                        "type": "boolean"
+                    },
+                    "BridgeNfIptables": {
+                        "type": "boolean"
+                    },
+                    "BridgeNfIp6tables": {
+                        "type": "boolean"
+                    },
+                    "Images": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "IndexServerAddress": {
+                        "type": "string"
+                    },
+                    "InitPath": {
+                        "type": "string"
+                    },
+                    "InitSha1": {
+                        "type": "string"
+                    },
+                    "KernelVersion": {
+                        "type": "string"
+                    },
+                    "Labels": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "MemoryLimit": {
+                        "type": "boolean"
+                    },
+                    "MemTotal": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "Name": {
+                        "type": "string"
+                    },
+                    "NCPU": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "NEventsListener": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "NFd": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "NGoroutines": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "NoProxy": {
+                        "type": "string"
+                    },
+                    "OomKillDisable": {
+                        "type": "boolean"
+                    },
+                    "OSType": {
+                        "type": "string"
+                    },
+                    "OomScoreAdj": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "OperatingSystem": {
+                        "type": "string"
+                    },
+                    "RegistryConfig": {
+                        "$ref": "#/components/schemas/InfoRegistryConfig"
+                    },
+                    "Sockets": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "SwapLimit": {
+                        "type": "boolean"
+                    },
+                    "SystemTime": {
+                        "type": "string"
+                    },
+                    "ServerVersion": {
+                        "type": "string"
+                    },
+                    "ClusterStore": {
+                        "type": "string"
+                    },
+                    "ClusterAdvertise": {
+                        "type": "string"
+                    },
+                    "Swarm": {
+                        "$ref": "#/components/schemas/SwarmInfo"
+                    },
+                    "Isolation": {
+                        "type": "string"
+                    },
+                    "SecurityOptions": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "InfoRegistryConfig": {
+                "type": "object",
+                "properties": {
+                    "IndexConfigs": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "$ref": "#/components/schemas/IndexConfig"
+                        }
+                    },
+                    "InsecureRegistryCIDRs": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "Mirrors": {
+                        "type": "object"
+                    }
+                }
+            },
+            "PeerNode": {
+                "type": "object",
+                "properties": {
+                    "NodeID": {
+                        "type": "string"
+                    },
+                    "Addr": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ResourceVersion": {
+                "type": "object",
+                "properties": {
+                    "Index": {
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                }
+            },
+            "ResponseObjectInfo": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/Info"
+                    }
+                }
+            },
+            "SwarmCAConfig": {
+                "type": "object",
+                "properties": {
+                    "NodeCertExpiry": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "ExternalCAs": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ExternalCA"
+                        }
+                    }
+                }
+            },
+            "SwarmDispatcherConfig": {
+                "type": "object",
+                "properties": {
+                    "HeartbeatPeriod": {
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                }
+            },
+            "SwarmInfo": {
+                "type": "object",
+                "properties": {
+                    "NodeID": {
+                        "type": "string"
+                    },
+                    "NodeAddr": {
+                        "type": "string"
+                    },
+                    "LocalNodeState": {
+                        "type": "string",
+                        "enum": [
+                            "inactive",
+                            "pending",
+                            "active",
+                            "error",
+                            "locked",
+                            ""
+                        ]
+                    },
+                    "ControlAvailable": {
+                        "type": "boolean"
+                    },
+                    "Error": {
+                        "type": "string"
+                    },
+                    "RemoteManagers": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/PeerNode"
+                        }
+                    },
+                    "Nodes": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "Managers": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "ClusterInfo": {
+                        "$ref": "#/components/schemas/ClusterInfo"
+                    }
+                }
+            },
+            "SwarmOrchestration": {
+                "type": "object",
+                "properties": {
+                    "TaskHistoryRetentionLimit": {
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                }
+            },
+            "SwarmRaftConfig": {
+                "type": "object",
+                "properties": {
+                    "LogEntriesForSlowFollowers": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "HeartbeatTick": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "SnapshotInterval": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "ElectionTick": {
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                }
+            },
+            "SwarmSpec": {
+                "type": "object",
+                "properties": {
+                    "Dispatcher": {
+                        "$ref": "#/components/schemas/SwarmDispatcherConfig"
+                    },
+                    "Orchestration": {
+                        "$ref": "#/components/schemas/SwarmOrchestration"
+                    },
+                    "CAConfig": {
+                        "$ref": "#/components/schemas/SwarmCAConfig"
+                    },
+                    "Raft": {
+                        "$ref": "#/components/schemas/SwarmRaftConfig"
+                    },
+                    "TaskDefaults": {
+                        "$ref": "#/components/schemas/TaskDefaults"
+                    },
+                    "Name": {
+                        "type": "string"
+                    }
+                }
+            },
+            "TaskDefaults": {
+                "type": "object",
+                "properties": {
+                    "LogDriver": {
+                        "$ref": "#/components/schemas/Driver"
+                    }
+                }
+            },
+            "ResponseObjectListDckfleTmplBean": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/DckfleTmplBean"
+                        }
+                    }
+                }
+            },
+            "ResponseObjectDckfleTmplInfo": {
+                "type": "object",
+                "properties": {
+                    "redirectUrl": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "$ref": "#/components/schemas/DckfleTmplInfo"
+                    }
+                }
+            }
+        }
+    }
+}

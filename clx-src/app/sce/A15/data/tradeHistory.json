@@ -1,0 +1,23 @@
+{
+    "LAST_NEXT_KEY": "",
+    "outRec1": [
+        {
+            "TOT_INT_AMT": "0",
+            "TOT_FEE": "0",
+            "TOT_TAX": "0",
+            "TOT_RCTM_AMT": "0",
+            "TOT_DRWG_AMT": "0",
+            "NROM_AMT": "0",
+            "ACNT_SE_NM": "",
+            "PGE_NO": "0",
+            "TOT_CNT": "0",
+            "TOT_PGE_CNT": "0"
+        }
+    ],
+    "outRec2_count": "0",
+    "outRec2": [],
+    "H_MSG_COD": "BNBC00003",
+    "H_MSG_CTNS": "조회할 내용이 없습니다.",
+    "errorF": "2",
+    "MSG": "조회할 내용이 없습니다."
+}

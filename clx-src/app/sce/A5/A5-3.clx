@@ -1,0 +1,131 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/0-1.프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-82cce0fc" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="true" customHeight="797" customWidth="800" active="true"/>
+    <screen std:sid="screen-c5735ee5" id="EXB-DIV" name="EXB-DIV" width="600px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-16e0c9fb" id="EXB-PART" name="EXB-PART" width="0px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-90321062">
+      <cl:dataset comment="프로세스 목록" std:sid="d-set-406d885d" id="dsProcess">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="" std:sid="d-column-9f37779a" name="TITLE"/>
+          <cl:datacolumn std:sid="d-column-54a27ccc" name="TITLE_RIGHT_TEXT"/>
+          <cl:datacolumn comment="" std:sid="d-column-7fe5300f" name="SUB_TITLE"/>
+          <cl:datacolumn comment="" std:sid="d-column-c68cb733" name="DELIMITER" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-fa740970" name="CONT" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-c9d6a3d7" name="KEY_CODE"/>
+          <cl:datacolumn std:sid="d-column-b4004ac2" name="SUB_CODE"/>
+          <cl:datacolumn comment="" std:sid="d-column-8d6dc077" name="TARGET_CTRL"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[○]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[목적]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[소스 변경 내역을 배포하지 않고 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[　]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[○]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[검증 조건]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[　]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[화면 수정 사항을 배포하지 않고 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[　]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[○]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[측정]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[　]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[화면 소스 수정 후 로컬에서 변경사항이 반영 되는지 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[　]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[　]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="로컬 수행"/>
+  </head>
+  <body std:sid="body-a0c207fd">
+    <cl:udc std:sid="ud-control-8c71e0ab" id="udcComAppHeader" type="udc.com.udcComAppHeader">
+      <cl:formdata std:sid="f-data-fbde6da2" row="0" col="0"/>
+      <cl:property name="title" value="5.3 로컬 수행" type="string"/>
+      <cl:property name="isExpandAllPocProcess" value="true" type="boolean"/>
+    </cl:udc>
+    <cl:group std:sid="group-be39b9f1" id="grpData" class="conts-area">
+      <cl:formdata std:sid="f-data-c86b3c83" width="100" height="54" row="1" col="0"/>
+      <cl:group std:sid="group-a47f66c3" id="grp1" class="governing">
+        <cl:formdata std:sid="f-data-ec7b8a24" width="100" height="54" row="0" col="0"/>
+        <cl:udc std:sid="ud-control-832e3ad2" id="udcComFormTitle1" type="udc.com.udcComFormTitle">
+          <cl:verticaldata std:sid="v-data-57799b3d" width="800px" height="28px" autosize="height"/>
+          <cl:property name="title" value="로컬 수행 지원" type="string"/>
+        </cl:udc>
+        <cl:output std:sid="output-1c257dfa" id="opt2" displayexp="&quot;eXBuilder6는 서버와 클라이언트를 한번에 개발하는 개발 통합 환경을 제공합니다.\n\r&quot; + sstr(&quot;스튜디오 내 미리보기 기능&quot;, [&quot;fw-bold&quot;]) + &quot;을 이용하여 로컬 PC의 외부 웹 브라우저로 서버 구동없이 &quot; +sstr(&quot;UI의 개발 및 실시간 테스트 수행이 가능&quot;, [&quot;fw-bold&quot;]) + &quot;합니다.&quot;">
+          <cl:verticaldata std:sid="v-data-e032687f" width="1218px" height="48px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-63c3bf60" scrollable="false" spacing="8"/>
+      </cl:group>
+      <cl:group std:sid="group-74ef678b" class="conts-wrap">
+        <cl:formdata std:sid="f-data-d826e1ee" row="1" col="0" rowspan="1" colspan="1"/>
+        <cl:udc std:sid="ud-control-080e60a6" id="udcPocDocViewer1" type="udc.poc.udcPocDocViewer">
+          <cl:formdata std:sid="f-data-3b6f2efa" row="0" col="0"/>
+          <cl:property name="fileUrl" value="data/docs/A5-3.png" type="resource"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-3001546a" scrollable="false" hspace="0px" vspace="0px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-010e2784" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="124" unit="PIXEL" autoSizing="true" hidden="true" syncminlength="false"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-16361ac5" scrollable="false" hspace="0px" vspace="16px" top-margin="16px" right-margin="24px" bottom-margin="24px" left-margin="24px">
+      <cl:rows length="40" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="740"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

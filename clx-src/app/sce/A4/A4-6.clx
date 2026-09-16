@@ -1,0 +1,529 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b2e24a61" version="1.0.5542">
+  <head std:sid="head-ee58bef2">
+    <std:metadata>
+      <std:property key="template-file" value="templates/poc/빈페이지.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-819b292b" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="true" customHeight="1500" customWidth="800" active="true"/>
+    <screen std:sid="screen-942a1a89" id="EXB-DIV" name="EXB-DIV" width="600px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-4925cd38" id="EXB-PART" name="EXB-PART" width="0px" height="768px" useCustomWidth="true" useCustomHeight="false" customHeight="600" customWidth="375"/>
+    <cl:model std:sid="model-3ce95ac2">
+      <cl:dataset comment="프로세스 목록" std:sid="d-set-406d885d" id="dsProcess">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-9f37779a" name="TITLE"/>
+          <cl:datacolumn std:sid="d-column-05046705" name="TITLE_RIGHT_TEXT"/>
+          <cl:datacolumn std:sid="d-column-7fe5300f" name="SUB_TITLE"/>
+          <cl:datacolumn std:sid="d-column-c68cb733" name="DELIMITER" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-fa740970" name="CONT" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-c9d6a3d7" name="KEY_CODE"/>
+          <cl:datacolumn std:sid="d-column-b4004ac2" name="SUB_CODE"/>
+          <cl:datacolumn std:sid="d-column-8d6dc077" name="TARGET_CTRL"/>
+          <cl:datacolumn std:sid="d-column-4e06ed8b" name="TARGET_EMB"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">목적</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[Excel Import/Export, 로컬 파일 제어, 업로드/다운로드 기능 검증]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[○]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[검증 요소]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[엑셀 파일 Import 및 Export 기능(Grid 포함) 검증]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[로컬 파일 제어(Read/Write/Copy/Delete) 기능 검증]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[대량 파일(10MB/30MB/50MB) 업/다운로드 기능 검증]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[측정]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[eXBuilder6 에서 지원하는 파일 제어 기능을 확인]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[(솔루션 기능) [엑셀 Import/Export] 엑셀 업로드 버튼을 클릭하여 사전에 준비한 importData.xlsx 파일을 업로드 한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[엑셀 Import/Export]]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[엑셀 업로드]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[grdImport,btn1]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[(솔루션 기능) [엑셀 Import/Export] 엑셀 버튼을 클릭하여 엑셀 다운로드 기능을 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[엑셀 Import/Export]]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[엑셀 다운로드]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[udcComGridTitle1]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[(솔루션 기능) [로컬파일 제어] eXDevice+ 를 통해 로컬 파일 제어 기능을 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[로컬파일 제어]]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[※ 범용브라우저에서 보안상 파일제어 불가능함에 따라, 비표준 전용 솔루션인 eXDevice+로 파일 제어]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[보안상 파일제어 불가능]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[(솔루션 기능) 파일 읽기 버튼을 눌러 로컬 파일의 내용을 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[파일 읽기]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[btnFileRead]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[embapp1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[(솔루션 기능) 파일 오픈 버튼을 눌러 로컬 파일을 오픈한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[파일 오픈]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[btnFileOpen]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[embapp1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[(솔루션 기능) 디렉토리 오픈 버튼을 눌러 로컬 경로의 파일 탐색기를 오픈한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[디렉토리 오픈]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[btnDirOpen]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[embapp1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[(솔루션 기능) 파일 생성 버튼을 눌러 아래 내용으로 구성된 파일을 생성한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[파일 생성]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[btnFileWrite]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[embapp1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[(솔루션 기능) 파일 복사 버튼을 눌러 동일한 파일을 복사한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[파일 복사]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[btnFileCopy]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[embapp1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[(솔루션 기능) 파일 삭제 버튼을 눌러 로컬 파일을 삭제한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[파일 삭제]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[btnFileDel]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[embapp1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[(솔루션 기능) [대량 파일 업/다운로드] 추가 버튼을 눌러 10MB,30MB,50MB 파일을 불러온다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[대량 파일 업/다운로드]]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[10MB,30MB,50MB,추가]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[fid1]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[(솔루션 기능) [대량 파일 업/다운로드] 보내기 버튼을 눌러 파일을 업로드 한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[대량 파일 업/다운로드]]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[보내기]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[fid1]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_EMB"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[btn2,btn3]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[(솔루션 기능) [대량 파일 업/다운로드] 업로드가 완료되면 다운로드 할 파일을 선택하여 개별 다운로드/전체 다운로드 버튼을 클릭해 파일을 다운로드 받는다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[대량 파일 업/다운로드]]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[개별 다운로드/전체 다운로드]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-5ea4678a" id="dsImport">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-4c5d067d" name="column1"/>
+          <cl:datacolumn std:sid="d-column-1178c162" name="column2"/>
+          <cl:datacolumn std:sid="d-column-4df27eed" name="column3"/>
+          <cl:datacolumn std:sid="d-column-df1e6b14" name="column4"/>
+          <cl:datacolumn std:sid="d-column-0f00409a" name="column5"/>
+          <cl:datacolumn std:sid="d-column-55da63d3" name="column6"/>
+          <cl:datacolumn std:sid="d-column-656cfbaf" name="column7"/>
+          <cl:datacolumn std:sid="d-column-5a5fc528" name="column8"/>
+          <cl:datacolumn std:sid="d-column-af5e44ec" name="column9"/>
+          <cl:datacolumn std:sid="d-column-cecf48ef" name="column10"/>
+          <cl:datacolumn std:sid="d-column-f5e2e6d7" name="column11"/>
+          <cl:datacolumn std:sid="d-column-54bd3106" name="column12"/>
+          <cl:datacolumn std:sid="d-column-da45d13f" name="column13"/>
+          <cl:datacolumn std:sid="d-column-7b062a99" name="column14"/>
+          <cl:datacolumn std:sid="d-column-ff999ee6" name="column15"/>
+          <cl:datacolumn std:sid="d-column-26bd5d28" name="column16"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-7af94637" id="dmUpload">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-519b935b" name="uploadPath"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-63242287" id="dmParamDown">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-d284150b" name="filePath"/>
+          <cl:datacolumn std:sid="d-column-82f45705" name="fileNm"/>
+          <cl:datacolumn std:sid="d-column-dc18b634" name="resType"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-2cb85e7b" id="subImport" action="/CmnExcelImport/import.do">
+        <cl:responsedata dataid="dsImport"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-cb243db3" id="subUpload" action="/CmnFile/upload.do" mediatype="multipart/form-data" responsetype="text">
+        <cl:responsedata dataid="dmUpload"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-ea9ffb34" id="subDownload" action="/CmnFile/download.do" mediatype="application/x-www-form-urlencoded" responsetype="blob">
+        <cl:requestdata dataid="dmParamDown"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-ffabc20a" id="subDownloadAll" action="/CmnFile/downloadAll.do" mediatype="application/x-www-form-urlencoded" responsetype="filedownload">
+        <cl:requestdata dataid="dmParamDown"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="2-7. 파일 제어 기능"/>
+  </head>
+  <body std:sid="body-e4f66bc9" class="wrap">
+    <cl:udc std:sid="ud-control-c03e37de" type="udc.com.udcComAppHeader">
+      <cl:formdata std:sid="f-data-72d479c4" row="0" col="0"/>
+    </cl:udc>
+    <cl:tabfolder std:sid="t-folder-4abffdf0">
+      <cl:formdata std:sid="f-data-a705d418" width="100" height="49" row="1" col="0"/>
+      <cl:tabitem std:sid="t-item-98ecdd7c" selected="true" text="엑셀 Import/Export">
+        <cl:group std:sid="group-3dcbe8fc" class="conts-wrap">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-4fa8d29b" class="conts-wrap">
+            <std:metadata>
+              <std:property key="template-uuid" value="fa6d726c-05f4-491f-a1ba-fc117e417e87"/>
+              <std:property key="template-rev" value="6"/>
+            </std:metadata>
+            <cl:formdata std:sid="f-data-f3ec81dc" row="0" col="0"/>
+            <cl:grid std:sid="grid-414b0b78" id="grdImport" fieldLabel="엑셀 Import/Export 기능 검증" datasetid="dsImport" autofit="1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16" clickmode="select" columnMovable="true">
+              <cl:attribute name="transform-on-mobile" value="dialogType"/>
+              <cl:formdata std:sid="f-data-713c3fb4" row="1" col="0" rowspan="1" colspan="2"/>
+              <cl:gridcolumn std:sid="g-column-3aa94103" width="60px"/>
+              <cl:gridcolumn std:sid="g-column-10adbab9" width="140px"/>
+              <cl:gridcolumn std:sid="g-column-ba89d81f" width="120px"/>
+              <cl:gridcolumn std:sid="g-column-f3bbf5c2" width="120px"/>
+              <cl:gridcolumn std:sid="g-column-fcacb764" width="120px"/>
+              <cl:gridcolumn std:sid="g-column-05d22ae4" width="165px"/>
+              <cl:gridcolumn std:sid="g-column-c9345d64" width="140px"/>
+              <cl:gridcolumn std:sid="g-column-ef2e84bf"/>
+              <cl:gridcolumn std:sid="g-column-d757515a"/>
+              <cl:gridcolumn std:sid="g-column-252b2a42"/>
+              <cl:gridcolumn std:sid="g-column-0d79fd6c"/>
+              <cl:gridcolumn std:sid="g-column-cbeefa3e"/>
+              <cl:gridcolumn std:sid="g-column-0a975d2e"/>
+              <cl:gridcolumn std:sid="g-column-df79255b"/>
+              <cl:gridcolumn std:sid="g-column-7b202c6d"/>
+              <cl:gridcolumn std:sid="g-column-43e61661"/>
+              <cl:gridcolumn std:sid="g-column-5919a20c"/>
+              <cl:gridheader std:sid="gh-band-9cb6fc78">
+                <cl:gridrow std:sid="g-row-b267aa86" height="44px"/>
+                <cl:gridrow std:sid="g-row-48bd8a39" height="44px"/>
+                <cl:gridrow std:sid="g-row-4dc4268f" height="44px"/>
+                <cl:gridrow std:sid="g-row-31412037" height="44px"/>
+                <cl:gridcell std:sid="gh-cell-145543ef" rowindex="3" colindex="5" text="대상"/>
+                <cl:gridcell std:sid="gh-cell-3b272022" rowindex="3" colindex="6" text="실행"/>
+                <cl:gridcell std:sid="gh-cell-b0cccdd2" rowindex="0" colindex="0" rowspan="4" colspan="1"/>
+                <cl:gridcell std:sid="gh-cell-142e10b6" rowindex="0" colindex="1" rowspan="4" colspan="1" text="지역본부명"/>
+                <cl:gridcell std:sid="gh-cell-abde2dc3" rowindex="0" colindex="2" rowspan="1" colspan="3" text="전일"/>
+                <cl:gridcell std:sid="gh-cell-05aa5321" rowindex="0" colindex="5" rowspan="1" colspan="5" text="금일"/>
+                <cl:gridcell std:sid="gh-cell-ec0a50e5" rowindex="2" colindex="2" rowspan="2" colspan="1" text="대상"/>
+                <cl:gridcell std:sid="gh-cell-a30cf833" rowindex="2" colindex="3" rowspan="2" colspan="1" text="실행"/>
+                <cl:gridcell std:sid="gh-cell-813326e1" rowindex="2" colindex="4" rowspan="2" colspan="1" text="실행률"/>
+                <cl:gridcell std:sid="gh-cell-3bb83d89" rowindex="2" colindex="5" rowspan="1" colspan="2" text="e금융신규미로그인"/>
+                <cl:gridcell std:sid="gh-cell-cc78b2b3" rowindex="1" colindex="2" rowspan="1" colspan="3" text="오늘의 할일(전체)"/>
+                <cl:gridcell std:sid="gh-cell-a47aead1" rowindex="1" colindex="5" rowspan="1" colspan="5" text="오늘의 할일(상세)"/>
+                <cl:gridcell std:sid="gh-cell-3a651ed6" rowindex="2" colindex="7" rowspan="1" colspan="2" text="만기(결과)안내(수신)"/>
+                <cl:gridcell std:sid="gh-cell-de102f6a" rowindex="3" colindex="7" text="대상"/>
+                <cl:gridcell std:sid="gh-cell-240f1b52" rowindex="3" colindex="8" text="실행"/>
+                <cl:gridcell std:sid="gh-cell-97cc70cd" rowindex="2" colindex="9" rowspan="2" colspan="1" text="실행률"/>
+                <cl:gridcell std:sid="gh-cell-c0ca81ad" rowindex="0" colindex="10" rowspan="1" colspan="7" text="분기"/>
+                <cl:gridcell std:sid="gh-cell-e1a9a763" rowindex="1" colindex="10" rowspan="1" colspan="3" text="오늘의 할일"/>
+                <cl:gridcell std:sid="gh-cell-82f00b42" rowindex="2" colindex="10" rowspan="2" colspan="1" text="대상"/>
+                <cl:gridcell std:sid="gh-cell-c6820627" rowindex="2" colindex="11" rowspan="2" colspan="1" text="실행"/>
+                <cl:gridcell std:sid="gh-cell-a741eca2" rowindex="2" colindex="12" rowspan="2" colspan="1" text="실행률"/>
+                <cl:gridcell std:sid="gh-cell-31f8b5f7" rowindex="1" colindex="13" rowspan="1" colspan="4" text="이탈안내"/>
+                <cl:gridcell std:sid="gh-cell-68a8ffa8" rowindex="2" colindex="13" rowspan="2" colspan="1" text="대상고객"/>
+                <cl:gridcell std:sid="gh-cell-89b7ef3b" rowindex="2" colindex="14" rowspan="2" colspan="1" text="실행(월)"/>
+                <cl:gridcell std:sid="gh-cell-6f1c8c97" rowindex="2" colindex="15" rowspan="2" colspan="1" text="실행(분기)"/>
+                <cl:gridcell std:sid="gh-cell-d4b99600" rowindex="2" colindex="16" rowspan="2" colspan="1" text="실행률"/>
+              </cl:gridheader>
+              <cl:griddetail std:sid="gd-band-84b35305">
+                <cl:gridrow std:sid="g-row-f70a68c7" height="45px"/>
+                <cl:gridcell std:sid="gd-cell-b92a1327" rowindex="0" colindex="1" columnname="column1">
+                  <cl:output std:sid="output-39c63009" id="opt9" style="text-align:center;">
+                    <cl:celldata std:sid="c-data-609a79f5"/>
+                  </cl:output>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-6840d7ef" rowindex="0" colindex="2" columnname="column2">
+                  <cl:numbereditor std:sid="n-editor-d69faff4" id="nbe15" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-b3297e0c"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-c8d7ca25" rowindex="0" colindex="3" columnname="column3">
+                  <cl:numbereditor std:sid="n-editor-39158d3a" id="nbe13" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-e7abe91b"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-e79553f0" rowindex="0" colindex="4" columnname="column4">
+                  <cl:numbereditor std:sid="n-editor-335f37b6" id="nbe14" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-d6b31109"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-033c85e9" rowindex="0" colindex="5" columnname="column5">
+                  <cl:numbereditor std:sid="n-editor-b5be34bf" id="nbe12" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-ada81d72"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-2dce1bd5" rowindex="0" colindex="6" columnname="column6">
+                  <cl:numbereditor std:sid="n-editor-ec734028" id="nbe11" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-92a37ad9"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-cd3a4e12" rowindex="0" colindex="0" columntype="rowindex"/>
+                <cl:gridcell std:sid="gd-cell-e0fecbf7" rowindex="0" colindex="7" columnname="column7">
+                  <cl:numbereditor std:sid="n-editor-ef372261" id="nbe1" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-5182f5be"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-c92ee1d9" rowindex="0" colindex="8" columnname="column8">
+                  <cl:numbereditor std:sid="n-editor-3e11a65f" id="nbe2" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-47ef38ef"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-36f28258" rowindex="0" colindex="9" columnname="column9">
+                  <cl:numbereditor std:sid="n-editor-32945af7" id="nbe3" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-c00d0a99"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-d5865e96" rowindex="0" colindex="10" columnname="column10">
+                  <cl:numbereditor std:sid="n-editor-416518ba" id="nbe4" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-6224f87f"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-1deed258" rowindex="0" colindex="11" columnname="column11">
+                  <cl:numbereditor std:sid="n-editor-5171038e" id="nbe5" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-a20abd31"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-0545d17d" rowindex="0" colindex="12" columnname="column12">
+                  <cl:numbereditor std:sid="n-editor-b0e3fa9f" id="nbe6" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-2600f2e6"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-179854d5" rowindex="0" colindex="13" columnname="column13">
+                  <cl:numbereditor std:sid="n-editor-7250f7f0" id="nbe7" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-8c75da26"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-f017f349" rowindex="0" colindex="14" columnname="column14">
+                  <cl:numbereditor std:sid="n-editor-ae28d950" id="nbe8" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-98efbe83"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-257aac9f" rowindex="0" colindex="15" columnname="column15">
+                  <cl:numbereditor std:sid="n-editor-025855b8" id="nbe9" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-840d33ad"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-a2f7813d" rowindex="0" colindex="16" columnname="column16">
+                  <cl:numbereditor std:sid="n-editor-64936d66" id="nbe10" format="s#,##0.#">
+                    <cl:celldata std:sid="c-data-707d2fa5"/>
+                  </cl:numbereditor>
+                </cl:gridcell>
+              </cl:griddetail>
+            </cl:grid>
+            <cl:udc std:sid="ud-control-8a93e9c5" type="udc.com.udcComGridTitle">
+              <cl:formdata std:sid="f-data-db42cd4b" row="0" col="0"/>
+              <cl:property name="ctrl" value="grdImport" type="control"/>
+              <cl:property name="exportshowRowIndex" value="true" type="boolean"/>
+              <cl:property name="exportUseFormat" value="false" type="boolean"/>
+              <cl:property name="showInfoText" value="true" type="boolean"/>
+              <cl:property name="infoText" value="3795 추진현황&#xD;&#xA;&#xD;&#xA;구분(일변) 조회일자 [20250721] 조회년월 [202505월] 출력조건 [사무소별]&#xD;&#xA;조회구분 [지역본부] [서울지역본부] [본부별] 사무소 [005085] [IT전략본부] [1]&#xD;&#xA;&#xD;&#xA;※ 오늘의 할일 추진현황의로서 월별자료와 상이할 수 있습니다. 일별자료는 참고용" type="string"/>
+            </cl:udc>
+            <cl:group std:sid="group-fdf19e1a">
+              <cl:formdata std:sid="f-data-295b5ece" row="0" col="1"/>
+              <cl:fileinput std:sid="f-input-312dd569" id="fit1" visible="false">
+                <cl:listener std:sid="listener-f2d98a96" name="value-change" handler="onFit1ValueChange"/>
+                <cl:flowlayoutdata std:sid="f-data-62977447" width="30px" height="28px"/>
+              </cl:fileinput>
+              <cl:button std:sid="button-31536d95" class="icon-excel" value="엑셀 업로드" icon="0">
+                <cl:listener std:sid="listener-ad777400" name="click" handler="onBtn1Click"/>
+                <cl:flowlayoutdata std:sid="f-data-152e42eb" width="130px" height="28px" autosize="width"/>
+              </cl:button>
+              <cl:flowlayout std:sid="f-layout-aa5ac52f" hspacing="4" halign="right"/>
+            </cl:group>
+            <cl:formlayout std:sid="f-layout-ce1ce2eb" scrollable="false" hspace="0px" vspace="8px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+              <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" syncminlength="false"/>
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="394" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-6421fd3f" scrollable="false" hspace="16px" vspace="16px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-373718b3" text="로컬파일 제어">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-00e24308" class="conts-area">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-b6688df5" class="conts-wrap">
+            <cl:verticaldata std:sid="v-data-7993473a" width="976px" height="1263px" autosize="height"/>
+            <cl:udc std:sid="ud-control-f1f62b64" id="udcPocDocViewer1" type="udc.poc.udcPocDocViewer">
+              <cl:verticaldata std:sid="v-data-1cca0c2f" width="942px" height="630px" autosize="height"/>
+              <cl:property name="fileUrl" value="data/docs/A4-6.png" type="resource"/>
+            </cl:udc>
+            <cl:embeddedapp std:sid="e-app-16de2e5a" src="A4-6-1.clx">
+              <cl:verticaldata std:sid="v-data-9101964d" width="320px" height="627px" autosize="height"/>
+            </cl:embeddedapp>
+            <cl:verticallayout std:sid="v-layout-94c4042e" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-d2022725" spacing="16"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-e5b1448e" text="대량 파일 업/다운로드">
+        <cl:group std:sid="group-bdb4e86e" class="conts-area">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-8331296a" id="grp6" class="conts-wrap">
+            <std:metadata>
+              <std:property key="template-uuid" value="d3a2c98f-b10c-467d-9c96-0c980e76da6e"/>
+              <std:property key="template-rev" value="10"/>
+            </std:metadata>
+            <cl:verticaldata std:sid="v-data-d6cbded8" width="992px" height="332px" autosize="height"/>
+            <cl:group std:sid="group-fd2c177e">
+              <cl:verticaldata std:sid="v-data-8094b0aa" width="1024px" height="28px" autosize="height"/>
+              <cl:udc std:sid="ud-control-d1fac6c8" type="udc.com.udcComFormTitle">
+                <cl:formdata std:sid="f-data-961ed673" row="0" col="0"/>
+                <cl:property name="title" value="파일 업/다운로드" type="string"/>
+              </cl:udc>
+              <cl:group std:sid="group-e68876e7">
+                <cl:formdata std:sid="f-data-fcb65c0b" row="0" col="1" rowspan="1" colspan="1"/>
+                <cl:button std:sid="button-7573ab1e" class="icon-download" value="개별 다운로드" icon="0">
+                  <cl:listener std:sid="listener-1c3ca22b" name="click" handler="onBtn2Click"/>
+                  <cl:flowlayoutdata std:sid="f-data-59f5ac80" width="150px" height="28px" autosize="width"/>
+                </cl:button>
+                <cl:button std:sid="button-9366b992" class="icon-download" value="전체 다운로드" icon="0">
+                  <cl:listener std:sid="listener-1b32f3e7" name="click" handler="onBtn3Click"/>
+                  <cl:flowlayoutdata std:sid="f-data-824e55ba" width="150px" height="28px" autosize="width"/>
+                </cl:button>
+                <cl:flowlayout std:sid="f-layout-db401272" hspacing="4" halign="right"/>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-a7e80e13" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="28" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+                <cl:columns length="1" unit="FRACTION"/>
+                <cl:columns length="325" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:fileupload std:sid="f-upload-a50ee88c" id="fid1">
+              <cl:listener std:sid="listener-7fdd8746" name="sendbutton-click" handler="onFid1SendbuttonClick"/>
+              <cl:verticaldata std:sid="v-data-c856b203" width="992px" height="300px" autosize="none"/>
+            </cl:fileupload>
+            <cl:verticallayout std:sid="v-layout-245105b8" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-d5ba9659" spacing="16"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:formlayout std:sid="f-layout-fde21e74" scrollable="false" hspace="0px" vspace="16px" top-margin="16px" right-margin="24px" bottom-margin="24px" left-margin="24px">
+      <cl:rows length="40" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

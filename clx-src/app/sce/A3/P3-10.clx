@@ -1,0 +1,90 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b2e24a61" version="1.0.5542">
+  <head std:sid="head-ee58bef2">
+    <std:metadata>
+      <std:property key="template-file" value="templates/poc/빈페이지.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-944e7ba7" id="EXB-POP[560]" name="EXB-POP[560]" width="560px" height="768px" useCustomWidth="false" useCustomHeight="true" customHeight="350" customWidth="1024" active="true"/>
+    <cl:model std:sid="model-3ce95ac2"/>
+    <cl:appspec title="차트 데이터 정보 팝업"/>
+  </head>
+  <body std:sid="body-e4f66bc9" class="wrap pop">
+    <cl:listener std:sid="listener-32179343" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-c3c81a3a" id="grpData" class="conts-area">
+      <cl:verticaldata std:sid="v-data-08709351" width="512px" height="240px" autosize="height"/>
+      <cl:group std:sid="group-057150a5" class="conts-wrap">
+        <cl:verticaldata std:sid="v-data-edf7da6b" width="512px" height="239px" autosize="height"/>
+        <cl:group std:sid="group-b33c3509" id="grpForm" class="form">
+          <cl:attribute name="mobile-column-count" value="1"/>
+          <cl:attribute name="tablet-column-count" value="2"/>
+          <cl:verticaldata std:sid="v-data-17b51ebc" width="528px" height="207px" autosize="height"/>
+          <cl:output std:sid="output-29b00f26" id="opt4" class="label" value="보장 컬럼명">
+            <cl:attribute name="needs-auto-height" value="true"/>
+            <cl:attribute name="mobile-min-height" value="30"/>
+            <cl:formdata std:sid="f-data-d29d6036" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-c45bc071" id="opt6" class="label" value="설계 컬럼명">
+            <cl:attribute name="needs-auto-height" value="true"/>
+            <cl:attribute name="mobile-min-height" value="30"/>
+            <cl:formdata std:sid="f-data-b66c786f" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-3b31b384" id="opt7" value="PLAN_PREMIUM">
+            <cl:attribute name="needs-auto-height" value="true"/>
+            <cl:attribute name="mobile-min-height" value="30"/>
+            <cl:formdata std:sid="f-data-1b3f86a0" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-28567e63" id="opt9" class="label" value="권장 컬럼명">
+            <cl:attribute name="needs-auto-height" value="true"/>
+            <cl:attribute name="mobile-min-height" value="30"/>
+            <cl:formdata std:sid="f-data-68f73e20" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-4417472d" id="opt11" class="label" value="변경 데이터&#xD;&#xA;(서버 전송 데이터)">
+            <cl:attribute name="needs-auto-height" value="true"/>
+            <cl:attribute name="mobile-min-height" value="30"/>
+            <cl:formdata std:sid="f-data-dd4201cb" row="3" col="0"/>
+          </cl:output>
+          <cl:textarea std:sid="t-area-6074a36f" id="txa2" readonly="true">
+            <cl:formdata std:sid="f-data-05d6ea48" row="3" col="1"/>
+          </cl:textarea>
+          <cl:output std:sid="output-4b18513d" id="opt2" value="COVERAGE_NM">
+            <cl:attribute name="needs-auto-height" value="true"/>
+            <cl:attribute name="mobile-min-height" value="30"/>
+            <cl:formdata std:sid="f-data-253a5613" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-e90ba742" id="opt5" value="REMD_PREMIUM">
+            <cl:attribute name="needs-auto-height" value="true"/>
+            <cl:attribute name="mobile-min-height" value="30"/>
+            <cl:formdata std:sid="f-data-86ef34e5" row="2" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-6c333456" scrollable="false" hspace="16px" vspace="17px" top-margin="8px" right-margin="8px" bottom-margin="8px" left-margin="8px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="86" unit="PIXEL"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-dd6b72e5" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-63a39787" spacing="16"/>
+    </cl:group>
+    <cl:group std:sid="group-b6a6fa57" id="grpFooter" class="conts-footer">
+      <cl:verticaldata std:sid="v-data-28b2f77a" width="512px" height="50px" autosize="height"/>
+      <cl:group std:sid="group-f3d7a659">
+        <cl:verticaldata std:sid="v-data-d687d2fa" width="992px" height="28px" autosize="height"/>
+        <cl:button std:sid="button-e610e9e9" id="btn1" value="닫기">
+          <cl:listener std:sid="listener-149f2bfd" name="click" handler="onBtn1Click"/>
+          <cl:flowlayoutdata std:sid="f-data-b4ec3581" width="74px" height="28px" autosize="none"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-1364edba" scrollable="false" hspacing="4" vspacing="5" halign="right"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-407f00a3" spacing="0"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-6c29c5cc" scrollable="true" spacing="16" leftmargin="24" rightmargin="24" topmargin="24" bottommargin="24"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

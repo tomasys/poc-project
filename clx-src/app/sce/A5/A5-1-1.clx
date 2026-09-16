@@ -1,0 +1,358 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9e369276" version="1.0.4372">
+  <head std:sid="head-3ec76fab">
+    <screen std:sid="screen-d3627774" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-6e512a21" id="EXB-DIV" name="EXB-DIV" width="600px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-0d9b2f77" id="EXB-PART" name="EXB-PART" width="0px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-a435a7f4">
+      <cl:dataset comment="상담Data" std:sid="d-set-ad0f4c1d" id="DS_COUNSEL" sortcondition="CONS_NO DESC" filtercondition="">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="고객번호" std:sid="d-column-a75ebf63" name="CUST_NO"/>
+          <cl:datacolumn comment="상담일시" std:sid="d-column-39158aa5" name="CONS_DT"/>
+          <cl:datacolumn comment="상담사" std:sid="d-column-1113643f" name="CONS_NM"/>
+          <cl:datacolumn comment="계약번호" std:sid="d-column-6560f9df" name="CON_NO"/>
+          <cl:datacolumn comment="인입전화번호" std:sid="d-column-29eda7a6" name="TEL"/>
+          <cl:datacolumn comment="상담유형" std:sid="d-column-fadaa035" name="CONS_TYPE"/>
+          <cl:datacolumn comment="상담상세내용" std:sid="d-column-8750dce5" name="CONS_DESC"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="CUST_NO">CUST_NO1</cl:datavalue>
+            <cl:datavalue columnname="CONS_DT">CONS_NO1</cl:datavalue>
+            <cl:datavalue columnname="CONS_NM">CONS_NM1</cl:datavalue>
+            <cl:datavalue columnname="CON_NO">CON_NO1</cl:datavalue>
+            <cl:datavalue columnname="TEL">TEL1</cl:datavalue>
+            <cl:datavalue columnname="CONS_TYPE">CONS_TYPE1</cl:datavalue>
+            <cl:datavalue columnname="CONS_DESC">CONS_DESC1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CUST_NO">CUST_NO2</cl:datavalue>
+            <cl:datavalue columnname="CONS_DT">CONS_NO2</cl:datavalue>
+            <cl:datavalue columnname="CONS_NM">CONS_NM2</cl:datavalue>
+            <cl:datavalue columnname="CON_NO">CON_NO2</cl:datavalue>
+            <cl:datavalue columnname="TEL">TEL2</cl:datavalue>
+            <cl:datavalue columnname="CONS_TYPE">CONS_TYPE2</cl:datavalue>
+            <cl:datavalue columnname="CONS_DESC">CONS_DESC2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CUST_NO">CUST_NO3</cl:datavalue>
+            <cl:datavalue columnname="CONS_DT">CONS_NO3</cl:datavalue>
+            <cl:datavalue columnname="CONS_NM">CONS_NM3</cl:datavalue>
+            <cl:datavalue columnname="CON_NO">CON_NO3</cl:datavalue>
+            <cl:datavalue columnname="TEL">TEL3</cl:datavalue>
+            <cl:datavalue columnname="CONS_TYPE">CONS_TYPE3</cl:datavalue>
+            <cl:datavalue columnname="CONS_DESC">CONS_DESC3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CUST_NO">CUST_NO4</cl:datavalue>
+            <cl:datavalue columnname="CONS_DT">CONS_NO4</cl:datavalue>
+            <cl:datavalue columnname="CONS_NM">CONS_NM4</cl:datavalue>
+            <cl:datavalue columnname="CON_NO">CON_NO4</cl:datavalue>
+            <cl:datavalue columnname="TEL">TEL4</cl:datavalue>
+            <cl:datavalue columnname="CONS_TYPE">CONS_TYPE4</cl:datavalue>
+            <cl:datavalue columnname="CONS_DESC">CONS_DESC4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CUST_NO">CUST_NO5</cl:datavalue>
+            <cl:datavalue columnname="CONS_DT">CONS_NO5</cl:datavalue>
+            <cl:datavalue columnname="CONS_NM">CONS_NM5</cl:datavalue>
+            <cl:datavalue columnname="CON_NO">CON_NO5</cl:datavalue>
+            <cl:datavalue columnname="TEL">TEL5</cl:datavalue>
+            <cl:datavalue columnname="CONS_TYPE">CONS_TYPE5</cl:datavalue>
+            <cl:datavalue columnname="CONS_DESC">CONS_DESC5</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CUST_NO">CUST_NO6</cl:datavalue>
+            <cl:datavalue columnname="CONS_DT">CONS_NO6</cl:datavalue>
+            <cl:datavalue columnname="CONS_NM">CONS_NM6</cl:datavalue>
+            <cl:datavalue columnname="CON_NO">CON_NO6</cl:datavalue>
+            <cl:datavalue columnname="TEL">TEL6</cl:datavalue>
+            <cl:datavalue columnname="CONS_TYPE">CONS_TYPE6</cl:datavalue>
+            <cl:datavalue columnname="CONS_DESC">CONS_DESC6</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CUST_NO">CUST_NO7</cl:datavalue>
+            <cl:datavalue columnname="CONS_DT">CONS_NO7</cl:datavalue>
+            <cl:datavalue columnname="CONS_NM">CONS_NM7</cl:datavalue>
+            <cl:datavalue columnname="CON_NO">CON_NO7</cl:datavalue>
+            <cl:datavalue columnname="TEL">TEL7</cl:datavalue>
+            <cl:datavalue columnname="CONS_TYPE">CONS_TYPE7</cl:datavalue>
+            <cl:datavalue columnname="CONS_DESC">CONS_DESC7</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CUST_NO">CUST_NO8</cl:datavalue>
+            <cl:datavalue columnname="CONS_DT">CONS_NO8</cl:datavalue>
+            <cl:datavalue columnname="CONS_NM">CONS_NM8</cl:datavalue>
+            <cl:datavalue columnname="CON_NO">CON_NO8</cl:datavalue>
+            <cl:datavalue columnname="TEL">TEL8</cl:datavalue>
+            <cl:datavalue columnname="CONS_TYPE">CONS_TYPE8</cl:datavalue>
+            <cl:datavalue columnname="CONS_DESC">CONS_DESC8</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CUST_NO">CUST_NO9</cl:datavalue>
+            <cl:datavalue columnname="CONS_DT">CONS_NO9</cl:datavalue>
+            <cl:datavalue columnname="CONS_NM">CONS_NM9</cl:datavalue>
+            <cl:datavalue columnname="CON_NO">CON_NO9</cl:datavalue>
+            <cl:datavalue columnname="TEL">TEL9</cl:datavalue>
+            <cl:datavalue columnname="CONS_TYPE">CONS_TYPE9</cl:datavalue>
+            <cl:datavalue columnname="CONS_DESC">CONS_DESC9</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CUST_NO">CUST_NO10</cl:datavalue>
+            <cl:datavalue columnname="CONS_DT">CONS_NO10</cl:datavalue>
+            <cl:datavalue columnname="CONS_NM">CONS_NM10</cl:datavalue>
+            <cl:datavalue columnname="CON_NO">CON_NO10</cl:datavalue>
+            <cl:datavalue columnname="TEL">TEL10</cl:datavalue>
+            <cl:datavalue columnname="CONS_TYPE">CONS_TYPE10</cl:datavalue>
+            <cl:datavalue columnname="CONS_DESC">CONS_DESC10</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CUST_NO">CUST_NO11</cl:datavalue>
+            <cl:datavalue columnname="CONS_DT">CONS_NO11</cl:datavalue>
+            <cl:datavalue columnname="CONS_NM">CONS_NM11</cl:datavalue>
+            <cl:datavalue columnname="CON_NO">CON_NO11</cl:datavalue>
+            <cl:datavalue columnname="TEL">TEL11</cl:datavalue>
+            <cl:datavalue columnname="CONS_TYPE">CONS_TYPE11</cl:datavalue>
+            <cl:datavalue columnname="CONS_DESC">CONS_DESC11</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="시나리오1(S1) 기준으로 작성&#xD;&#xA;프로젝트에서 사용되어질 공통적인 요소들을 추출하여 사전에 UI 템플릿으로 등록 &amp; 재사용이 가능한 공통 컴포넌트 UDC 미리보기 기능&#xD;&#xA;앱 헤더 컴포넌트, 조회 영역, 고객검색 컴포넌트, 고객기본 상세, 고객기본 탭&#xD;&#xA;OSMU - 폼 영역 구조" title="템플릿 제공 : 템플릿 시연 화면"/>
+  </head>
+  <body std:sid="body-7007edc6" class="wrap">
+    <cl:listener std:sid="listener-799249c0" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-74bccfef" name="host-change" handler="onBodyHostChange"/>
+    <cl:udc std:sid="ud-control-f84423f1" id="udcComAppHeader1" type="udc.com.udcComAppHeader">
+      <cl:verticaldata std:sid="v-data-210f7de5" width="1024px" height="23px" autosize="height"/>
+    </cl:udc>
+    <cl:group std:sid="group-a5780b4a" id="grpSearch" class="sch-filter-box">
+      <std:metadata>
+        <std:property key="template-uuid" value="ced8aa06-0be6-4966-954d-2fe3acc0398b"/>
+        <std:property key="template-rev" value="3"/>
+      </std:metadata>
+      <cl:attribute name="mobile-column-count" value="2"/>
+      <cl:verticaldata std:sid="v-data-86a77691" width="982px" height="54px" autosize="height"/>
+      <cl:group std:sid="group-df612196">
+        <cl:formdata std:sid="f-data-990543cf" width="100" height="23" row="0" col="0" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-3a8ddfa2" class="label" value="Label">
+          <cl:formdata std:sid="f-data-6fdf2601" row="0" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-ace5acff">
+          <cl:formdata std:sid="f-data-f3ecc598" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-f745a671" scrollable="false" hspace="4px" vspace="0px">
+          <cl:rows length="28"/>
+          <cl:columns length="100" autoSizing="true" shadecolor="transparent" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="true" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-84966c3d" class="search-button-group">
+        <cl:formdata std:sid="f-data-1c7496a5" row="0" col="1"/>
+        <cl:button std:sid="button-2787823e" id="btnSearch" class="primary btn-search" value="조회" icon="0">
+          <cl:flowlayoutdata std:sid="f-data-1fb5d4ae" width="75px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-bdd676a6" scrollable="false" vspacing="0" halign="right" valign="middle" linewrap="false"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-fca9fb14" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+        <cl:columns length="200" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" minlength="0" syncminlength="false"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-b75214a3" id="grpData" class="conts-area">
+      <cl:verticaldata std:sid="v-data-388a5b55" width="976px" height="379px" autosize="height"/>
+      <cl:group std:sid="group-44766ef5" id="grp1" class="conts-wrap">
+        <std:metadata>
+          <std:property key="template-uuid" value="f91b19be-4854-4d7d-b7e1-c43b9a18b816"/>
+          <std:property key="template-rev" value="5"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-4f953296" width="992px" height="181px" autosize="height"/>
+        <cl:group std:sid="group-609e7573" id="grp3">
+          <cl:verticaldata std:sid="v-data-e5a75810" width="1240px" height="28px" autosize="height"/>
+          <cl:udc std:sid="ud-control-1d0f1083" id="udcComFormTitle1" type="udc.com.udcComFormTitle">
+            <cl:formdata std:sid="f-data-89a98679" row="0" col="0"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-8f608877" scrollable="false" hspace="6px" vspace="6px">
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-b7576ef7" id="grp4" class="form">
+          <cl:attribute name="table-min-height" value=""/>
+          <cl:attribute name="mobile-column-count" value="1"/>
+          <cl:attribute name="tablet-column-count" value="2"/>
+          <cl:verticaldata std:sid="v-data-c410f84e" width="992px" height="149px" autosize="height"/>
+          <cl:output std:sid="output-a6834ced" id="opt2" class="label" value="Output">
+            <cl:formdata std:sid="f-data-5f980b76" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-07145714" id="opt3" class="label" value="Output">
+            <cl:formdata std:sid="f-data-a2159bbe" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-6dafa1c3" id="opt4" class="label" value="Output">
+            <cl:formdata std:sid="f-data-fb27b068" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-1defcf5e" id="opt5" class="label" value="Output">
+            <cl:formdata std:sid="f-data-5c931abd" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-eb9ce9a1" id="opt6" class="label" value="Output">
+            <cl:formdata std:sid="f-data-5b553998" row="0" col="2"/>
+          </cl:output>
+          <cl:output std:sid="output-ceed2295" id="opt7" class="label" value="Output">
+            <cl:formdata std:sid="f-data-983c9caf" row="1" col="2"/>
+          </cl:output>
+          <cl:output std:sid="output-39d9da74" id="opt8" class="label" value="Output">
+            <cl:formdata std:sid="f-data-317121bb" row="2" col="2"/>
+          </cl:output>
+          <cl:output std:sid="output-71d5afcb" id="opt9" class="label" value="Output">
+            <cl:formdata std:sid="f-data-09d708a0" row="3" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-af16a194" id="ipb2">
+            <cl:formdata std:sid="f-data-c0c83143" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-3caef725" id="ipb3">
+            <cl:formdata std:sid="f-data-59a48cbc" row="1" col="1"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-c68fc825" id="ipb4">
+            <cl:formdata std:sid="f-data-b48894f5" row="2" col="1"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-50fe2ee2" id="ipb5">
+            <cl:formdata std:sid="f-data-58bca903" row="3" col="1"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-e61879c0" id="ipb6">
+            <cl:formdata std:sid="f-data-04c949b8" row="0" col="3"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-2a41a49c" id="ipb7">
+            <cl:formdata std:sid="f-data-bacdb13c" row="1" col="3"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-b5301153" id="ipb8">
+            <cl:formdata std:sid="f-data-017bf1b0" row="2" col="3"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-52c86ece" id="ipb9">
+            <cl:formdata std:sid="f-data-fd1ffa2a" row="3" col="3"/>
+          </cl:inputbox>
+          <cl:formlayout std:sid="f-layout-17e91045" scrollable="false" hspace="16px" vspace="17px" top-margin="8px" right-margin="8px" bottom-margin="8px" left-margin="8px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="28" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-b5fe668b" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+      </cl:group>
+      <cl:group std:sid="group-9149ea29" id="grpForm" class="conts-wrap" clipcontent="false">
+        <std:metadata>
+          <std:property key="template-uuid" value="217fbaa4-f7d4-4b6b-a9a1-88e275bcfce6"/>
+          <std:property key="template-rev" value="4"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-dc8225fd" width="1250px" height="182px" autosize="height"/>
+        <cl:group std:sid="group-66386052" id="grpCustTit" clipcontent="false">
+          <cl:formdata std:sid="f-data-70cc0eaa" row="0" col="0"/>
+          <cl:udc std:sid="ud-control-6143fb59" id="udcComFormTitle2" type="udc.com.udcComFormTitle">
+            <cl:formdata std:sid="f-data-adcf59eb" row="0" col="0"/>
+            <cl:property name="title" value="타이틀" type="string"/>
+          </cl:udc>
+          <cl:group std:sid="group-65e5d8c1" id="grp5" clipcontent="false">
+            <cl:formdata std:sid="f-data-812f166f" row="0" col="1"/>
+            <cl:flowlayout std:sid="f-layout-28e1f01f" scrollable="false" hspacing="6" vspacing="6" halign="right"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-7947ed41" scrollable="false" hspace="5px" vspace="5px">
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="300" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-f0a9f2db" id="grpCustInfo" class="form">
+          <cl:attribute name="table-min-height" value=""/>
+          <cl:attribute name="mobile-column-count" value="1"/>
+          <cl:attribute name="tablet-column-count" value="2"/>
+          <cl:formdata std:sid="f-data-bd5fae9c" width="100" height="32" row="1" col="0"/>
+          <cl:output std:sid="output-21507a3f" id="opt10" class="label" value="Label">
+            <cl:formdata std:sid="f-data-07a356e8" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-b66bc744" id="opt11" class="label required" value="Label">
+            <cl:formdata std:sid="f-data-a9d321b9" row="0" col="2"/>
+          </cl:output>
+          <cl:output std:sid="output-a407737d" id="opt12" class="label" value="Label">
+            <cl:formdata std:sid="f-data-33f4c518" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-1045f8c4" id="opt13" class="label" value="Label">
+            <cl:formdata std:sid="f-data-12e3cf63" row="1" col="2"/>
+          </cl:output>
+          <cl:output std:sid="output-138c4afc" id="opt14" class="label" value="Label">
+            <cl:formdata std:sid="f-data-230828be" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-90357320" id="opt15" class="label" value="Label">
+            <cl:formdata std:sid="f-data-d8d6cf4a" row="2" col="2"/>
+          </cl:output>
+          <cl:output std:sid="output-f838ae99" id="opt16" class="label" value="Label">
+            <cl:formdata std:sid="f-data-e1e4968b" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-3a0de154" id="opt17" class="label" value="Label">
+            <cl:formdata std:sid="f-data-29a0ef37" row="3" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-f5af91de" id="ipb10">
+            <cl:formdata std:sid="f-data-4b071c9c" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:group std:sid="group-311eead5" id="grp6" clipcontent="false">
+            <cl:formdata std:sid="f-data-5cd029ac" row="0" col="3"/>
+            <cl:output std:sid="output-2484d850" id="opt18" style="text-align:center;" value="unit">
+              <cl:formdata std:sid="f-data-45421304" row="0" col="1"/>
+            </cl:output>
+            <cl:numbereditor std:sid="n-editor-68bc119e" id="nbe1" fieldLabel="고객연령" spinbutton="false" format="s999">
+              <cl:formdata std:sid="f-data-79c5524b" row="0" col="0"/>
+            </cl:numbereditor>
+            <cl:formlayout std:sid="f-layout-965233b7" scrollable="false" hspace="4px" vspace="4px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0" syncminlength="false"/>
+              <cl:columns length="50" unit="PIXEL" autoSizing="true" minlength="30" syncminlength="false"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:dateinput std:sid="d-input-952a46a6" id="dti1">
+            <cl:formdata std:sid="f-data-77db3c10" row="2" col="1"/>
+          </cl:dateinput>
+          <cl:radiobutton std:sid="r-button-074bd23e" id="rdb1">
+            <cl:formdata std:sid="f-data-accf4286" row="1" col="3"/>
+          </cl:radiobutton>
+          <cl:combobox std:sid="c-box-0b23e262" id="cmb1">
+            <cl:formdata std:sid="f-data-f3486e8e" row="3" col="1"/>
+          </cl:combobox>
+          <cl:checkbox std:sid="c-box-b0287708" id="cbx1" text="Check">
+            <cl:formdata std:sid="f-data-691faa39" row="2" col="3"/>
+          </cl:checkbox>
+          <cl:numbereditor std:sid="n-editor-2c515577" id="nbe2">
+            <cl:formdata std:sid="f-data-43a3e7ba" row="1" col="1"/>
+          </cl:numbereditor>
+          <cl:searchinput std:sid="s-input-30fb130e" id="searchinput1">
+            <cl:formdata std:sid="f-data-a7461764" row="3" col="3"/>
+          </cl:searchinput>
+          <cl:formlayout std:sid="f-layout-a152eb13" scrollable="false" hspace="16px" vspace="17px" top-margin="8px" right-margin="8px" bottom-margin="8px" left-margin="8px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="28" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="110" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="110" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-e7edc720" scrollable="false" hspace="0px" vspace="8px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+          <cl:rows length="28" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-0cb641a9" spacing="16"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-90ace916" spacing="16" leftmargin="24" rightmargin="24" topmargin="16" bottommargin="24"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

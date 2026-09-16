@@ -1,0 +1,161 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/0-1.프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <script std:sid="script-56e1286e" src="../../../thirdparty/ckeditor5/build/ckeditor5.js" type="text/javascript"/>
+    <script std:sid="script-60455fc9" src="../../../thirdparty/ckeditor4/ckeditor.js" type="text/javascript"/>
+    <screen std:sid="screen-91339f93" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-515e6a6c" id="EXB-DIV" name="EXB-DIV" width="600px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-072ae9c6" id="EXB-PART" name="EXB-PART" width="0px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-90321062">
+      <cl:dataset comment="프로세스 목록" std:sid="d-set-406d885d" id="dsProcess">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="" std:sid="d-column-9f37779a" name="TITLE"/>
+          <cl:datacolumn std:sid="d-column-c1d8c4b8" name="TITLE_RIGHT_TEXT"/>
+          <cl:datacolumn comment="" std:sid="d-column-7fe5300f" name="SUB_TITLE"/>
+          <cl:datacolumn comment="" std:sid="d-column-c68cb733" name="DELIMITER" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-fa740970" name="CONT" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-c9d6a3d7" name="KEY_CODE"/>
+          <cl:datacolumn std:sid="d-column-b4004ac2" name="SUB_CODE"/>
+          <cl:datacolumn comment="" std:sid="d-column-8d6dc077" name="TARGET_CTRL"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">목적</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT">P.37</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT">웹 에디터 기능을 제공하여야 한다.</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">검증 조건</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT">게시판(웹 에디터) 글을 작성한다.</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">측정</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT">구성된 웹 에디터에 글을 작성한다.</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">글,작성</cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT">구성된 웹 에디터를 확인한다.</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+            <cl:datavalue columnname="TARGET_CTRL"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER"/>
+            <cl:datavalue columnname="CONT"><![CDATA[Smart Editor, CkEditor4, CkEditor5]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[Smart Editor, CkEditor4, CkEditor5]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[grp6,grp1,grp2]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="웹 에디터 기능 호환 및 지원"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="wrap">
+    <cl:listener std:sid="listener-1987da86" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-717596f9" name="init" handler="onBodyInit"/>
+    <cl:udc std:sid="ud-control-8c71e0ab" id="udcComAppHeader" type="udc.com.udcComAppHeader">
+      <cl:verticaldata std:sid="v-data-d23e67ba" width="1238px" height="40px" autosize="height"/>
+      <cl:property name="title" value="3.5 웹 에디터 기능 호환 및 지원" type="string"/>
+      <cl:property name="isExpandAllPocProcess" value="true" type="boolean"/>
+    </cl:udc>
+    <cl:group std:sid="group-7e5559d4" id="grpGoverning" class="governing">
+      <cl:verticaldata std:sid="v-data-ab3f2ba4" width="994px" height="130px" autosize="height"/>
+      <cl:output std:sid="output-6fb83195" id="opt4" class="tit" value="웹 에디터">
+        <cl:verticaldata std:sid="v-data-d68a450b" width="100px" height="28px" autosize="height"/>
+      </cl:output>
+      <cl:output std:sid="output-5953dfd4" id="opt5" class="txt" displayexp="&quot;eXBuilder6는 웹에디터(CK Editor5)를 제공하고 있으며, &quot; + sstr(&quot;외부 컴포넌트 연동 전용 컨트롤&quot;, [&quot;fw-bold&quot;]) + &quot;을 통해 오픈 아키텍처 및 상용 웹에디터와의 연동을 지원합니다.\n&quot;&#xD;&#xA;+&quot;이를 통해, eXBuilder6는&quot;+ sstr(&quot;표 삽입/편집 및 이미지/특수문자 삽입&quot;, [&quot;fw-bold&quot;]) + &quot;이 가능한 &quot; +sstr(&quot;다양한 에디터와의 호환성을 제공&quot;, [&quot;fw-bold&quot;]) + &quot;하고 있습니다.&quot;&#xD;&#xA;">
+        <cl:verticaldata std:sid="v-data-6574ec63" width="1218px" height="60px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-62f1ecf3" scrollable="false" spacing="8"/>
+    </cl:group>
+    <cl:group std:sid="group-be39b9f1" id="grpData" class="conts-area">
+      <cl:verticaldata std:sid="v-data-851ebd20" width="994px" height="1292px" autosize="height"/>
+      <cl:group std:sid="group-6a655fe4" id="grp2" class="conts-wrap">
+        <cl:listener std:sid="listener-8984fe56" name="click" handler="onGrp2Click"/>
+        <cl:verticaldata std:sid="v-data-b14903cd" width="994px" height="402px" autosize="height"/>
+        <cl:udc std:sid="ud-control-c4ec32a7" id="udcComFormTitle2" type="udc.com.udcComFormTitle">
+          <cl:verticaldata std:sid="v-data-c11b31a2" width="1260px" height="28px" autosize="height"/>
+          <cl:property name="title" value="외부 라이브러리 웹 에디터(Smart Editor)" type="string"/>
+        </cl:udc>
+        <cl:embeddedpage std:sid="e-page-ab61d421" id="empEditor" src="../../../thirdparty/smarteditor/SmartEditor2.html">
+          <cl:listener std:sid="listener-3b305e14" name="load" handler="onEmpEditorLoad"/>
+          <cl:verticaldata std:sid="v-data-8c341aad" width="1206px" height="370px" autosize="none"/>
+        </cl:embeddedpage>
+        <cl:verticallayout std:sid="v-layout-7fa68bdd" scrollable="false" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+      </cl:group>
+      <cl:group std:sid="group-d90e9236" id="grp6" class="conts-wrap">
+        <cl:verticaldata std:sid="v-data-da48887b" width="994px" height="442px" autosize="height"/>
+        <cl:udc std:sid="ud-control-764d81cf" id="udcComFormTitle5" type="udc.com.udcComFormTitle">
+          <cl:verticaldata std:sid="v-data-b4382b38" width="1260px" height="28px" autosize="none"/>
+          <cl:property name="title" value="외부 라이브러리 웹 에디터(CK Editor4)" type="string"/>
+        </cl:udc>
+        <cl:uicontrolshell std:sid="uic-shell-21c68947" id="sampleThr">
+          <cl:listener std:sid="listener-26f1c3be" name="load" handler="onShlCkEditorLoad"/>
+          <cl:listener std:sid="listener-51d50d09" name="init" handler="onShlCkEditorInit"/>
+          <cl:verticaldata std:sid="v-data-6370462d" width="800px" height="410px" autosize="none"/>
+        </cl:uicontrolshell>
+        <cl:verticallayout std:sid="v-layout-4e677d30" scrollable="false" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+      </cl:group>
+      <cl:group std:sid="group-a47f66c3" id="grp1" class="conts-wrap">
+        <cl:verticaldata std:sid="v-data-53211d7f" width="994px" height="432px" autosize="height"/>
+        <cl:udc std:sid="ud-control-832e3ad2" id="udcComFormTitle1" type="udc.com.udcComFormTitle">
+          <cl:verticaldata std:sid="v-data-b83cb379" width="1260px" height="28px" autosize="height"/>
+          <cl:property name="title" value="외부 라이브러리 웹 에디터(CK Editor5)" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-e26fb3d0" id="udccmnhtmleditor" type="udc.com.udcCmnHtmlEditor">
+          <cl:verticaldata std:sid="v-data-36656273" width="800px" height="400px"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-63c3bf60" scrollable="false" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-4167ee7a" distribution="fill" spacing="16"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="16" leftmargin="24" rightmargin="24" topmargin="16" bottommargin="24"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

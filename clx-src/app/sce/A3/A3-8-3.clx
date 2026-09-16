@@ -1,0 +1,112 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b2e24a61" version="1.0.5542">
+  <head std:sid="head-ee58bef2">
+    <std:metadata>
+      <std:property key="template-file" value="templates/poc/빈페이지_폼.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-56a257a5" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="true" customHeight="404" customWidth="800" active="true"/>
+    <screen std:sid="screen-7851c5f3" id="EXB-DIV" name="EXB-DIV" width="600px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-e1bf73b2" id="EXB-PART" name="EXB-PART" width="0px" height="768px" useCustomWidth="true" useCustomHeight="false" customHeight="600" customWidth="375"/>
+    <cl:model std:sid="model-3ce95ac2">
+      <cl:dataset std:sid="d-set-00f9f248" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="고객제외조건" std:sid="d-column-1338b6ba" name="column1"/>
+          <cl:datacolumn comment="사용여부" std:sid="d-column-602203cd" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[고객제외조건을 작성합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[Y]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-e4f66bc9" class="scenario-panel">
+    <cl:listener std:sid="listener-2ad95c83" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-20a2ba99" name="init" handler="onBodyInit"/>
+    <cl:textarea std:sid="t-area-53150da9" id="txa2" readonly="true" value="■ 개요&#xD;&#xA;조건에 대한 기준을 설정하는 단계입니다.&#xD;&#xA;&#xD;&#xA;■ 소득기분/소비기준&#xD;&#xA;제외할 대상의 소득 및 소비 기준을 작성하실 수 있습니다.&#xD;&#xA;&#xD;&#xA;■ 예외 대상&#xD;&#xA;해당 기준을 만족하더라도 제외 대상인 경우에 대해 작성할 수 있습니다. ">
+      <cl:formdata std:sid="f-data-abe2ad77" row="0" col="1"/>
+    </cl:textarea>
+    <cl:group std:sid="group-6765d9f2" id="grp6">
+      <cl:formdata std:sid="f-data-9e2aca9c" width="100" height="-61" row="0" col="0"/>
+      <cl:group std:sid="group-f75cd45a" id="grp1">
+        <cl:formdata std:sid="f-data-6537630a" row="0" col="0"/>
+        <cl:group std:sid="group-4e1c232d" id="grp2" class="title-area">
+          <cl:formdata std:sid="f-data-ef025f09" row="0" col="0" rowspan="1" colspan="1"/>
+          <cl:output std:sid="output-5c61f5a7" id="optTilte" class="tit" outputtype="h5">
+            <cl:formdata std:sid="f-data-54c828f8" row="0" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-add4318f" scrollable="false" hspace="0px" vspace="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-b735756d" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-3ba32875" id="grp3" class="form">
+        <cl:attribute name="mobile-column-count" value="2"/>
+        <cl:attribute name="tablet-column-count" value="4"/>
+        <cl:formdata std:sid="f-data-7cbf5010" row="1" col="0"/>
+        <cl:output std:sid="output-a7bbefb3" id="opt2" class="label" value="구분">
+          <cl:formdata std:sid="f-data-284b03d2" row="0" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-b7239a53" id="ipb6">
+          <cl:formdata std:sid="f-data-0d47ec2a" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-5d677078" id="opt3" class="label" value="소득기준">
+          <cl:formdata std:sid="f-data-8cb77ce8" row="1" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-a45946c9" id="ipb5">
+          <cl:formdata std:sid="f-data-9e6dbbc9" row="1" col="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-e3759fa1" id="opt4" class="label" value="소비기준">
+          <cl:formdata std:sid="f-data-fd338997" row="2" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-8c40a34f" id="ipb4">
+          <cl:formdata std:sid="f-data-a79fa855" row="2" col="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-1388e6a7" id="opt5" class="label" value="섭외기준">
+          <cl:formdata std:sid="f-data-3b94f5b9" row="3" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-d50f918c" id="ipb3">
+          <cl:formdata std:sid="f-data-0bab6872" row="3" col="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-e4717174" id="opt8" class="label" value="예외대상">
+          <cl:formdata std:sid="f-data-11386f20" row="4" col="0"/>
+        </cl:output>
+        <cl:textarea std:sid="t-area-ac46fe6a" id="txa1">
+          <cl:formdata std:sid="f-data-b1e20005" row="4" col="1"/>
+        </cl:textarea>
+        <cl:formlayout std:sid="f-layout-780d965a" scrollable="false" hspace="16px" vspace="17px" top-margin="8px" right-margin="8px" bottom-margin="8px" left-margin="8px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+          <cl:rows length="28" unit="PIXEL"/>
+          <cl:rows length="28" unit="PIXEL"/>
+          <cl:rows length="28" unit="PIXEL"/>
+          <cl:rows length="28" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" minlength="120" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-c7868adc" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="28" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" syncminlength="true"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-dfe0cdc0" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="300" unit="PIXEL"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

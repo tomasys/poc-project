@@ -1,0 +1,120 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a8cec547" version="1.0.5186">
+  <head std:sid="head-f17c210b">
+    <std:metadata>
+      <std:property key="template-file" value="templates/팝업/2.폼/V_폼.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-27eb0e37" id="EXB-POP[1024]" name="EXB-POP[1024]" width="1024px" height="576px" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-f9795e9f" id="EXB-POP[800]" name="EXB-POP[800]" width="800px" height="480px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-2b552898" id="EXB-POP[480]" name="EXB-POP[480]" width="480px" height="320px" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-c1c81b9e">
+      <cl:datamap std:sid="d-map-6596bc69" id="dmPrintInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b3e1ed54" name="title"/>
+          <cl:datacolumn std:sid="d-column-cc96206d" name="approval"/>
+          <cl:datacolumn std:sid="d-column-15ea25c8" name="approvalLocation"/>
+          <cl:datacolumn std:sid="d-column-d2e48f15" name="office"/>
+          <cl:datacolumn std:sid="d-column-08da3007" name="dateYn"/>
+          <cl:datacolumn std:sid="d-column-18f0eb24" name="name"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="출력 정보 지정 팝업"/>
+  </head>
+  <body std:sid="body-cbe48c0d" class="wrap pop" clipcontent="true" childcombinatorclass="v_base">
+    <cl:listener std:sid="listener-7a984372" name="init" handler="onBodyInit"/>
+    <cl:udc std:sid="ud-control-81187a41" visible="false" type="udc.com.udcComAppHeader">
+      <cl:verticaldata std:sid="v-data-0eff39ef" width="1580px" height="40px" autosize="height"/>
+    </cl:udc>
+    <cl:group std:sid="group-a91da2cb" id="grpData" class="conts-area">
+      <cl:verticaldata std:sid="v-data-d0d59be1" width="992px" height="335px" autosize="height"/>
+      <cl:group std:sid="group-7fafe6d8" class="conts-wrap">
+        <cl:verticaldata std:sid="v-data-bae60092" width="992px" height="314px" autosize="height"/>
+        <cl:group std:sid="group-1b48d124" id="grpPrintInfo" class="form">
+          <cl:attribute name="mobile-column-count" value="2"/>
+          <cl:datamapcontext datacontrolid="dmPrintInfo"/>
+          <cl:verticaldata std:sid="v-data-471766e4" width="992px" height="284px" autosize="height"/>
+          <cl:output std:sid="output-3ef34b41" class="label" value="제목">
+            <cl:formdata std:sid="f-data-0b494467" row="0" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-f968e5a8" id="ipb1">
+            <cl:relativebind property="value" columnname="title"/>
+            <cl:formdata std:sid="f-data-3b8b1347" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-e8b94794" id="opt1" class="label" value="전자결재 라인">
+            <cl:formdata std:sid="f-data-0c826360" row="1" col="0"/>
+          </cl:output>
+          <cl:combobox std:sid="c-box-377d9d00" id="cmb2" multiple="true">
+            <cl:listener std:sid="listener-ed9b5961" name="selection-change" handler="onCmb2SelectionChange"/>
+            <cl:listener std:sid="listener-2e0acdb6" name="open" handler="onCmb2Open"/>
+            <cl:relativebind property="value" columnname="approval"/>
+            <cl:formdata std:sid="f-data-c29f1832" row="1" col="1"/>
+            <cl:item std:sid="t-item-d4380802" label="박주완" value="박주완" icon="" tooltip=""/>
+            <cl:item std:sid="t-item-2c6b583a" label="서다예" value="서다예" icon="" tooltip=""/>
+            <cl:item std:sid="t-item-ba414e28" label="김수현" value="김수현" icon="" tooltip=""/>
+            <cl:item std:sid="t-item-7fe1ed28" label="엄혜진" value="엄혜진"/>
+            <cl:item std:sid="t-item-94b63a7a" label="차은비" value="차은비"/>
+          </cl:combobox>
+          <cl:output std:sid="output-553aee2d" id="opt2" class="label" value="전자결재 위치">
+            <cl:formdata std:sid="f-data-acf4039f" row="2" col="0"/>
+          </cl:output>
+          <cl:combobox std:sid="c-box-b0ee2675" id="cmb1">
+            <cl:relativebind property="value" columnname="approvalLocation"/>
+            <cl:formdata std:sid="f-data-47e66c3d" row="2" col="1"/>
+            <cl:item std:sid="t-item-a912ea28" label="우측" value="right" icon="" tooltip=""/>
+            <cl:item std:sid="t-item-ab9abc44" label="좌측" value="left" icon="" tooltip=""/>
+          </cl:combobox>
+          <cl:output std:sid="output-70bdb303" class="label" value="사무소명">
+            <cl:formdata std:sid="f-data-0e1681dc" row="3" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-2a2f9420" id="ipb3">
+            <cl:relativebind property="value" columnname="office"/>
+            <cl:formdata std:sid="f-data-9e45f2a0" row="3" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-3051e67d" id="opt3" class="label" value="출력자명">
+            <cl:formdata std:sid="f-data-988e74bf" row="4" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-4d1b3e84" id="ipb4">
+            <cl:relativebind property="value" columnname="name"/>
+            <cl:formdata std:sid="f-data-97ffde0f" row="4" col="1"/>
+          </cl:inputbox>
+          <cl:formlayout std:sid="f-layout-dbabe69d" scrollable="false" hspace="16px" vspace="17px" top-margin="8px" right-margin="8px" bottom-margin="8px" left-margin="8px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:columns length="120" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-b13cd344" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-a573c6a2" scrollable="false" spacing="16"/>
+    </cl:group>
+    <cl:group std:sid="group-ec756d32" id="grpFooter" class="conts-footer">
+      <cl:verticaldata std:sid="v-data-cc7ccd1d" width="1024px" height="51px" autosize="height"/>
+      <cl:group std:sid="group-89d9707e" class="footer-button-group">
+        <cl:verticaldata std:sid="v-data-27fb65cf" width="1532px" height="28px" autosize="height"/>
+        <cl:group std:sid="group-98ea6c41">
+          <cl:formdata std:sid="f-data-06ffa68a" row="0" col="0"/>
+          <cl:button std:sid="button-7f318a32" id="btnSave" class="primary ico-check" value="저장" icon="0">
+            <cl:listener std:sid="listener-84800d36" name="click" handler="onBtnSaveClick"/>
+            <cl:flowlayoutdata std:sid="f-data-59308a4c" width="74px" height="28px" autosize="width"/>
+          </cl:button>
+          <cl:flowlayout std:sid="f-layout-6d32a134" hspacing="4" vspacing="4" halign="right"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-877f6ca0" scrollable="false" hspace="4px" vspace="4px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" syncminlength="true"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-3f36ca99" spacing="16"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-54dbf863" scrollable="true" spacing="16" leftmargin="24" rightmargin="24" topmargin="24" bottommargin="24"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

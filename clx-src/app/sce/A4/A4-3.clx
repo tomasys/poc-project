@@ -1,0 +1,305 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-e427d551" version="1.0.3545">
+  <head std:sid="head-bc30000a">
+    <screen std:sid="screen-3e2be0b8" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="true" customHeight="838" customWidth="800" active="true"/>
+    <cl:model std:sid="model-d8305ae6">
+      <cl:dataset comment="프로세스 목록" std:sid="d-set-406d885d" id="dsProcess">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="" std:sid="d-column-9f37779a" name="TITLE"/>
+          <cl:datacolumn std:sid="d-column-3e5eca5d" name="TITLE_RIGHT_TEXT"/>
+          <cl:datacolumn comment="" std:sid="d-column-7fe5300f" name="SUB_TITLE"/>
+          <cl:datacolumn comment="" std:sid="d-column-c68cb733" name="DELIMITER" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-fa740970" name="CONT" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-c9d6a3d7" name="KEY_CODE"/>
+          <cl:datacolumn std:sid="d-column-b4004ac2" name="SUB_CODE"/>
+          <cl:datacolumn comment="" std:sid="d-column-8d6dc077" name="TARGET_CTRL"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">목적</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[P.41]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[화면 접근 통제 기능을 제공한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">검증 조건</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[반복적인 화면 접근 시도 및 화면 내 트랜잭션 요청 중 접근제한 등의 통제 실시간 적용 가능 여부]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[화면 접근통제 적용 시 즉각적으로 화면 접근 차단 및 내부 트랜잭션 수행 불가 여부]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[접근통제 후에는 추가 화면접근 뿐 아니라, 기존 열려있는 화면 내 트랜잭션 요청/수행 불가(이벤트가 동작하면 안됨)]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">측정</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[화면 접근 통제 페이지에서 일반 사용자에 대한 메뉴, 트랙잭션 허용 여부 값을 변경한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[열려있던 페이지가 즉각적으로 접근 차단되는 것을 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[접근 통제 후 페이지 접근 불가 및 트랜잭션 수행 불가한 것을 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[하나의 브라우저에서는 관리자 계정으로 로그인하고, 다른 브라우저에서는 일반사용자 계정으로 로그인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[일반 사용자 계정 브라우저에서 시나리오 페이지를 들어간다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[관리자 계정 브라우저에서 일반 사용자가 연 페이지에 접근 권한을 삭제한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[접근 권한]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[삭제]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">•</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[일반 사용자 계정 브라우저에서 즉각적으로 접근 차단되며, 추가 화면접근이 되지 않는것을 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[접근 차단]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[즉각적으로]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">•</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[관리자 계정 브라우저에서 일반 사용자가 연 페이지에 트랜잭션 수행 권한을 삭제한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[트랜잭션 수행 권한]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[삭제]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[일반 사용자 계정 브라우저에서 트랜잭션을 수행하는 버튼들이 강제 비활성화 되며 트랜잭션 요청/수행을 할수없는 것을 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[트랜잭션 요청/수행]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[강제 비활성화]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset comment="메뉴" std:sid="d-set-a1e801ff" id="dsAllMenu" filtercondition="REFLECT_YN != &quot;N&quot; &amp;&amp; UP_MENU_ID != &quot;&quot; &amp;&amp; UP_MENU_ID != &quot;LEVEL00-00&quot;" staterestore="true">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="메뉴명" std:sid="d-column-b7d0e3e2" name="MENU_NM"/>
+          <cl:datacolumn comment="메뉴 아이디" std:sid="d-column-1a75e7e3" name="MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-ce8bf8b8" name="UP_MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-18380ef4" name="TOP_MENU_ID"/>
+          <cl:datacolumn comment="대상 페이지" std:sid="d-column-b7879d44" name="CALL_PAGE"/>
+          <cl:datacolumn std:sid="d-column-9bdc2fe6" name="PGM_ID"/>
+          <cl:datacolumn std:sid="d-column-4c100870" name="ICON"/>
+          <cl:datacolumn std:sid="d-column-a2bd6f9f" name="MENU_KEY"/>
+          <cl:datacolumn std:sid="d-column-1d8b7278" name="MOBILE_YN"/>
+          <cl:datacolumn std:sid="d-column-7bb4293e" name="DESC"/>
+          <cl:datacolumn std:sid="d-column-f1e3e1d7" name="CLASS"/>
+          <cl:datacolumn std:sid="d-column-a5f7493c" name="MENU_DESC" datatype="expression" expression="&quot;[&quot; + MENU_NM + &quot;] &quot; + DESC&#xD;&#xA;"/>
+          <cl:datacolumn std:sid="d-column-e7bfcd7b" name="MENU_LOWERCASE" datatype="expression" expression="doLowerCase(MENU_NM)"/>
+          <cl:datacolumn std:sid="d-column-48c5ffc5" name="DESC_LOWERCASE" datatype="expression" expression="doLowerCase(DESC)"/>
+          <cl:datacolumn std:sid="d-column-e9a2adee" name="MENU_LVL" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-833dbc36" name="MENU_FAV"/>
+          <cl:datacolumn std:sid="d-column-f4a106b6" name="TAG"/>
+          <cl:datacolumn std:sid="d-column-ce41a5d0" name="TAG_LOWERCASE" datatype="expression" expression="doLowerCase(TAG)"/>
+          <cl:datacolumn std:sid="d-column-c02635f6" name="REFLECT_YN"/>
+          <cl:datacolumn comment="일반사용자 메뉴 접근여부" std:sid="d-column-26a049e3" name="USR_ACCESS_YN"/>
+          <cl:datacolumn comment="일반사용자 트랜잭션 허용여부" std:sid="d-column-9e70a736" name="USR_TRANS_YN"/>
+          <cl:datacolumn std:sid="d-column-84fd9390" name="SORT_COL" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="templates/테스트케이스/테스트케이스_조회.clx 템플릿 사용하여 작성 함." title="화면 접근 통제 기능"/>
+  </head>
+  <body std:sid="body-4579b91c" class="wrap">
+    <cl:listener std:sid="listener-4bd67810" name="init" handler="onBodyInit"/>
+    <cl:udc std:sid="ud-control-d73ab6f7" id="udcComAppHeader" type="udc.com.udcComAppHeader">
+      <cl:formdata std:sid="f-data-942cdb6e" row="0" col="0"/>
+      <cl:property name="title" value="4.3 화면 접근 통제 기능" type="string"/>
+      <cl:property name="isExpandAllPocProcess" value="true" type="boolean"/>
+    </cl:udc>
+    <cl:group std:sid="group-7e5559d4" id="grpGoverning" class="governing">
+      <cl:formdata std:sid="f-data-2d164f0d" width="100" height="70" row="1" col="0"/>
+      <cl:output std:sid="output-6fb83195" id="opt4" class="tit" value="화면 접근 통제">
+        <cl:verticaldata std:sid="v-data-d68a450b" width="100px" height="28px" autosize="height"/>
+      </cl:output>
+      <cl:output std:sid="output-5953dfd4" id="opt5" class="txt" displayexp="&quot;eXBuilder6 웹 어플리케이션은 웹소켓 서버 구현과 브라우저의 웹소켓 클라이언트를 통해, &quot; + sstr(&quot;실시간 화면 접근 통제 기능&quot;,[&quot;fw-bold&quot;]) + &quot;을 지원합니다.&quot;">
+        <cl:verticaldata std:sid="v-data-6574ec63" width="1218px" height="58px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-62f1ecf3" scrollable="false" spacing="8"/>
+    </cl:group>
+    <cl:group std:sid="group-648ab6f2" id="grpSearch" class="sch-filter-box">
+      <std:metadata>
+        <std:property key="template-uuid" value="ced8aa06-0be6-4966-954d-2fe3acc0398b"/>
+        <std:property key="template-rev" value="4"/>
+      </std:metadata>
+      <cl:attribute name="mobile-column-count" value="2"/>
+      <cl:formdata std:sid="f-data-b5338bfc" row="2" col="0"/>
+      <cl:group std:sid="group-84966c3d" class="search-button-group">
+        <cl:formdata std:sid="f-data-1c7496a5" row="0" col="1"/>
+        <cl:button std:sid="button-2787823e" id="btnSave" class="primary ico-check" value="저장" icon="0">
+          <cl:listener std:sid="listener-eff0e3d4" name="click" handler="onBtn1Click"/>
+          <cl:flowlayoutdata std:sid="f-data-1fb5d4ae" width="86px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-bdd676a6" scrollable="false" vspacing="0" halign="right" valign="middle" linewrap="false"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-6fe70bc3" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+        <cl:columns length="200" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" minlength="0" syncminlength="false"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-fbb415b4" id="grpData" class="conts-area">
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:attribute name="tablet-column-count" value="1"/>
+      <cl:formdata std:sid="f-data-cac1023a" row="3" col="0"/>
+      <cl:group std:sid="group-548cf0a2" class="conts-wrap">
+        <cl:formdata std:sid="f-data-6c2a7b76" row="0" col="0" rowspan="1" colspan="1"/>
+        <cl:udc std:sid="ud-control-51c6d663" id="udcComGridTitle1" type="udc.com.udcComGridTitle">
+          <cl:formdata std:sid="f-data-e3a7bd3a" row="0" col="0"/>
+          <cl:property name="title" value="메뉴 목록" type="string"/>
+          <cl:property name="ctrl" value="grd1" type="control"/>
+        </cl:udc>
+        <cl:grid std:sid="grid-c6415dca" id="grd1" fieldLabel="LMS 목록" datasetid="dsAllMenu" collapsible="true">
+          <cl:formdata std:sid="f-data-1835a465" row="1" col="0"/>
+          <cl:gridcolumn std:sid="g-column-7992ab22" width="250px"/>
+          <cl:gridcolumn std:sid="g-column-df67e682" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-d4829ada" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-2b3f63f6" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-59176255" width="120px"/>
+          <cl:gridheader std:sid="gh-band-fad36df5">
+            <cl:gridrow std:sid="g-row-6d50efc3" height="44px"/>
+            <cl:gridcell std:sid="gh-cell-ad373396" rowindex="0" colindex="0" targetcolumnname="MENU_NM" sortable="false" filterable="false" text="메뉴명"/>
+            <cl:gridcell std:sid="gh-cell-7fc54807" rowindex="0" colindex="1" targetcolumnname="MENU_ID" sortable="false" filterable="false" text="메뉴 아이디"/>
+            <cl:gridcell std:sid="gh-cell-e692aa1c" rowindex="0" colindex="2" targetcolumnname="CALL_PAGE" sortable="false" filterable="false" text="대상 페이지"/>
+            <cl:gridcell std:sid="gh-cell-c4222776" rowindex="0" colindex="3" targetcolumnname="USR_ACCESS_YN" sortable="false" filterable="false" text="일반사용자 메뉴 접근여부"/>
+            <cl:gridcell std:sid="gh-cell-21c82869" rowindex="0" colindex="4" targetcolumnname="USR_TRANS_YN" sortable="false" filterable="false" text="일반사용자 트랜잭션 허용여부"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-1edba0c2">
+            <cl:gridrow std:sid="g-row-a8ffdc86" height="45px"/>
+            <cl:gridcell std:sid="gd-cell-ac9c4167" rowindex="0" colindex="0" columnname="MENU_NM">
+              <cl:treecell std:sid="t-cell-391d248f" readonly="true" showlines="true" showrootlines="false">
+                <cl:relativebind property="level" category="PROPERTY" columnname="MENU_LVL"/>
+                <cl:celldata std:sid="c-data-4d7e6e21"/>
+              </cl:treecell>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-a5de327d" rowindex="0" colindex="1" columnname="MENU_ID"/>
+            <cl:gridcell std:sid="gd-cell-22ac554a" rowindex="0" colindex="2" columnname="CALL_PAGE"/>
+            <cl:gridcell std:sid="gd-cell-d824890f" rowindex="0" colindex="3" columnname="USR_ACCESS_YN">
+              <cl:checkbox std:sid="c-box-dc7ad403" id="cbx1" truevalue="Y" falsevalue="N">
+                <cl:expbind property="visible" category="PROPERTY" expression="CALL_PAGE != &quot;&quot;"/>
+                <cl:celldata std:sid="c-data-ac4f4572"/>
+              </cl:checkbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-fa4cdf73" rowindex="0" colindex="4" columnname="USR_TRANS_YN">
+              <cl:checkbox std:sid="c-box-b7619fdb" id="cbx2" truevalue="Y" falsevalue="N">
+                <cl:expbind property="visible" category="PROPERTY" expression="CALL_PAGE != &quot;&quot;"/>
+                <cl:celldata std:sid="c-data-7c8d4141"/>
+              </cl:checkbox>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-3199144b" scrollable="false" hspace="0px" vspace="8px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+          <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-c03b18cb" scrollable="false" hspace="16px" vspace="16px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-ce95d3e3" hspace="0px" vspace="16px" top-margin="16px" right-margin="24px" bottom-margin="24px" left-margin="24px">
+      <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+      <cl:rows length="125" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+      <cl:rows length="58" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+      <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d3b53cd0" version="1.0.5448">
+  <head std:sid="head-823c218f">
+    <screen std:sid="screen-896562b4" id="EXB-POP[1024]" name="EXB-POP[1024]" width="1024px" height="576px" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-06731d33" id="EXB-POP[800]" name="EXB-POP[800]" width="800px" height="480px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-8fe6baac" id="EXB-POP[480]" name="EXB-POP[480]" width="480px" height="320px" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-90968d35">
+      <cl:datamap std:sid="d-map-8d77d0ae" id="dmParam"/>
+    </cl:model>
+    <cl:appspec title="차트 미리보기"/>
+  </head>
+  <body std:sid="body-bc322e32" class="wrap pop" childcombinatorclass="f_base">
+    <cl:udc std:sid="ud-control-7481dce1" id="udcclipreport1" type="udc.exam.udcClipReport">
+      <cl:listener std:sid="listener-115f1da9" name="report-load" handler="onUdcclipreport1ReportLoad"/>
+      <cl:formdata std:sid="f-data-85ad2bb1" row="0" col="0"/>
+      <cl:property name="filePath" value="Clip.crf" type="string"/>
+      <cl:property name="autoStart" value="false" type="boolean"/>
+    </cl:udc>
+    <cl:formlayout std:sid="f-layout-2d0ec727" scrollable="false" hspace="0px" vspace="16px" top-margin="24px" right-margin="24px" bottom-margin="24px" left-margin="24px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

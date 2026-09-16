@@ -1,0 +1,16 @@
+{
+	"foo": {
+		"interface": [
+			{
+				"interfaceid": "api1.json",
+				"interfacename": "서비스1 - 응답",
+				"version": "1"
+			},
+			{
+				"interfaceid": "api2.json",
+				"interfacename": "서비스2 - 요청 및 응답",
+				"version": "1"
+			}
+		]
+	}
+}

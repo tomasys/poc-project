@@ -1,0 +1,92 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-279132c9" version="1.0.5186">
+  <head std:sid="head-03dc3db3">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반화면/3.혼합/F_그리드(좌)+폼.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-757b9c6f" id="default" name="default" width="1640px" height="984px" useCustomWidth="false" useCustomHeight="true" customHeight="909" customWidth="800" active="true"/>
+    <screen std:sid="screen-4ef9bc93" id="tablet" name="tablet" width="1024px" height="767px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-5507010d" id="mobile" name="mobile" width="0px" height="767px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-2a220fa7">
+      <cl:dataset comment="워크플로우 Unit 동적 생성" std:sid="d-set-e0335771" id="dsWorflow" sortcondition="index" filtercondition="useYN == &quot;Y&quot;">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="프로세스 등록 순서" std:sid="d-column-b9d8cd76" name="index"/>
+          <cl:datacolumn comment="프로세스명" std:sid="d-column-f1d84dcd" name="title" datatype="string"/>
+          <cl:datacolumn comment="서브프로세스명" std:sid="d-column-3a852f74" name="subTitle" datatype="string" displayonly="false"/>
+          <cl:datacolumn comment="연결할 화면 ID" std:sid="d-column-15da5a5b" name="src"/>
+          <cl:datacolumn comment="프로세스 사용여부" std:sid="d-column-2fd5b55c" name="useYN"/>
+          <cl:datacolumn comment="순서도 모양" std:sid="d-column-99a78fbe" name="shape" datatype="string"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="index"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[민원접수]]></cl:datavalue>
+            <cl:datavalue columnname="src"><![CDATA[app/sce/A1/minwon/minwon_01_1M]]></cl:datavalue>
+            <cl:datavalue columnname="useYN"><![CDATA[Y]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="subTitle"><![CDATA[민원실]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="index"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[수령처리]]></cl:datavalue>
+            <cl:datavalue columnname="src"><![CDATA[app/sce/A1/minwon/minwon_02_2M]]></cl:datavalue>
+            <cl:datavalue columnname="useYN"><![CDATA[Y]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="subTitle"><![CDATA[민원실]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="index"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[접수확인]]></cl:datavalue>
+            <cl:datavalue columnname="src"><![CDATA[app/sce/A1/minwon/minwon_03_2M]]></cl:datavalue>
+            <cl:datavalue columnname="useYN"><![CDATA[Y]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="subTitle"><![CDATA[주관 부서]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="index"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[심사및내역등록]]></cl:datavalue>
+            <cl:datavalue columnname="src"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="useYN"><![CDATA[Y]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="subTitle"><![CDATA[주관 부서]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="index"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[민원결과결재]]></cl:datavalue>
+            <cl:datavalue columnname="src"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="useYN"><![CDATA[Y]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="subTitle"><![CDATA[주관 부서]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="index"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[민원결과등록]]></cl:datavalue>
+            <cl:datavalue columnname="src"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="useYN"><![CDATA[Y]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="subTitle"><![CDATA[주관 부서]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="1. 그리드 / 바인딩 / UDC / UI 템플릿 / 차트&#xD;&#xA;2. 버튼 이벤트 / 스크립트" title="민원신청 메인"/>
+  </head>
+  <body std:sid="body-8b55795a" class="wrap" clipcontent="true" childcombinatorclass="f_base">
+    <cl:udc std:sid="ud-control-084bdffd" id="udcpocminwonworkflow1" style="box-shadow:0 8px 12px -6px rgba(0, 0, 0, 0.15); border-bottom-color:#dddddd; border-bottom-width:1px; border-bottom-style:solid;" type="udc.poc.udcPocMinwonWorkflow">
+      <cl:formdata std:sid="f-data-0cb2df5c" row="0" col="0"/>
+      <cl:property name="dataSet" value="dsWorflow" type="control"/>
+    </cl:udc>
+    <cl:embeddedapp std:sid="e-app-7a1905cf" id="embapp1">
+      <cl:formdata std:sid="f-data-7d090599" row="1" col="0"/>
+    </cl:embeddedapp>
+    <cl:formlayout std:sid="f-layout-c9ad2d4b" scrollable="true" hspace="0px" vspace="0px" top-margin="16px">
+      <cl:rows length="110" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

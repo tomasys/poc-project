@@ -1,0 +1,563 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ae0eb696" version="1.0.5424">
+  <head std:sid="head-a30e98b2">
+    <screen std:sid="screen-124488d6" id="default" name="default" width="1024px" height="768px" useCustomWidth="true" useCustomHeight="true" customHeight="1200" customWidth="1920" active="true"/>
+    <screen std:sid="screen-2d562bdf" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-788b4c27" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-c9e6f079">
+      <cl:dataset comment="커스텀 메뉴 목록" std:sid="d-set-a1e801ff" id="dsCustomItem" filtercondition="">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="아이템 ID" std:sid="d-column-5cadda04" info="" name="itemId"/>
+          <cl:datacolumn comment="아이템명" std:sid="d-column-c6af0253" name="itemNm"/>
+          <cl:datacolumn comment="아이템 Type(UDC)" std:sid="d-column-b5eecaad" name="itemType"/>
+          <cl:datacolumn comment="최소 너비" std:sid="d-column-ec9a9d18" name="minWidth" datatype="number"/>
+          <cl:datacolumn comment="최소 높이" std:sid="d-column-f90ee1e2" name="minHeight" datatype="number"/>
+          <cl:datacolumn comment="정렬순서" std:sid="d-column-61259d83" name="sortNo"/>
+          <cl:datacolumn comment="constraint" std:sid="d-column-05652297" name="constraint"/>
+          <cl:datacolumn comment="기본 배치 로우수" std:sid="d-column-3875fa1f" name="rowSpan" datatype="number"/>
+          <cl:datacolumn comment="기본 배치 컬럼수" std:sid="d-column-a291777a" name="colSpan" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:dataset comment="전체 아이템" std:sid="d-set-cfe23240" id="dsAllItem" filtercondition="">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="아이템 ID" std:sid="d-column-ed91bb9d" info="" name="itemId"/>
+          <cl:datacolumn comment="아이템명" std:sid="d-column-02aeb3ac" name="itemNm"/>
+          <cl:datacolumn comment="아이템 Type(UDC)" std:sid="d-column-240878ae" name="itemType"/>
+          <cl:datacolumn comment="최소 너비" std:sid="d-column-4df9c9b3" name="minWidth" datatype="number"/>
+          <cl:datacolumn comment="최소 높이" std:sid="d-column-006089c5" name="minHeight" datatype="number"/>
+          <cl:datacolumn comment="정렬순서" std:sid="d-column-235faa3f" name="sortNo"/>
+          <cl:datacolumn comment="기본 Constraint" std:sid="d-column-64a603d3" name="constraint"/>
+          <cl:datacolumn comment="기본 배치 로우수" std:sid="d-column-669dd304" name="rowSpan" datatype="number"/>
+          <cl:datacolumn comment="기본 배치 컬럼수" std:sid="d-column-80b64e0a" name="colSpan" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId">udcStockChart</cl:datavalue>
+            <cl:datavalue columnname="itemNm">차트</cl:datavalue>
+            <cl:datavalue columnname="itemType">udc.stock.udcStockChart</cl:datavalue>
+            <cl:datavalue columnname="minWidth">250</cl:datavalue>
+            <cl:datavalue columnname="minHeight">189</cl:datavalue>
+            <cl:datavalue columnname="sortNo">0</cl:datavalue>
+            <cl:datavalue columnname="constraint"><![CDATA[{"colIndex":4,"rowIndex":0,"colSpan":14,"rowSpan":10}]]></cl:datavalue>
+            <cl:datavalue columnname="rowSpan">10</cl:datavalue>
+            <cl:datavalue columnname="colSpan">15</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId"><![CDATA[udcStockDayTimePrice]]></cl:datavalue>
+            <cl:datavalue columnname="itemNm"><![CDATA[일별/실시간 시세]]></cl:datavalue>
+            <cl:datavalue columnname="itemType"><![CDATA[udc.stock.udcStockDayTimePrice]]></cl:datavalue>
+            <cl:datavalue columnname="minWidth">350</cl:datavalue>
+            <cl:datavalue columnname="minHeight">174</cl:datavalue>
+            <cl:datavalue columnname="sortNo">1</cl:datavalue>
+            <cl:datavalue columnname="constraint"><![CDATA[{"colIndex":4,"rowIndex":10,"colSpan":5,"rowSpan":8}]]></cl:datavalue>
+            <cl:datavalue columnname="rowSpan"><![CDATA[8]]></cl:datavalue>
+            <cl:datavalue columnname="colSpan"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId"><![CDATA[udcStockHistory]]></cl:datavalue>
+            <cl:datavalue columnname="itemNm"><![CDATA[거래내역]]></cl:datavalue>
+            <cl:datavalue columnname="itemType"><![CDATA[udc.stock.udcStockHistory]]></cl:datavalue>
+            <cl:datavalue columnname="minWidth">250</cl:datavalue>
+            <cl:datavalue columnname="minHeight">350</cl:datavalue>
+            <cl:datavalue columnname="sortNo">2</cl:datavalue>
+            <cl:datavalue columnname="constraint"><![CDATA[{"colIndex":14,"rowIndex":10,"colSpan":4,"rowSpan":8}]]></cl:datavalue>
+            <cl:datavalue columnname="rowSpan"><![CDATA[8]]></cl:datavalue>
+            <cl:datavalue columnname="colSpan"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId"><![CDATA[udcStockHoga]]></cl:datavalue>
+            <cl:datavalue columnname="itemNm"><![CDATA[호가]]></cl:datavalue>
+            <cl:datavalue columnname="itemType"><![CDATA[udc.stock.udcStockHoga]]></cl:datavalue>
+            <cl:datavalue columnname="minWidth">250</cl:datavalue>
+            <cl:datavalue columnname="minHeight">500</cl:datavalue>
+            <cl:datavalue columnname="sortNo">3</cl:datavalue>
+            <cl:datavalue columnname="constraint"><![CDATA[{"colIndex":9,"rowIndex":10,"colSpan":5,"rowSpan":8}]]></cl:datavalue>
+            <cl:datavalue columnname="colSpan"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="rowSpan"><![CDATA[8]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId"><![CDATA[udcStockInvest]]></cl:datavalue>
+            <cl:datavalue columnname="itemNm"><![CDATA[투자자 현황]]></cl:datavalue>
+            <cl:datavalue columnname="itemType"><![CDATA[udc.stock.udcStockInvest]]></cl:datavalue>
+            <cl:datavalue columnname="minWidth">250</cl:datavalue>
+            <cl:datavalue columnname="minHeight">250</cl:datavalue>
+            <cl:datavalue columnname="sortNo">4</cl:datavalue>
+            <cl:datavalue columnname="constraint"><![CDATA[{"colIndex":9,"rowIndex":10,"colSpan":5,"rowSpan":8}]]></cl:datavalue>
+            <cl:datavalue columnname="colSpan"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="rowSpan"><![CDATA[8]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId"><![CDATA[udcStockMyStock]]></cl:datavalue>
+            <cl:datavalue columnname="itemNm"><![CDATA[보유중인 주식]]></cl:datavalue>
+            <cl:datavalue columnname="itemType"><![CDATA[udc.stock.udcStockMyStock]]></cl:datavalue>
+            <cl:datavalue columnname="minWidth">250</cl:datavalue>
+            <cl:datavalue columnname="minHeight">250</cl:datavalue>
+            <cl:datavalue columnname="sortNo">5</cl:datavalue>
+            <cl:datavalue columnname="constraint"><![CDATA[{"colIndex":0,"rowIndex":0,"colSpan":4,"rowSpan":18}]]></cl:datavalue>
+            <cl:datavalue columnname="colSpan"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="rowSpan"><![CDATA[18]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId"><![CDATA[udcStockMyWallet]]></cl:datavalue>
+            <cl:datavalue columnname="itemNm"><![CDATA[내 자산]]></cl:datavalue>
+            <cl:datavalue columnname="itemType"><![CDATA[udc.stock.udcStockMyWallet]]></cl:datavalue>
+            <cl:datavalue columnname="minWidth">250</cl:datavalue>
+            <cl:datavalue columnname="minHeight">250</cl:datavalue>
+            <cl:datavalue columnname="sortNo">6</cl:datavalue>
+            <cl:datavalue columnname="constraint"><![CDATA[{"colIndex":0,"rowIndex":0,"colSpan":4,"rowSpan":18}]]></cl:datavalue>
+            <cl:datavalue columnname="colSpan"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="rowSpan"><![CDATA[18]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId"><![CDATA[udcStockTrade]]></cl:datavalue>
+            <cl:datavalue columnname="itemNm"><![CDATA[거래]]></cl:datavalue>
+            <cl:datavalue columnname="itemType"><![CDATA[udc.stock.udcStockTrade]]></cl:datavalue>
+            <cl:datavalue columnname="minWidth"><![CDATA[250]]></cl:datavalue>
+            <cl:datavalue columnname="minHeight"><![CDATA[350]]></cl:datavalue>
+            <cl:datavalue columnname="sortNo"><![CDATA[7]]></cl:datavalue>
+            <cl:datavalue columnname="constraint"><![CDATA[{"colIndex":14,"rowIndex":10,"colSpan":4,"rowSpan":8}]]></cl:datavalue>
+            <cl:datavalue columnname="rowSpan"><![CDATA[8]]></cl:datavalue>
+            <cl:datavalue columnname="colSpan"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset comment="전체 아이템" std:sid="d-set-7496bb85" id="dsAllItem2" filtercondition="">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="아이템 ID" std:sid="d-column-55cc2ed5" info="" name="itemId"/>
+          <cl:datacolumn comment="아이템명" std:sid="d-column-9262b238" name="itemNm"/>
+          <cl:datacolumn comment="아이템 Type(UDC)" std:sid="d-column-272b28ab" name="itemType"/>
+          <cl:datacolumn comment="최소 너비" std:sid="d-column-51d7e691" name="minWidth" datatype="number"/>
+          <cl:datacolumn comment="최소 높이" std:sid="d-column-530a7cc4" name="minHeight" datatype="number"/>
+          <cl:datacolumn comment="정렬순서" std:sid="d-column-91614f37" name="sortNo"/>
+          <cl:datacolumn comment="기본 Constraint" std:sid="d-column-5ec55043" name="constraint"/>
+          <cl:datacolumn comment="기본 배치 로우수" std:sid="d-column-296144b5" name="rowSpan" datatype="number"/>
+          <cl:datacolumn comment="기본 배치 컬럼수" std:sid="d-column-b9fc2a03" name="colSpan" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId">udcDashUser</cl:datavalue>
+            <cl:datavalue columnname="itemNm">사용자</cl:datavalue>
+            <cl:datavalue columnname="itemType">udc.cmn.dashboard.udcDashUser</cl:datavalue>
+            <cl:datavalue columnname="minWidth">250</cl:datavalue>
+            <cl:datavalue columnname="minHeight">189</cl:datavalue>
+            <cl:datavalue columnname="sortNo">0</cl:datavalue>
+            <cl:datavalue columnname="constraint">{&quot;colIndex&quot;:0,&quot;rowIndex&quot;:0,&quot;colSpan&quot;:4,&quot;rowSpan&quot;:5}</cl:datavalue>
+            <cl:datavalue columnname="rowSpan">5</cl:datavalue>
+            <cl:datavalue columnname="colSpan">4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId">udcDashImage</cl:datavalue>
+            <cl:datavalue columnname="itemNm">청약전용시스템</cl:datavalue>
+            <cl:datavalue columnname="itemType">udc.cmn.dashboard.udcDashImage</cl:datavalue>
+            <cl:datavalue columnname="minWidth">350</cl:datavalue>
+            <cl:datavalue columnname="minHeight">174</cl:datavalue>
+            <cl:datavalue columnname="sortNo">1</cl:datavalue>
+            <cl:datavalue columnname="constraint">{&quot;colIndex&quot;:4,&quot;rowIndex&quot;:0,&quot;colSpan&quot;:8,&quot;rowSpan&quot;:5}</cl:datavalue>
+            <cl:datavalue columnname="rowSpan">5</cl:datavalue>
+            <cl:datavalue columnname="colSpan">8</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId">udcDashTab2</cl:datavalue>
+            <cl:datavalue columnname="itemNm">최근가입설계</cl:datavalue>
+            <cl:datavalue columnname="itemType">udc.cmn.dashboard.udcDashTab2</cl:datavalue>
+            <cl:datavalue columnname="minWidth">250</cl:datavalue>
+            <cl:datavalue columnname="minHeight">350</cl:datavalue>
+            <cl:datavalue columnname="sortNo">2</cl:datavalue>
+            <cl:datavalue columnname="constraint">{&quot;colIndex&quot;:12,&quot;rowIndex&quot;:0,&quot;colSpan&quot;:6,&quot;rowSpan&quot;:11}</cl:datavalue>
+            <cl:datavalue columnname="rowSpan">11</cl:datavalue>
+            <cl:datavalue columnname="colSpan">6</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId">udcDashQuickMenu</cl:datavalue>
+            <cl:datavalue columnname="itemNm">장기, 업무지원</cl:datavalue>
+            <cl:datavalue columnname="itemType">udc.cmn.dashboard.udcDashQuickMenu</cl:datavalue>
+            <cl:datavalue columnname="minWidth">250</cl:datavalue>
+            <cl:datavalue columnname="minHeight">500</cl:datavalue>
+            <cl:datavalue columnname="sortNo">3</cl:datavalue>
+            <cl:datavalue columnname="constraint">{&quot;colIndex&quot;:0,&quot;rowIndex&quot;:5,&quot;colSpan&quot;:4,&quot;rowSpan&quot;:13}</cl:datavalue>
+            <cl:datavalue columnname="colSpan">4</cl:datavalue>
+            <cl:datavalue columnname="rowSpan">14</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId">udcDashChart</cl:datavalue>
+            <cl:datavalue columnname="itemNm">시상 및 매출현황</cl:datavalue>
+            <cl:datavalue columnname="itemType">udc.cmn.dashboard.udcDashChart</cl:datavalue>
+            <cl:datavalue columnname="minWidth">250</cl:datavalue>
+            <cl:datavalue columnname="minHeight">250</cl:datavalue>
+            <cl:datavalue columnname="sortNo">4</cl:datavalue>
+            <cl:datavalue columnname="constraint">{&quot;colIndex&quot;:4,&quot;rowIndex&quot;:5,&quot;colSpan&quot;:8,&quot;rowSpan&quot;:6}</cl:datavalue>
+            <cl:datavalue columnname="colSpan">8</cl:datavalue>
+            <cl:datavalue columnname="rowSpan">6</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId">udcDashTab1</cl:datavalue>
+            <cl:datavalue columnname="itemNm">완판모니터링</cl:datavalue>
+            <cl:datavalue columnname="itemType">udc.cmn.dashboard.udcDashTab1</cl:datavalue>
+            <cl:datavalue columnname="minWidth">250</cl:datavalue>
+            <cl:datavalue columnname="minHeight">250</cl:datavalue>
+            <cl:datavalue columnname="sortNo">5</cl:datavalue>
+            <cl:datavalue columnname="constraint">{&quot;colIndex&quot;:4,&quot;rowIndex&quot;:11,&quot;colSpan&quot;:8,&quot;rowSpan&quot;:7}</cl:datavalue>
+            <cl:datavalue columnname="colSpan">8</cl:datavalue>
+            <cl:datavalue columnname="rowSpan">7</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="itemId">udcDashNotice</cl:datavalue>
+            <cl:datavalue columnname="itemNm">공지사항</cl:datavalue>
+            <cl:datavalue columnname="itemType">udc.cmn.dashboard.udcDashNotice</cl:datavalue>
+            <cl:datavalue columnname="minWidth">250</cl:datavalue>
+            <cl:datavalue columnname="minHeight">250</cl:datavalue>
+            <cl:datavalue columnname="sortNo">6</cl:datavalue>
+            <cl:datavalue columnname="constraint">{&quot;colIndex&quot;:12,&quot;rowIndex&quot;:11,&quot;colSpan&quot;:6,&quot;rowSpan&quot;:7}</cl:datavalue>
+            <cl:datavalue columnname="colSpan">6</cl:datavalue>
+            <cl:datavalue columnname="rowSpan">7</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-f0a5c452" id="dmUserInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="사용자 ID" std:sid="d-column-fdb5af46" name="userId"/>
+          <cl:datacolumn comment="사용자명" std:sid="d-column-0105571f" name="userNm"/>
+          <cl:datacolumn comment="사용자메뉴그룹명" std:sid="d-column-f08ae96d" name="userMenuGrpDate" defaultvalue=""/>
+          <cl:datacolumn comment="사용자메뉴그룹자료" std:sid="d-column-4ac12ab7" name="userMenuGrpData"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="WTS"/>
+  </head>
+  <body std:sid="body-3e36ffb9" class="wts-main">
+    <cl:listener std:sid="listener-2d2b320b" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-89fa070f" name="before-unload" handler="onBodyBeforeUnload"/>
+    <cl:listener std:sid="listener-4bf4af3c" name="init" handler="onBodyInit"/>
+    <cl:listener std:sid="listener-0af832c7" name="mousedown" handler="onBodyMousedown"/>
+    <cl:listener std:sid="listener-769fb927" name="unload" handler="onBodyUnload"/>
+    <cl:listener std:sid="listener-d4462095" name="host-change" handler="onBodyHostChange"/>
+    <cl:attribute name="mobile-column-count" value="1"/>
+    <cl:attribute name="tablet-column-count" value="1"/>
+    <cl:group std:sid="group-35561232" id="grpHeader" class="custom-header">
+      <cl:formdata std:sid="f-data-32a0a11a" row="0" col="0" rowspan="1" colspan="4"/>
+      <cl:output std:sid="output-4e4fa668" id="optSaveDate" datatype="date" format="YYYY-MM-DD HH:mm:ss" displayexp="&quot;저장일시 : &quot; + text">
+        <cl:datamapbind property="value" datacontrolid="dmUserInfo" columnname="userMenuGrpDate"/>
+        <cl:formdata std:sid="f-data-3911f54b" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-ea94bc92" id="grpItemListWrap">
+        <cl:formdata std:sid="f-data-8e58fca7" row="0" col="1" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-4576deab" id="opt1" style="color:#B7B7B7; font-size:12px;" class="text-center" value="아이템 목록 - 해당 아이템 버튼을 드래그 &amp; 드랍하여 배치할 수 있습니다">
+          <cl:xylayoutdata std:sid="xyl-data-c5389546" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:group std:sid="group-b5a3cfb1" id="grpItemList" class="custom-item-list">
+          <cl:xylayoutdata std:sid="xyl-data-1628538f" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+          <cl:flowlayout std:sid="f-layout-52d1e03a" leftmargin="4" rightmargin="4"/>
+        </cl:group>
+        <cl:xylayout std:sid="xylayout-7b1ae14e"/>
+      </cl:group>
+      <cl:group std:sid="group-da3f785f" id="grpBtns">
+        <cl:formdata std:sid="f-data-7c84402d" row="0" col="2"/>
+        <cl:button std:sid="button-9012fe11" id="btnCustomReset" visible="false" value="초기화">
+          <cl:listener std:sid="listener-b307cb41" name="click" handler="onBtnCustomResetClick"/>
+          <cl:flowlayoutdata std:sid="f-data-cf83d123" width="85px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:button std:sid="button-15e392b0" id="btnAllDel" visible="false" value="전체삭제">
+          <cl:flowlayoutdata std:sid="f-data-03253616" width="85px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:button std:sid="button-f5016679" id="btnCustomUpdate" visible="false" value="편집">
+          <cl:listener std:sid="listener-7862ad7d" name="click" handler="onBtnCustomUpdateClick"/>
+          <cl:flowlayoutdata std:sid="f-data-5cc1cb0f" width="70px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:button std:sid="button-387933f0" id="btnCustomSave" value="저장">
+          <cl:listener std:sid="listener-aa4ea085" name="click" handler="onBtnCustomSaveClick"/>
+          <cl:flowlayoutdata std:sid="f-data-66b41237" width="70px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:button std:sid="button-ffadaf68" id="btnCancle" visible="false" value="취소">
+          <cl:listener std:sid="listener-71efdee3" name="click" handler="onBtnCancleClick"/>
+          <cl:flowlayoutdata std:sid="f-data-241028d3" width="52px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-ff6c9ea7" halign="right"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-15a19526" scrollable="false" hspace="8px" vspace="8px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="200" unit="PIXEL" autoSizing="true"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="400" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-1c7e43da" id="grpPortlet" class="custom-body">
+      <cl:attribute name="portlet" value="Y"/>
+      <cl:attribute name="dataType" value="a"/>
+      <cl:attribute name="mobile-column-count" value="4"/>
+      <cl:attribute name="tablet-column-count" value="8"/>
+      <cl:formdata std:sid="f-data-655002fd" row="1" col="0" rowspan="1" colspan="4"/>
+      <cl:tabfolder std:sid="t-folder-931ed940" id="tab2" class="tab-widget" removeOnBuild="true" item-dragging-mode="global">
+        <cl:attribute name="mobile-min-height" value="400"/>
+        <cl:attribute name="tablet-min-height" value="400"/>
+        <cl:formdata std:sid="f-data-35a6cbaf" row="0" col="3" rowspan="10" colspan="15"/>
+        <cl:tabitem std:sid="t-item-db0706dc" selected="true" text="차트 · 호가">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-2c95e3e4" id="grpChart" class="chart-group">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:udc std:sid="ud-control-37a0e115" id="udcstockchart1" type="udc.stock.udcStockChart">
+              <cl:formdata std:sid="f-data-5526f146" row="0" col="0"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-956fde9e" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-e4776850" text="종목정보">
+          <cl:group std:sid="group-8eaf6f7d" id="grp1">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-2b27f527"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-72d3423e" text="뉴스 · 공시">
+          <cl:group std:sid="group-0ce3851f" id="grp2">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-c61febc1"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-27624dab" text="거래현황">
+          <cl:group std:sid="group-852deb0a" id="grp3">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-9ea0298d"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-e05a328c" text="커뮤니티">
+          <cl:group std:sid="group-42b255ca" id="grp4">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-d3cee412"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:group std:sid="group-30f1047b" id="grp5">
+          <cl:headercontroldata std:sid="thc-data-8d9cfa54" width="32" position="right"/>
+          <cl:formlayout std:sid="f-layout-efca9acc" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+      </cl:tabfolder>
+      <cl:tabfolder std:sid="t-folder-b95912c3" id="tab3" class="tab-widget" removeOnBuild="true" item-dragging-mode="global">
+        <cl:attribute name="mobile-min-height" value="400"/>
+        <cl:attribute name="tablet-min-height" value="400"/>
+        <cl:formdata std:sid="f-data-a78b4338" row="10" col="3" rowspan="8" colspan="5"/>
+        <cl:tabitem std:sid="t-item-05a6c49d" selected="true" text="일별/실시간 시세">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-fc27f174" id="grp6">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:udc std:sid="ud-control-30d3e151" id="udcstockdaymonthprice1" type="udc.stock.udcStockDayTimePrice">
+              <cl:formdata std:sid="f-data-53de2c0f" row="0" col="0"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-4fd12411" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+        </cl:tabitem>
+        <cl:group std:sid="group-0857a099" id="grp7">
+          <cl:headercontroldata std:sid="thc-data-65640c28" width="32" position="right"/>
+          <cl:formlayout std:sid="f-layout-38b4a4ef" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+      </cl:tabfolder>
+      <cl:tabfolder std:sid="t-folder-651a6f64" id="tab4" class="tab-widget" removeOnBuild="true" item-dragging-mode="global">
+        <cl:attribute name="mobile-min-height" value="400"/>
+        <cl:attribute name="tablet-min-height" value="400"/>
+        <cl:formdata std:sid="f-data-169a5a52" row="10" col="8" rowspan="8" colspan="5"/>
+        <cl:tabitem std:sid="t-item-1d93ed4f" text="호가">
+          <cl:group std:sid="group-e72d434f" id="grp8">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:udc std:sid="ud-control-cb5cba8c" id="udcstockhoga1" type="udc.stock.udcStockHoga">
+              <cl:verticaldata std:sid="v-data-735be1e7" width="400px" height="400px" autosize="height"/>
+            </cl:udc>
+            <cl:verticallayout std:sid="v-layout-7dc40d22" spacing="16"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-5066db7c" selected="true" text="투자자 매매 동향">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-f76e2241" id="grp9">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:udc std:sid="ud-control-867a5ace" id="udcstockinvest1" type="udc.stock.udcStockInvest">
+              <cl:formdata std:sid="f-data-f60e66f3" row="0" col="0"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-0d7a23dc" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+        </cl:tabitem>
+        <cl:group std:sid="group-3d4de564" id="grp10">
+          <cl:headercontroldata std:sid="thc-data-e3072ed9" width="32" position="right"/>
+          <cl:formlayout std:sid="f-layout-18ef6a0b" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+      </cl:tabfolder>
+      <cl:tabfolder std:sid="t-folder-2b65af07" id="tab5" class="tab-widget" removeOnBuild="true" item-dragging-mode="global">
+        <std:metadata>
+          <std:property key="template-uuid" value="922ad87e-d70e-4079-b903-e05e4b1ca8da"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:attribute name="mobile-min-height" value="400"/>
+        <cl:attribute name="tablet-min-height" value="400"/>
+        <cl:formdata std:sid="f-data-202b03e6" row="10" col="13" rowspan="8" colspan="5"/>
+        <cl:tabitem std:sid="t-item-0b5aeee1" selected="true" text="거래">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-5799328b" id="grp11" class="card">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:udc std:sid="ud-control-1a99ed12" id="udcstocktrade1" type="udc.stock.udcStockTrade">
+              <cl:formdata std:sid="f-data-dd0c5d7a" row="0" col="0"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-625cdb36" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-e5dbb6bd" text="거래내역">
+          <cl:group std:sid="group-699fe5c8" id="grp12">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:udc std:sid="ud-control-14a0731c" id="udcstockhistory1" type="udc.stock.udcStockHistory">
+              <cl:formdata std:sid="f-data-8a4ff2ce" row="0" col="0"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-c9147133" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+        </cl:tabitem>
+        <cl:group std:sid="group-048f059c" id="grp13">
+          <cl:headercontroldata std:sid="thc-data-3ba56501" width="32" position="right"/>
+          <cl:formlayout std:sid="f-layout-f67e7dd1" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+      </cl:tabfolder>
+      <cl:tabfolder std:sid="t-folder-67f7cd6a" id="tab1" class="tab-widget" removeOnBuild="true" item-dragging-mode="global">
+        <cl:listener std:sid="listener-6682953c" name="item-drag" handler="onTab1ItemDrag"/>
+        <cl:attribute name="mobile-min-height" value="400"/>
+        <cl:attribute name="tablet-min-height" value="400"/>
+        <cl:formdata std:sid="f-data-11186fb0" row="0" col="0" rowspan="18" colspan="3"/>
+        <cl:tabitem std:sid="t-item-09e6e054" selected="true" text="보유중인 주식2">
+          <cl:group std:sid="group-bd5cab60" id="grp14">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:udc std:sid="ud-control-b669857f" id="udcstockmystock1" type="udc.stock.udcStockMyStock">
+              <cl:formdata std:sid="f-data-051b6322" row="0" col="0"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-cfd6c4c6" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-bbb48d2d" text="내 자산">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-9464990f" id="grp15">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:udc std:sid="ud-control-ea2e3793" id="udcstockmywallet1" type="udc.stock.udcStockMyWallet">
+              <cl:formdata std:sid="f-data-8cc6c427" row="0" col="0"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-2623554c" scrollable="false" hspace="16px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+        </cl:tabitem>
+        <cl:group std:sid="group-9808cda1" id="grp16">
+          <cl:headercontroldata std:sid="thc-data-3b993ea9" width="32" position="right"/>
+          <cl:formlayout std:sid="f-layout-a188ffdc" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+      </cl:tabfolder>
+      <cl:formlayout std:sid="f-layout-e373c523" scrollable="true" hspace="16px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatortype="BY_CLASS" vseparatortype="BY_CLASS">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-0f3ed4a8" scrollable="false" hspace="16px" vspace="16px" top-margin="16px" right-margin="24px" bottom-margin="24px" left-margin="24px">
+      <cl:rows length="40" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="transparent"/>
+      <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

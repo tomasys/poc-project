@@ -1,0 +1,119 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a8cec547" version="1.0.5186">
+  <head std:sid="head-f17c210b">
+    <std:metadata>
+      <std:property key="template-file" value="templates/팝업화면/2.폼/V_폼.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-4b01f96b" id="EXB-POP[1024]" name="EXB-POP[1024]" width="1024px" height="576px" useCustomWidth="true" useCustomHeight="true" customHeight="700" customWidth="500" active="true"/>
+    <cl:model std:sid="model-c1c81b9e">
+      <cl:datamap std:sid="d-map-b5a6fdb0" id="dmTime">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-905e52cd" name="date" defaultvalue=""/>
+          <cl:datacolumn std:sid="d-column-31fa0aa5" name="hour" datatype="number" defaultvalue="00"/>
+          <cl:datacolumn std:sid="d-column-3ec1bf88" name="minute" datatype="string" defaultvalue="00"/>
+          <cl:datacolumn std:sid="d-column-15f0102b" name="ampm" defaultvalue="am"/>
+          <cl:datacolumn std:sid="d-column-80bd830d" name="result" datatype="expression" expression="ampm == &quot;am&quot; ? date +&quot; &quot;+ hour+&quot;:&quot;+minute : date +&quot; &quot;+ (12+hour)+&quot;:&quot;+minute"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="예약 날짜/시간 선택 팝업"/>
+  </head>
+  <body std:sid="body-cbe48c0d" class="wrap pop" clipcontent="true" childcombinatorclass="v_base">
+    <cl:listener std:sid="listener-ecd3a413" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-a91da2cb" id="grpData" class="conts-area">
+      <cl:verticaldata std:sid="v-data-d0d59be1" width="1580px" height="553px" autosize="height"/>
+      <cl:group std:sid="group-24886cef" class="conts-wrap">
+        <cl:verticaldata std:sid="v-data-9a163a21" width="452px" height="554px" autosize="height"/>
+        <cl:group std:sid="group-7fafe6d8">
+          <cl:verticaldata std:sid="v-data-bae60092" width="976px" height="481px" autosize="height"/>
+          <cl:group std:sid="group-f75cd45a" class="content-title-box">
+            <cl:verticaldata std:sid="v-data-64fa71e0" width="976px" height="26px" autosize="height"/>
+            <cl:group std:sid="group-319101d3" class="title-button-group">
+              <cl:formdata std:sid="f-data-459f4d77" row="0" col="1"/>
+              <cl:button std:sid="button-49a545a3" class="btn-inline" value="초기화">
+                <cl:listener std:sid="listener-244837a1" name="click" handler="onButtonClick"/>
+                <cl:flowlayoutdata std:sid="f-data-30f651eb" width="66px" height="26px" autosize="none"/>
+              </cl:button>
+              <cl:flowlayout std:sid="f-layout-a1f5aa04" scrollable="false" halign="right"/>
+            </cl:group>
+            <cl:formlayout std:sid="f-layout-b735756d" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:calendar std:sid="calendar-11c13e62" id="cdr1" format="YYYY.MM.DD">
+            <cl:listener std:sid="listener-3eaedc7b" name="value-change" handler="onCdr1ValueChange"/>
+            <cl:attribute name="required" value="Y"/>
+            <cl:datamapbind property="value" datacontrolid="dmTime" columnname="date"/>
+            <cl:verticaldata std:sid="v-data-b7688616" width="260px" height="450px"/>
+          </cl:calendar>
+          <cl:verticallayout std:sid="v-layout-b13cd344" spacing="8" leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0"/>
+        </cl:group>
+        <cl:group std:sid="group-8f811e0c" id="grpTime" enabled="false">
+          <cl:verticaldata std:sid="v-data-b550be5a" width="400px" height="32px"/>
+          <cl:numbereditor std:sid="n-editor-14452717" id="nbe1" min="0" max="12" format="#,##0" showclearbutton="true">
+            <cl:listener std:sid="listener-6b72e7a4" name="value-change" handler="onNbe1ValueChange"/>
+            <cl:attribute name="required" value="Y"/>
+            <cl:datamapbind property="value" datacontrolid="dmTime" columnname="hour"/>
+            <cl:formdata std:sid="f-data-9def667d" row="0" col="0"/>
+          </cl:numbereditor>
+          <cl:output std:sid="output-e5310c8d" value="시">
+            <cl:formdata std:sid="f-data-103ca78b" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-c66b8d3b" value="분">
+            <cl:formdata std:sid="f-data-06495f60" row="0" col="3"/>
+          </cl:output>
+          <cl:group std:sid="group-cffc1e32">
+            <cl:formdata std:sid="f-data-144d5a7a" row="0" col="4" rowspan="1" colspan="1"/>
+            <cl:radiobutton std:sid="r-button-b67f51f2" id="rdb1" class="toggle" hideicon="true" clickRegion="item">
+              <cl:listener std:sid="listener-9f1c3d5a" name="selection-change" handler="onRdb1SelectionChange"/>
+              <cl:datamapbind property="value" datacontrolid="dmTime" columnname="ampm"/>
+              <cl:flowlayoutdata std:sid="f-data-2dd5665d" width="80px" height="32px" autosize="width"/>
+              <cl:item std:sid="item-68064fc2" label="오전" value="am"/>
+              <cl:item std:sid="item-313cbcb9" label="오후" value="pm"/>
+            </cl:radiobutton>
+            <cl:flowlayout std:sid="f-layout-c603d3a5" halign="right"/>
+          </cl:group>
+          <cl:inputbox std:sid="i-box-0e0dd0fe" id="ipb1" inputfilter="[0-9]">
+            <cl:listener std:sid="listener-56706ae5" name="value-change" handler="onIpb1ValueChange"/>
+            <cl:listener std:sid="listener-2add1d55" name="before-value-change" handler="onIpb1BeforeValueChange"/>
+            <cl:datamapbind property="value" datacontrolid="dmTime" columnname="minute"/>
+            <cl:formdata std:sid="f-data-6caed6e5" row="0" col="2"/>
+          </cl:inputbox>
+          <cl:formlayout std:sid="f-layout-16992e82" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="100" unit="PIXEL"/>
+            <cl:columns length="10" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+            <cl:columns length="100" unit="PIXEL"/>
+            <cl:columns length="10" autoSizing="true" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-b3b851f0" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-a573c6a2" scrollable="false" spacing="16"/>
+    </cl:group>
+    <cl:group std:sid="group-ec756d32" id="grpFooter" class="conts-footer">
+      <cl:verticaldata std:sid="v-data-cc7ccd1d" width="1024px" height="58px" autosize="height"/>
+      <cl:group std:sid="group-89d9707e" class="footer-button-group">
+        <cl:verticaldata std:sid="v-data-27fb65cf" width="1532px" height="32px" autosize="none"/>
+        <cl:button std:sid="button-2a148351" id="btnSelect" enabled="false" displayexp="text + &quot; 선택&quot;">
+          <cl:listener std:sid="listener-edb48298" name="click" handler="onBtnSelectClick"/>
+          <cl:datamapbind property="value" datacontrolid="dmTime" columnname="result"/>
+          <cl:formdata std:sid="f-data-b9b347f1" row="0" col="0"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-877f6ca0" scrollable="false" hspace="1fr" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" syncminlength="true"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-3f36ca99" spacing="0"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-54dbf863" scrollable="true" spacing="16" leftmargin="24" rightmargin="24" topmargin="24" bottommargin="24"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

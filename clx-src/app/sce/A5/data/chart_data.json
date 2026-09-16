@@ -1,0 +1,134 @@
+{
+	"dsBar": [
+		{
+			"COLUMN2": 10,
+			"COLUMN1": "본인"
+		},
+		{
+			"COLUMN2": 20,
+			"COLUMN1": "유사군"
+		}
+	],
+	"dsBar2": [
+		{
+			"COLUMN2": 20,
+			"COLUMN1": "본인"
+		},
+		{
+			"COLUMN2": 10,
+			"COLUMN1": "유사군"
+		}
+	],
+	"dsBar3": [
+		{
+			"COLUMN2": 5,
+			"COLUMN1": "본인"
+		},
+		{
+			"COLUMN2": 20,
+			"COLUMN1": "유사군"
+		}
+	],
+	"dsBar4": [
+		{
+			"COLUMN2": 4.7,
+			"COLUMN1": "수신"
+		},
+		{
+			"COLUMN2": 0.3,
+			"COLUMN1": "여신"
+		},
+		{
+			"COLUMN2": 0.6,
+			"COLUMN1": "보험"
+		},
+		{
+			"COLUMN2": 1.7,
+			"COLUMN1": "수카드신"
+		}
+	],
+	"dsBar5": [
+		{
+			"COLUMN2": 144182,
+			"COLUMN1": "수신"
+		},
+		{
+			"COLUMN2": 17439,
+			"COLUMN1": "여신"
+		},
+		{
+			"COLUMN2": 478,
+			"COLUMN1": "보험"
+		},
+		{
+			"COLUMN2": 3483,
+			"COLUMN1": "수카드신"
+		}
+	],
+	"dsLine": [
+		{
+			"COLUMN2": 20,
+			"COLUMN1": "25.01"
+		},
+		{
+			"COLUMN2": 150,
+			"COLUMN1": "25.02"
+		},
+		{
+			"COLUMN2": 90,
+			"COLUMN1": "25.03"
+		},
+		{
+			"COLUMN2": 100,
+			"COLUMN1": "25.04"
+		},
+		{
+			"COLUMN2": 180,
+			"COLUMN1": "25.05"
+		}
+	],
+	"dsLine2": [
+		{
+			"COLUMN2": 120,
+			"COLUMN1": "Mon"
+		},
+		{
+			"COLUMN2": 200,
+			"COLUMN1": "Tue"
+		},
+		{
+			"COLUMN2": 150,
+			"COLUMN1": "Wed"
+		},
+		{
+			"COLUMN2": 80,
+			"COLUMN1": "Thu"
+		},
+		{
+			"COLUMN2": 70,
+			"COLUMN1": "Fri"
+		}
+	],
+	"dsLine3": [
+		{
+			"COLUMN2": 10,
+			"COLUMN1": "Mon"
+		},
+		{
+			"COLUMN2": 40,
+			"COLUMN1": "Tue"
+		},
+		{
+			"COLUMN2": 40,
+			"COLUMN1": "Wed"
+		},
+		{
+			"COLUMN2": 30,
+			"COLUMN1": "Thu"
+		},
+		{
+			"COLUMN2": 30,
+			"COLUMN1": "Fri"
+		}
+	]
+}

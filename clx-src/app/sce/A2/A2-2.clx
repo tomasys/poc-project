@@ -1,0 +1,359 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/0-1.프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-d627daf1" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-b5d22810" id="EXB-DIV" name="EXB-DIV" width="600px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-4b9c7861" id="EXB-PART" name="EXB-PART" width="0px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-90321062">
+      <cl:dataset comment="프로세스 목록" std:sid="d-set-406d885d" id="dsProcess">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="" std:sid="d-column-9f37779a" name="TITLE"/>
+          <cl:datacolumn std:sid="d-column-e322462b" name="TITLE_RIGHT_TEXT"/>
+          <cl:datacolumn comment="" std:sid="d-column-7fe5300f" name="SUB_TITLE"/>
+          <cl:datacolumn comment="" std:sid="d-column-c68cb733" name="DELIMITER" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-fa740970" name="CONT" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-c9d6a3d7" name="KEY_CODE"/>
+          <cl:datacolumn std:sid="d-column-b4004ac2" name="SUB_CODE"/>
+          <cl:datacolumn comment="" std:sid="d-column-8d6dc077" name="TARGET_CTRL"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">목적</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+            <cl:datavalue columnname="TARGET_CTRL"/>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT">다국어 지원 기능을 확인한다.</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+            <cl:datavalue columnname="TARGET_CTRL"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">검증 조건</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+            <cl:datavalue columnname="TARGET_CTRL"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT">유니코드 기반 다국어를 지원한다.</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+            <cl:datavalue columnname="TARGET_CTRL"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">측정</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+            <cl:datavalue columnname="TARGET_CTRL"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT">유니코드 기반 다국어 표기를 확인한다.</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT">다국어를 변경하여 선택한 언어로 표기됨을 확인한다.</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">선택한 언어 , 표기</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">다국어</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">cmbLang</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[시스템 메세지에서 동일하게 선택된 언어로/n표기됨을 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[시스템 메세지]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[btnMsg]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[개발 스튜디오에서 POC 시연화면을 실행한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[스튜디오]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[스튜디오에서 Language 탭의 다국어를 변경하여/n선택한 언어로 표기됨을 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[스튜디오]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[다국어]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="다국어 지원"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="wrap">
+    <cl:listener std:sid="listener-76242e4e" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-8c71e0ab" id="udcComAppHeader" type="udc.com.udcComAppHeader">
+      <cl:verticaldata std:sid="v-data-d23e67ba" width="1238px" height="40px" autosize="height"/>
+      <cl:property name="title" value="2.2 다국어 지원" type="string"/>
+      <cl:property name="isExpandAllPocProcess" value="true" type="boolean"/>
+    </cl:udc>
+    <cl:group std:sid="group-be39b9f1" id="grpData" class="conts-area">
+      <cl:verticaldata std:sid="v-data-851ebd20" width="1250px" height="1212px" autosize="height"/>
+      <cl:group std:sid="group-7cb19574" class="conts-wrap">
+        <cl:verticaldata std:sid="v-data-f849dbe4" width="976px" height="620px" autosize="height"/>
+        <cl:udc std:sid="ud-control-4a970eac" id="udcpocdocviewer1" type="udc.poc.udcPocDocViewer">
+          <cl:verticaldata std:sid="v-data-dd7dcda5" width="1250px" height="620px" autosize="none"/>
+          <cl:property name="fileUrl" value="data/docs/A2-2.png" type="resource"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-6f0301bb" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+      </cl:group>
+      <cl:group std:sid="group-dea34b59" class="conts-wrap">
+        <cl:verticaldata std:sid="v-data-99323534" width="1250px" height="571px" autosize="height"/>
+        <cl:group std:sid="group-1792291b" id="grp4">
+          <cl:verticaldata std:sid="v-data-7c553a43" width="1218px" height="539px" autosize="height"/>
+          <cl:group std:sid="group-fd9c2a3c" id="grp7">
+            <cl:formdata std:sid="f-data-634861be" row="0" col="0" rowspan="1" colspan="1"/>
+            <cl:group std:sid="group-4f005f17" id="grp2">
+              <cl:formdata std:sid="f-data-742a9d19" row="0" col="0" rowspan="1" colspan="1"/>
+              <cl:udc std:sid="ud-control-c15f2744" id="udcComFormTitle2" type="udc.com.udcComFormTitle">
+                <cl:flowlayoutdata std:sid="f-data-72da2cc7" width="262px" height="28px" autosize="width"/>
+                <cl:property name="title" value="다국어 변경" type="string"/>
+              </cl:udc>
+              <cl:combobox std:sid="c-box-6d4af39d" id="cmbLang" preventinput="true">
+                <cl:listener std:sid="listener-af015b1f" name="selection-change" handler="onCmbLangSelectionChange"/>
+                <cl:flowlayoutdata std:sid="f-data-59102156" width="120px" height="28px" autosize="none"/>
+                <cl:item std:sid="item-3c6547f2" label="한국어" value="ko">
+                  <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M003"/>
+                </cl:item>
+                <cl:item std:sid="item-355ef95d" label="영어" value="en">
+                  <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M004"/>
+                </cl:item>
+                <cl:item std:sid="item-e1170b6a" label="일본어" value="ja">
+                  <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M005"/>
+                </cl:item>
+                <cl:item std:sid="item-3e0cb237" label="중국어" value="zh">
+                  <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M006"/>
+                </cl:item>
+              </cl:combobox>
+              <cl:output std:sid="output-de5457de" id="opt3" class="fw-medium" value="※ 선택한 언어에 따라 표기되는 언어가 변경됩니다.">
+                <cl:flowlayoutdata std:sid="f-data-53cda871" width="407px" height="28px" autosize="width"/>
+              </cl:output>
+              <cl:flowlayout std:sid="f-layout-ce8ea83e" scrollable="false" hspacing="8" vspacing="8"/>
+            </cl:group>
+            <cl:button std:sid="button-40d511c0" id="btnMsg" class="btn-primary" value="메세지 호출">
+              <cl:listener std:sid="listener-cf95ed75" name="click" handler="onBtnMsgClick"/>
+              <cl:formdata std:sid="f-data-08354c51" row="0" col="1"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-283ebb5e" scrollable="false" hspace="4px" vspace="4px">
+              <cl:rows length="28" unit="PIXEL"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:udc std:sid="ud-control-b6950779" id="udcComFormTitle3" type="udc.com.udcComFormTitle">
+            <cl:langbind property="title" category="PROPERTY" keypath="NLS-UI-M016"/>
+            <cl:formdata std:sid="f-data-321d081d" row="1" col="0"/>
+          </cl:udc>
+          <cl:group std:sid="group-e83090b9" id="grp1" class="form">
+            <std:metadata>
+              <std:property key="template-uuid" value="4773e6bb-e377-4d0f-a2b8-c7e060936076"/>
+              <std:property key="template-rev" value="1"/>
+            </std:metadata>
+            <cl:attribute name="mobile-column-count" value="1"/>
+            <cl:attribute name="tablet-column-count" value="2"/>
+            <cl:formdata std:sid="f-data-79a3506b" width="100" height="283" row="2" col="0"/>
+            <cl:output std:sid="output-467ea0e2" id="opt5" class="label">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="value" keypath="NLS-UI-M007"/>
+              <cl:formdata std:sid="f-data-bef1246d" row="0" col="0"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-119316ba" id="ipb1">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="placeholder" category="PROPERTY" keypath="NLS-UI-M019"/>
+              <cl:formdata std:sid="f-data-5faf1f8f" row="0" col="1"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-48481d5d" id="opt12" class="label" value="텍스트">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="value" keypath="NLS-UI-M014"/>
+              <cl:formdata std:sid="f-data-0f001323" row="0" col="2"/>
+            </cl:output>
+            <cl:checkboxgroup std:sid="cb-group-32bfc548" id="cbg1">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:formdata std:sid="f-data-180629aa" row="0" col="3"/>
+              <cl:item std:sid="item-7ad4184f" label="체크박스" value="value1">
+                <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M014"/>
+              </cl:item>
+              <cl:item std:sid="item-c8057122" label="체크박스" value="value2">
+                <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M014"/>
+              </cl:item>
+              <cl:value>value2</cl:value>
+            </cl:checkboxgroup>
+            <cl:output std:sid="output-ecde75c7" id="opt6" class="label" value="텍스트">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="value" keypath="NLS-UI-M008"/>
+              <cl:formdata std:sid="f-data-fc58bcdf" row="1" col="0"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-702df545" id="ipb2" value="12345!@#$%" secret="true">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="placeholder" category="PROPERTY" keypath="NLS-INF-M019"/>
+              <cl:formdata std:sid="f-data-8cf51b89" row="1" col="1"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-89fd1f91" id="opt13" class="label" value="텍스트">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="value" category="PROPERTY" keypath="NLS-UI-M015"/>
+              <cl:formdata std:sid="f-data-5ae9f0e1" row="1" col="2"/>
+            </cl:output>
+            <cl:radiobutton std:sid="r-button-9cbc26bd" id="rdb1" value="value2">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:formdata std:sid="f-data-55da11ee" row="1" col="3"/>
+              <cl:item std:sid="item-4fa95d1f" label="라디오" value="value1">
+                <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M015"/>
+              </cl:item>
+              <cl:item std:sid="item-42100525" label="라디오" value="value2">
+                <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M015"/>
+              </cl:item>
+            </cl:radiobutton>
+            <cl:output std:sid="output-ab63b24a" id="opt7" class="label" value="텍스트">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="value" keypath="NLS-UI-M009"/>
+              <cl:formdata std:sid="f-data-87890ced" row="2" col="0"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-e1dd0efd" id="ipb3" value="name@example.com">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="placeholder" category="PROPERTY" keypath="NLS-INF-M019"/>
+              <cl:formdata std:sid="f-data-bc161996" row="2" col="1"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-f1e563e3" id="opt9" class="label" value="텍스트">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="value" keypath="NLS-UI-M011"/>
+              <cl:formdata std:sid="f-data-cfd40a98" row="5" col="0" rowspan="1" colspan="1"/>
+            </cl:output>
+            <cl:listbox std:sid="l-box-9785dc7c" id="lbx1" multiple="true">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:formdata std:sid="f-data-a8c4d749" row="5" col="1" rowspan="1" colspan="1"/>
+              <cl:item std:sid="item-ec5eec63" label="1" value="1">
+                <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M007"/>
+              </cl:item>
+              <cl:item std:sid="item-9b9b24c1" label="2" value="2">
+                <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M008"/>
+              </cl:item>
+              <cl:item std:sid="item-77defb18" label="3" value="3">
+                <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M009"/>
+              </cl:item>
+              <cl:value>1</cl:value>
+            </cl:listbox>
+            <cl:output std:sid="output-b8252931" id="opt2" class="label">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="value" category="PROPERTY" keypath="NLS-UI-M017"/>
+              <cl:formdata std:sid="f-data-e7e4b298" row="3" col="0"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-2db78954" id="ipb4" value="010-1234-5678">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="placeholder" category="PROPERTY" keypath="NLS-INF-M019"/>
+              <cl:formdata std:sid="f-data-5ef30ec3" row="3" col="1"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-2a4b5c3c" id="opt8" class="label" value="텍스트">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="value" keypath="NLS-UI-M010"/>
+              <cl:formdata std:sid="f-data-a5f8bdae" row="4" col="0"/>
+            </cl:output>
+            <cl:combobox std:sid="c-box-7e6fe88e" id="cmb2" value="1">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:formdata std:sid="f-data-29268c27" row="4" col="1"/>
+              <cl:item std:sid="item-847ffc9e" label="1" value="1">
+                <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M007"/>
+              </cl:item>
+              <cl:item std:sid="item-8cb31415" label="2" value="2">
+                <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M008"/>
+              </cl:item>
+              <cl:item std:sid="item-1c9de8ca" label="3" value="3">
+                <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M009"/>
+              </cl:item>
+            </cl:combobox>
+            <cl:output std:sid="output-b50ba757" id="opt10" class="label" value="텍스트">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="value" keypath="NLS-UI-M012"/>
+              <cl:formdata std:sid="f-data-e706e113" row="6" col="0" rowspan="1" colspan="1"/>
+            </cl:output>
+            <cl:group std:sid="group-fae99791" id="grp5">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:formdata std:sid="f-data-4ef67000" row="6" col="1" rowspan="1" colspan="3"/>
+              <cl:textarea std:sid="t-area-5d0292fb" id="txa1">
+                <cl:langbind property="placeholder" category="PROPERTY" keypath="NLS-UI-M019"/>
+                <cl:formdata std:sid="f-data-6d6843bc" row="0" col="0" rowspan="1" colspan="1"/>
+              </cl:textarea>
+              <cl:output std:sid="output-5ec0535b" id="opt1" style="color:red;" displayexp="&quot;※ &quot; + text">
+                <cl:langbind property="value" category="PROPERTY" keypath="NLS-UI-M018"/>
+                <cl:formdata std:sid="f-data-09566d96" row="1" col="0"/>
+              </cl:output>
+              <cl:formlayout std:sid="f-layout-1235bbd2" scrollable="false" hseparatorwidth="1">
+                <cl:rows length="1" unit="FRACTION" shadecolor="transparent"/>
+                <cl:rows length="30" unit="PIXEL" autoSizing="true" shadecolor="transparent" syncminlength="false"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:output std:sid="output-437dfe4f" id="opt4" class="label">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:langbind property="value" category="PROPERTY" keypath="NLS-UI-M020"/>
+              <cl:formdata std:sid="f-data-b0d2b335" row="2" col="2" rowspan="4" colspan="1"/>
+            </cl:output>
+            <cl:calendar std:sid="calendar-771897dc" id="cal1" headerformat="YYYY MMMM" footervisible="false">
+              <cl:attribute name="needs-auto-height" value="true"/>
+              <cl:formdata std:sid="f-data-5e587dad" row="2" col="3" rowspan="4" colspan="1"/>
+            </cl:calendar>
+            <cl:formlayout std:sid="f-layout-eae5e2eb" scrollable="false" hspace="16px" vspace="17px" top-margin="8px" right-margin="8px" bottom-margin="8px" left-margin="8px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+              <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+              <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+              <cl:rows length="28" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+              <cl:rows length="28" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+              <cl:rows length="28" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+              <cl:rows length="120" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+              <cl:rows length="150" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+              <cl:columns length="180" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" syncminlength="false"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="180" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" syncminlength="false"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-26259d99" scrollable="false" hspace="4px" vspace="4px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="28" unit="PIXEL" shadetype="NONE"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE"/>
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-dd866ff3" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-4167ee7a" spacing="16" leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="16" leftmargin="24" rightmargin="24" topmargin="16" bottommargin="24"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

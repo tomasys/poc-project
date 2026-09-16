@@ -1,0 +1,22 @@
+기본적으로 높은 버전의 윈도우에서는 ie 지원이 종료되었기 때문에 
+program files/ iexplorer.exe 를 실행시키더라도 엣지가 열리게 됩니다.
+
+어떻게든 ie를 열어야 하는 경우에는 VBS파일을 만들어 비쥬얼베이직스크립트를 실행시켜 ie를 열게 만들었습니다.
+A14/data 폴더 안에 있는 internet Explorer.VBS파일을 C:\Program Files\Internet Explorer 경로에 파일이 존재해야하며, 
+다른 경로에 파일을 집어넣는 경우 A14-3.clx 페이지에 배치된 라디오버튼 컨트롤이 가진 아이템 IE열기의 value 속성값을 
+VBS파일이 위치한 경로로 수정해줘야한다.
+
+edge로 열기같이 exe파일을 실행시키는 경우에는 url 파라미터를 통해 열어야하는 location정보를 전달할 수 있으나,
+VBS 파일을 실행시킬때는 파라미터를 전달할 수 없어, 파일안에 작성되어있는
+
+Set IE = CreateObject("InternetExplorer.Application")
+IE.Top = 0
+IE.Left = 0
+IE.StatusBar = True
+IE.Visible = True
+IE.Width = "1024"
+IE.Height = "768"
+IE.navigate "http://localhost:8080/ui/app/sce/A14/data/popup.html"
+
+
+의 navigate 경로를 수정해줘야한다.

@@ -1,0 +1,72 @@
+{
+	"wrap" : {
+		"submission": {
+			"action": "https://google.co.kr/sub2",
+			"method": "post",
+			"userAttr": {
+				"hello": "world"
+			},
+			"comment": "서비스2"
+		},
+		"request": {
+			"data": {
+				"dmRequest": {
+					"dataControl": "dmRequest",
+					"format": "object",
+					"isAdd": false,
+					"comment" : "요청 파라미터",			
+					"data": {
+						"userName": {
+							"format": "string",
+							"comment": "사용자명"							
+						},
+						"userCode": {
+							"format": "decimal",
+							"comment": "사용자코드"
+						},
+						"dpcd": {
+							"format": "string",
+							"path": "@email",
+							"comment": "부서코드"							
+						}						
+					}
+				}
+			}
+		},
+		"response": {
+			"linked": false,
+			"format": "responsedata",
+			"data": {
+				"dsUserList": {
+					"dataControl": "dsUserList",
+					"isAdd": false,
+					"comment" : "사용자 목록",
+					"userAttr": {
+						"comment": "그리드 데이터 셋 사용자 정의 속성 테스트",
+						"other": "hello"
+					},
+					"linked": false,
+					"format": "array",
+					"data": {
+						"name": {
+							"format": "string",
+							"comment": "이름"							
+						},
+						"age": {
+							"format": "decimal",
+							"comment": "나이"
+						},
+						"email": {
+							"format": "string",
+							"comment": "이메일"							
+						},
+						"mobile": {
+							"format": "string",
+							"comment": "전화번호"
+						}
+					}
+				}
+			}
+		}
+	}
+}

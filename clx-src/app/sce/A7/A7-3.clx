@@ -1,0 +1,166 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-1162b043" version="1.0.0.0">
+  <head std:sid="head-40c06ab5">
+    <title>M0001</title>
+    <screen std:sid="screen-45d3202a" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="true" customHeight="798" customWidth="800" active="true"/>
+    <screen std:sid="screen-12080f6e" id="EXB-DIV" name="EXB-DIV" width="600px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-63cc5771" id="EXB-PART" name="EXB-PART" width="0px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-fe0213c8">
+      <cl:dataset comment="프로세스 목록" std:sid="d-set-406d885d" id="dsProcess">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="" std:sid="d-column-9f37779a" name="TITLE"/>
+          <cl:datacolumn std:sid="d-column-365757dd" name="TITLE_RIGHT_TEXT"/>
+          <cl:datacolumn comment="" std:sid="d-column-7fe5300f" name="SUB_TITLE"/>
+          <cl:datacolumn comment="" std:sid="d-column-c68cb733" name="DELIMITER" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-fa740970" name="CONT" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-c9d6a3d7" name="KEY_CODE"/>
+          <cl:datacolumn std:sid="d-column-b4004ac2" name="SUB_CODE"/>
+          <cl:datacolumn comment="" std:sid="d-column-8d6dc077" name="TARGET_CTRL"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">목적</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT">REST API 또는 GraphQL 등의 데이터 API 명세 연동</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">검증 조건</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT">서비스 API 통합 기능 시연</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">측정</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[스튜디오의 서브미션(통신 프로토콜)에서 지원하는/n서비스 API를 호출하여 연동을 확인한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[API 연동에 따라 자동으로 구성되는 데이터 객체를 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[서브미션 컨트롤의 Submission Builder 기능을 활용하여/nAPI 명세조회 및 API를 자동 생성한다.]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">Submission Builder,API 명세조회</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"/>
+            <cl:datavalue columnname="KEY_CODE">자동 생성</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[생성된 서브미션의 요청, 응답 정보 및 데이터 객체를 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[요청, 응답 정보,데이터 객체]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[매트릭스 서브미션 컨트롤의 Matrix Builder 기능을 활용하여/nAPI 명세조회 및 API를 자동 생성한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">자동 생성</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">Matrix Builder,API 명세조회</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">진행</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[생성된 매트릭스 서브미션의 요청, 응답 정보 및 데이터 객체를 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[요청, 응답 정보,데이터 객체]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:submission comment="서브미션" std:sid="submission-36e52370" id="sub" method="post" action="">
+        <cl:attribute name="hello" value="world"/>
+      </cl:submission>
+      <cl:matrix-submission comment="매트릭스 서브미션" std:sid="m-submission-1eb9f83b" id="msub" async="true" withCredentials="false" method="post" action="">
+        <cl:attribute name="hello" value="world"/>
+        <cl:attribute name="itfNm" value="개인고객조회"/>
+        <cl:attribute name="itfId" value="ICMPRSNCUSTMGMTPSI002R"/>
+        <cl:matrix>
+          <cl:request type="object"/>
+          <cl:response type="object"/>
+        </cl:matrix>
+      </cl:matrix-submission>
+    </cl:model>
+    <cl:appspec title="API 및 데이터 바인딩"/>
+  </head>
+  <body std:sid="body-ed05e51e" style="top:0px; left:0px; width:800px; height:600px;" class="wrap">
+    <cl:listener std:sid="listener-8711e599" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-8c71e0ab" id="udcComAppHeader" type="udc.com.udcComAppHeader">
+      <cl:formdata std:sid="f-data-efa61241" row="0" col="0"/>
+      <cl:property name="title" value="7.3 API 및 데이터 바인딩" type="string"/>
+      <cl:property name="isExpandAllPocProcess" value="true" type="boolean"/>
+    </cl:udc>
+    <cl:group std:sid="group-be39b9f1" id="grpData" class="conts-area">
+      <cl:formdata std:sid="f-data-9ec465e7" width="100" height="55" row="1" col="0"/>
+      <cl:group std:sid="group-eece9ad9" id="grp2" class="governing">
+        <cl:formdata std:sid="f-data-a2a0c210" width="100" height="55" row="0" col="0"/>
+        <cl:udc std:sid="ud-control-27ec2e8d" id="udcComFormTitle2" type="udc.com.udcComFormTitle">
+          <cl:verticaldata std:sid="v-data-30dd0d40" width="800px" height="28px" autosize="height"/>
+          <cl:property name="title" value="서비스 API 통합 기능 제공(전문플러그인)" type="string"/>
+        </cl:udc>
+        <cl:output std:sid="output-1c257dfa" id="opt2" displayexp="&quot;eXBuilder6는 REST API와 같이 체계화된 &quot; + sstr(&quot;서비스 API 명세&quot;, [&quot;fw-bold&quot;]) + &quot;를 연동하여&quot; + &quot;정의된 API 명세에 따라 &quot; + sstr(&quot;서브미션(통신 프로토콜)&quot;, [&quot;fw-bold&quot;]) + &quot;을 자동 구성합니다.&quot;&#xD;&#xA;+ &quot;\n\r&quot; + &quot;자동구성된 서브미션과 더불어 연결된 &quot; + sstr(&quot;데이터 객체&quot;, [&quot;fw-bold&quot;]) + &quot; 또한 자동생성 및 바인딩하여 제공합니다.&quot;">
+          <cl:verticaldata std:sid="v-data-a6e01c7f" width="1218px" height="48px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-94eb003e" scrollable="false" spacing="8"/>
+      </cl:group>
+      <cl:group std:sid="group-3e309218" class="conts-wrap">
+        <cl:formdata std:sid="f-data-49c0c169" row="1" col="0" rowspan="1" colspan="1"/>
+        <cl:udc std:sid="ud-control-23052c02" id="udcPocDocViewer1" type="udc.poc.udcPocDocViewer">
+          <cl:formdata std:sid="f-data-83f22ea2" row="0" col="0"/>
+          <cl:property name="fileUrl" value="../A7/data/docs/A7-3.png" type="resource"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-00acb145" scrollable="false" hspace="8px" vspace="8px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-dd677874" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="125" unit="PIXEL" autoSizing="true" hidden="true" syncminlength="false"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-f1c4c0d4" scrollable="false" hspace="0px" vspace="16px" top-margin="16px" right-margin="24px" bottom-margin="24px" left-margin="24px">
+      <cl:rows length="40" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+      <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

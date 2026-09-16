@@ -1,0 +1,376 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/0-1.프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-fae26221" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="true" customHeight="850" customWidth="800" active="true"/>
+    <screen std:sid="screen-5fe26eb5" id="EXB-DIV" name="EXB-DIV" width="600px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-5b516b59" id="EXB-PART" name="EXB-PART" width="0px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <script std:sid="script-329aaed7" src="../../../thirdparty/echarts/echarts.min.js" type="text/javascript"/>
+    <cl:model std:sid="model-90321062">
+      <cl:dataset comment="프로세스 목록" std:sid="d-set-406d885d" id="dsProcess">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="" std:sid="d-column-9f37779a" name="TITLE"/>
+          <cl:datacolumn std:sid="d-column-365757dd" name="TITLE_RIGHT_TEXT"/>
+          <cl:datacolumn comment="" std:sid="d-column-7fe5300f" name="SUB_TITLE"/>
+          <cl:datacolumn comment="" std:sid="d-column-c68cb733" name="DELIMITER" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-fa740970" name="CONT" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-c9d6a3d7" name="KEY_CODE"/>
+          <cl:datacolumn std:sid="d-column-b4004ac2" name="SUB_CODE"/>
+          <cl:datacolumn comment="" std:sid="d-column-8d6dc077" name="TARGET_CTRL"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[검증 목적]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT">P.36</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[[3-10] 다양한 차트 연계 편의성 기능 구성 여부]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[3-10] ]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[검증 항목 상세]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[방사형 차트 또는 막대그래프 연계 Grid 데이터 변경 기능 (검증요건 3-14 sheet 참고)]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[방사형 차트 및 막대그래프의 설계 부분 변경이 가능하고, 변경된 정보를 서버에 전송 가능한 상태 확인(수정된 정보를 팝업으로 보여주는 것까지 시연)]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[검증 기준]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[다양한 차트 구성 및 변경한 값에 대한 정보처리 이벤트 설정이 용이한가?]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"/>
+            <cl:datavalue columnname="SUB_CODE"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[그리드 데이터 변경]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[○]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[[그리드] 그리드 내 데이터를 변경시 실시간 변경되는 차트 확인]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[그리드]]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[실시간 변경]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[grdList]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[데이터 변경시 변경되는 합계 데이터 확인]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[grdList]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[합계 데이터]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[○]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[차트 드래그]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[[방사형 차트] 방사형 차트 꼭지점 드래그시 변경되는 데이터 확인]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[방사형 차트]]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[드래그]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[radarChart]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[[Bar 차트] Bar 차트 아이템 드래그시 변경되는 데이터 확인]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[Bar 차트]]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[barChart]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[드래그]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[○]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[수정된 정보 확인]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[[데이터 실시간 연동] 그리드 데이터 실시간 변경 확인 가능]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[데이터 실시간 연동]]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[실시간 변경]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[grdList]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[[수정된 데이터 정보] 서버로 전송되는 변경된 데이터 확인]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[수정된 데이터 정보]]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[서버로 전송]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[btn1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[○]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[차트 UPDATE 이벤트 구성]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[진행]]></cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[[이벤트] 차트 컴포넌트 update 이벤트 확인]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[[이벤트]]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-a1c9ad14" id="dsRadar">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="보장" std:sid="d-column-e0fb3415" info="보장" name="COVERAGE_NM"/>
+          <cl:datacolumn comment="설계" std:sid="d-column-4ec75a8b" info="설계" name="PLAN_PREMIUM" datatype="number"/>
+          <cl:datacolumn comment="권장" std:sid="d-column-c6a89853" info="권장" name="REMD_PREMIUM" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="COVERAGE_NM"><![CDATA[상해]]></cl:datavalue>
+            <cl:datavalue columnname="PLAN_PREMIUM"><![CDATA[1000]]></cl:datavalue>
+            <cl:datavalue columnname="REMD_PREMIUM"><![CDATA[1100]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="COVERAGE_NM"><![CDATA[암]]></cl:datavalue>
+            <cl:datavalue columnname="PLAN_PREMIUM"><![CDATA[1500]]></cl:datavalue>
+            <cl:datavalue columnname="REMD_PREMIUM"><![CDATA[1550]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="COVERAGE_NM"><![CDATA[질병]]></cl:datavalue>
+            <cl:datavalue columnname="PLAN_PREMIUM"><![CDATA[700]]></cl:datavalue>
+            <cl:datavalue columnname="REMD_PREMIUM"><![CDATA[1000]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="COVERAGE_NM"><![CDATA[수술]]></cl:datavalue>
+            <cl:datavalue columnname="PLAN_PREMIUM"><![CDATA[650]]></cl:datavalue>
+            <cl:datavalue columnname="REMD_PREMIUM"><![CDATA[900]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="COVERAGE_NM"><![CDATA[기타]]></cl:datavalue>
+            <cl:datavalue columnname="PLAN_PREMIUM"><![CDATA[900]]></cl:datavalue>
+            <cl:datavalue columnname="REMD_PREMIUM"><![CDATA[1200]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="다양한 차트 연계"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="wrap">
+    <cl:listener std:sid="listener-f95e2c37" name="before-draw" handler="onBodyBeforeDraw"/>
+    <cl:udc std:sid="ud-control-8c71e0ab" id="udcComAppHeader" type="udc.com.udcComAppHeader">
+      <cl:verticaldata std:sid="v-data-d23e67ba" width="1238px" height="32px" autosize="height"/>
+      <cl:property name="isExpandAllPocProcess" value="true" type="boolean"/>
+    </cl:udc>
+    <cl:group std:sid="group-7e5559d4" id="grpGoverning" class="governing">
+      <cl:verticaldata std:sid="v-data-ab3f2ba4" width="994px" height="147px" autosize="height"/>
+      <cl:output std:sid="output-6fb83195" id="opt4" class="tit" value="다양한 차트 연계 편의성 기능 구성 여부">
+        <cl:verticaldata std:sid="v-data-d68a450b" width="100px" height="28px" autosize="height"/>
+      </cl:output>
+      <cl:output std:sid="output-5953dfd4" id="opt5" class="txt" displayexp="&quot;eXBuilder6는 다양한 형태의 차트(eChart)를 제공하고 있으며, &quot; + sstr(&quot;외부 컴포넌트 연동 컨트롤&quot;, [&quot;fw-bold&quot;])+ &quot;을 통해 오픈 아키텍처 및 상용 차트와의 연동을 지원합니다.\n&quot;&#xD;&#xA;+&quot;이를 통해, &quot; + sstr(&quot;다양한 차트와의 호환성을 제공하며 이를 UDC로 제작 시, 기본 컨트롤처럼 사용이 가능합니다.&quot;, [&quot;fw-bold&quot;])&#xD;&#xA;">
+        <cl:verticaldata std:sid="v-data-6574ec63" width="1218px" height="77px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-62f1ecf3" scrollable="false" spacing="8"/>
+    </cl:group>
+    <cl:group std:sid="group-be39b9f1" id="grpData" class="conts-area">
+      <cl:verticaldata std:sid="v-data-851ebd20" width="992px" height="560px" autosize="height"/>
+      <cl:group std:sid="group-0092a8f7">
+        <cl:verticaldata std:sid="v-data-5accb9a4" width="992px" height="24px" autosize="height"/>
+        <cl:output std:sid="output-b0e7132f" id="opt3" style="font-weight:500; font-size:15px;" class="text-right" value="최대값 : 1,600(만원)">
+          <cl:flowlayoutdata std:sid="f-data-11748cf4" width="135px" height="26px" autosize="width"/>
+        </cl:output>
+        <cl:button std:sid="button-393977d5" id="btn1" class="btn-primary" value="변경 데이터 확인">
+          <cl:listener std:sid="listener-29e2e1a4" name="click" handler="onBtn1Click"/>
+          <cl:flowlayoutdata std:sid="f-data-a96ca4a8" width="141px" height="26px" autosize="width"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-cab0f5ae" halign="right"/>
+      </cl:group>
+      <cl:group std:sid="group-8823111f" id="grpChartCn" class="division-group" fieldLabel="차트">
+        <cl:attribute name="mobile-column-count" value="1"/>
+        <cl:attribute name="tablet-column-count" value="2"/>
+        <cl:verticaldata std:sid="v-data-42f29af9" width="992px" height="528px" autosize="height"/>
+        <cl:group std:sid="group-77a516f8">
+          <cl:formdata std:sid="f-data-859ddece" row="0" col="0" rowspan="2" colspan="1"/>
+          <cl:group std:sid="group-2fe91d51" id="grp1">
+            <cl:formdata std:sid="f-data-63eaf520" row="0" col="0" rowspan="1" colspan="1"/>
+            <cl:udc std:sid="ud-control-9647dd08" id="udcComGridTitle1" type="udc.com.udcComGridTitle">
+              <cl:formdata std:sid="f-data-bb331d89" row="0" col="0"/>
+              <cl:property name="ctrl" value="grdList" type="control"/>
+              <cl:property name="title" value="가입 금액 목록" type="string"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-691ae8e7" hspace="0px" vspace="4px">
+              <cl:rows length="24" unit="PIXEL" autoSizing="false" shadecolor="transparent" syncminlength="true"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="true" minlength="0" syncminlength="false"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="transparent" minlength="0" syncminlength="true"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:grid std:sid="grid-146d67e8" id="grdList" fieldLabel="가입 금액 목록" datasetid="dsRadar">
+            <cl:formdata std:sid="f-data-71545bd9" row="1" col="0"/>
+            <cl:gridcolumn std:sid="g-column-185e565d"/>
+            <cl:gridcolumn std:sid="g-column-ed8d185c"/>
+            <cl:gridcolumn std:sid="g-column-ab71ffd5"/>
+            <cl:gridheader std:sid="gh-band-c0a3984e">
+              <cl:gridrow std:sid="g-row-205e75c9" height="44px"/>
+              <cl:gridcell std:sid="gh-cell-35382a87" rowindex="0" colindex="0" targetcolumnname="COVERAGE_NM" sortable="false" filterable="false" text="보장"/>
+              <cl:gridcell std:sid="gh-cell-dc92fd55" rowindex="0" colindex="1" targetcolumnname="PLAN_PREMIUM" sortable="false" filterable="false" text="설계"/>
+              <cl:gridcell std:sid="gh-cell-e27b6a3f" rowindex="0" colindex="2" targetcolumnname="REMD_PREMIUM" sortable="false" filterable="false" text="권장"/>
+            </cl:gridheader>
+            <cl:griddetail std:sid="gd-band-3c238d06">
+              <cl:gridrow std:sid="g-row-bcb5f61e" height="45px"/>
+              <cl:gridcell std:sid="gd-cell-26f4a72d" rowindex="0" colindex="0" columnname="COVERAGE_NM"/>
+              <cl:gridcell std:sid="gd-cell-439387b0" rowindex="0" colindex="1" columnname="PLAN_PREMIUM">
+                <cl:numbereditor std:sid="n-editor-82e66e94" id="nbe1" min="0" max="1600">
+                  <cl:celldata std:sid="c-data-34c93944"/>
+                </cl:numbereditor>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gd-cell-27fb5e7b" rowindex="0" colindex="2" columnname="REMD_PREMIUM">
+                <cl:numbereditor std:sid="n-editor-1f90af96" id="nbe2" min="0" max="1600">
+                  <cl:celldata std:sid="c-data-0e490211"/>
+                </cl:numbereditor>
+              </cl:gridcell>
+            </cl:griddetail>
+            <cl:gridfooter std:sid="gf-band-5232186e">
+              <cl:gridrow std:sid="g-row-5cfb4efc" height="44px"/>
+              <cl:gridcell std:sid="gf-cell-51b89316" rowindex="0" colindex="0" expr="&quot;합 계&quot;"/>
+              <cl:gridcell std:sid="gf-cell-aab43bb9" rowindex="0" colindex="1" expr="getSum(&quot;PLAN_PREMIUM&quot;)">
+                <cl:output std:sid="output-33d40339" id="opt1" datatype="number" format="s#,##0">
+                  <cl:celldata std:sid="c-data-07655864"/>
+                </cl:output>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gf-cell-e6bd0ced" rowindex="0" colindex="2" expr="getSum(&quot;REMD_PREMIUM&quot;)">
+                <cl:output std:sid="output-8a3db2a5" id="opt2" datatype="number" format="s#,##0">
+                  <cl:celldata std:sid="c-data-6a1c213a"/>
+                </cl:output>
+              </cl:gridcell>
+            </cl:gridfooter>
+          </cl:grid>
+          <cl:formlayout std:sid="f-layout-05971e4c" hspace="0px" vspace="8px">
+            <cl:rows length="24" unit="PIXEL" autoSizing="false" shadecolor="transparent" syncminlength="true"/>
+            <cl:rows length="500" unit="PIXEL" autoSizing="true" shadecolor="transparent" syncminlength="true"/>
+            <cl:columns length="319" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-6eaafabf">
+          <cl:formdata std:sid="f-data-7a86eeb5" row="0" col="1" rowspan="2" colspan="1"/>
+          <cl:udc std:sid="ud-control-de77cac2" id="udcComFormTitle2" type="udc.com.udcComFormTitle">
+            <cl:formdata std:sid="f-data-820a347b" leftSpacing="20.0" row="0" col="0"/>
+            <cl:property name="title" value="방사형 차트" type="string"/>
+          </cl:udc>
+          <cl:udc std:sid="ud-control-dbe1fc02" id="radarChart" type="udc.cmn.chart.cmnChart">
+            <cl:listener std:sid="listener-336cc6cd" name="update" handler="onRadarChartUpdate"/>
+            <cl:formdata std:sid="f-data-d79f052d" row="1" col="0"/>
+            <cl:property name="chartType" value="radar : default" type="enumeration"/>
+            <cl:property name="dataSet" value="dsRadar" type="control"/>
+            <cl:property name="categoryColNm" value="COVERAGE_NM" type="string"/>
+            <cl:property name="valueColNms" value="REMD_PREMIUM,PLAN_PREMIUM" type="string"/>
+            <cl:property name="title" value="연령, 소득 기준에 따른 권장보장 설정" type="string"/>
+            <cl:property name="titlePosition" value="top-center" type="enumeration"/>
+            <cl:property name="chartColor" value="true" type="boolean"/>
+            <cl:property name="viewSum" value="true" type="boolean"/>
+            <cl:property name="viewSumText" value="true" type="boolean"/>
+            <cl:property name="useChartColor" value="true" type="boolean"/>
+            <cl:property name="useDragValueChange" value="true" type="boolean"/>
+            <cl:property name="maxValue" value="1600" type="number"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-f86d07e8" hspace="0px" vspace="8px">
+            <cl:rows length="24" unit="PIXEL" autoSizing="false" shadecolor="transparent" syncminlength="true"/>
+            <cl:rows length="500" unit="PIXEL" autoSizing="true" shadecolor="transparent" syncminlength="true"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="true" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-766a8743">
+          <cl:formdata std:sid="f-data-897565e9" row="0" col="2" rowspan="2" colspan="1"/>
+          <cl:udc std:sid="ud-control-a8ff5014" id="udcComFormTitle3" type="udc.com.udcComFormTitle">
+            <cl:formdata std:sid="f-data-c0c02d8a" leftSpacing="20.0" row="0" col="0"/>
+            <cl:property name="title" value="막대그래프 차트" type="string"/>
+          </cl:udc>
+          <cl:udc std:sid="ud-control-b70e2f4e" id="barChart" type="udc.cmn.chart.cmnChart">
+            <cl:listener std:sid="listener-5c1bd033" name="update" handler="onBarChartUpdate"/>
+            <cl:formdata std:sid="f-data-858a6308" row="1" col="0"/>
+            <cl:property name="chartType" value="bar : horizontal" type="enumeration"/>
+            <cl:property name="dataSet" value="dsRadar" type="control"/>
+            <cl:property name="categoryColNm" value="COVERAGE_NM" type="string"/>
+            <cl:property name="valueColNms" value="REMD_PREMIUM,PLAN_PREMIUM" type="string"/>
+            <cl:property name="title" value="연령, 소득 기준에 따른 권장보장 설정" type="string"/>
+            <cl:property name="titlePosition" value="top-center" type="enumeration"/>
+            <cl:property name="chartColor" value="true" type="boolean"/>
+            <cl:property name="viewSum" value="true" type="boolean"/>
+            <cl:property name="viewSumText" value="true" type="boolean"/>
+            <cl:property name="useChartColor" value="true" type="boolean"/>
+            <cl:property name="useDragValueChange" value="true" type="boolean"/>
+            <cl:property name="maxValue" value="1600" type="number"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-18520996" hspace="0px" vspace="8px">
+            <cl:rows length="24" unit="PIXEL" autoSizing="false" shadecolor="transparent" syncminlength="true"/>
+            <cl:rows length="500" unit="PIXEL" autoSizing="true" shadecolor="transparent" syncminlength="true"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="true" shadecolor="transparent" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-b571ee97" hspace="8px" vspace="8px">
+          <cl:rows length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="transparent" syncminlength="true"/>
+          <cl:rows length="500" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="true"/>
+          <cl:columns length="319" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="transparent" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-4167ee7a" spacing="16" leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="16" leftmargin="24" rightmargin="24" topmargin="16" bottommargin="24"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

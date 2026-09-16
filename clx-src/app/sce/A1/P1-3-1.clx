@@ -1,0 +1,149 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-67ef4f29" version="1.0.5448">
+  <head std:sid="head-47cd42d5">
+    <screen std:sid="screen-8c9e579f" id="EXB-POP[1024]" name="EXB-POP[1024]" width="1024px" height="576px" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-17e8cfd8" id="EXB-POP[800]" name="EXB-POP[800]" width="800px" height="480px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-8a7510f9" id="EXB-POP[480]" name="EXB-POP[480]" width="480px" height="320px" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-656667a3">
+      <cl:datamap std:sid="d-map-2e33bfca" id="dmSpCtrt">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="상품코드" std:sid="d-column-e31d7524" name="PRD_CD"/>
+          <cl:datacolumn comment="상품명" std:sid="d-column-971f5497" name="PRD_NM"/>
+          <cl:datacolumn comment="판매일자" std:sid="d-column-7d2649b1" name="SAL_ST_DT"/>
+          <cl:datacolumn comment="종료일자" std:sid="d-column-73a403b9" name="SAL_ED_DT"/>
+          <cl:datacolumn comment="특약코드" std:sid="d-column-54d8362c" name="SP_CTRT_CD"/>
+          <cl:datacolumn comment="특약명" std:sid="d-column-3bf6ab14" name="SP_CTRT_NM"/>
+          <cl:datacolumn comment="특약시작일자" std:sid="d-column-a6888070" name="SP_CTRT_ST_DT"/>
+          <cl:datacolumn comment="특약종료일" std:sid="d-column-c8b5524c" name="SP_CTRT_ED_DT"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="특약리스트 상세"/>
+  </head>
+  <body std:sid="body-5c53b685" class="wrap pop" childcombinatorclass="v_base">
+    <cl:listener std:sid="listener-04c6beb2" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-8c71e0ab" id="udcComAppHeader" visible="false" type="udc.com.udcComAppHeader">
+      <cl:verticaldata std:sid="v-data-345cc100" width="1070px" height="40px" autosize="height"/>
+      <cl:property name="title" value="특약리스트 정보" type="string"/>
+      <cl:property name="isViewPocProcess" value="false" type="boolean"/>
+    </cl:udc>
+    <cl:group std:sid="group-210e52e6" id="grpData" class="conts-area">
+      <cl:verticaldata std:sid="v-data-1842f19e" width="992px" height="271px" autosize="height"/>
+      <cl:group std:sid="group-76505e26" class="conts-wrap">
+        <cl:verticaldata std:sid="v-data-cc589787" width="992px" height="379px" autosize="height"/>
+        <cl:group std:sid="group-b33c3509" id="grp5" class="form">
+          <cl:attribute name="mobile-column-count" value="1"/>
+          <cl:attribute name="tablet-column-count" value="2"/>
+          <cl:verticaldata std:sid="v-data-8cd232bc" width="992px" height="359px" autosize="height"/>
+          <cl:output std:sid="output-37256380" id="opt1" class="label" value="상품코드">
+            <cl:formdata std:sid="f-data-fc2c4312" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-9f035994" id="opt2">
+            <cl:datamapbind property="value" datacontrolid="dmSpCtrt" columnname="PRD_CD"/>
+            <cl:formdata std:sid="f-data-9e119750" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-29b00f26" id="opt3" class="label" value="상품명">
+            <cl:formdata std:sid="f-data-d29d6036" row="1" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-fae2ab9a" id="ipb1">
+            <cl:datamapbind property="value" datacontrolid="dmSpCtrt" columnname="PRD_NM"/>
+            <cl:formdata std:sid="f-data-c5c719ef" row="1" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-c45bc071" id="opt4" class="label" value="판매일자">
+            <cl:formdata std:sid="f-data-b66c786f" row="2" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-54c33ed7" id="grp2">
+            <cl:formdata std:sid="f-data-ae486588" row="2" col="1"/>
+            <cl:dateinput std:sid="d-input-c1c74573" id="dti4">
+              <cl:datamapbind property="value" datacontrolid="dmSpCtrt" columnname="SAL_ST_DT"/>
+              <cl:formdata std:sid="f-data-90dd9f86" row="0" col="0"/>
+            </cl:dateinput>
+            <cl:output std:sid="output-675ead41" id="opt10" value="~">
+              <cl:formdata std:sid="f-data-f4b6b040" row="0" col="1"/>
+            </cl:output>
+            <cl:dateinput std:sid="d-input-942f4bbe" id="dti5">
+              <cl:datamapbind property="value" datacontrolid="dmSpCtrt" columnname="SAL_ED_DT"/>
+              <cl:formdata std:sid="f-data-56d43bee" row="0" col="2"/>
+            </cl:dateinput>
+            <cl:formlayout std:sid="f-layout-f1f6abc5" scrollable="false" hspace="4px" vspace="4px" hseparatorwidth="1">
+              <cl:rows length="30" unit="PIXEL"/>
+              <cl:columns length="125"/>
+              <cl:columns length="18" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+              <cl:columns length="125" shadetype="NONE" shadecolor="transparent"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:output std:sid="output-834bfc83" id="opt6" class="label" value="특약코드">
+            <cl:formdata std:sid="f-data-6b45f7c8" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-b180a2f2" id="opt5">
+            <cl:datamapbind property="value" datacontrolid="dmSpCtrt" columnname="SP_CTRT_CD"/>
+            <cl:formdata std:sid="f-data-63e4279e" row="3" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-4417472d" id="opt7" class="label" value="특약명">
+            <cl:formdata std:sid="f-data-dd4201cb" row="4" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-8bd162a7" id="ipb2">
+            <cl:datamapbind property="value" datacontrolid="dmSpCtrt" columnname="SP_CTRT_NM"/>
+            <cl:formdata std:sid="f-data-a06c1fb9" row="4" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-58720a83" id="opt8" class="label" value="특약 일자">
+            <cl:formdata std:sid="f-data-ae863760" row="5" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-aa8a500f" id="grp1">
+            <cl:formdata std:sid="f-data-61eadda8" row="5" col="1" rowspan="1" colspan="1"/>
+            <cl:dateinput std:sid="d-input-8f94bebc" id="dti2">
+              <cl:datamapbind property="value" datacontrolid="dmSpCtrt" columnname="SP_CTRT_ST_DT"/>
+              <cl:formdata std:sid="f-data-c3577b20" row="0" col="0"/>
+            </cl:dateinput>
+            <cl:output std:sid="output-23509a10" id="opt9" value="~">
+              <cl:formdata std:sid="f-data-19a5cf92" row="0" col="1"/>
+            </cl:output>
+            <cl:dateinput std:sid="d-input-f8c4938e" id="dti3">
+              <cl:datamapbind property="value" datacontrolid="dmSpCtrt" columnname="SP_CTRT_ED_DT"/>
+              <cl:formdata std:sid="f-data-1bed8711" row="0" col="2"/>
+            </cl:dateinput>
+            <cl:formlayout std:sid="f-layout-4d427c4f" scrollable="false" hspace="4px" vspace="4px" hseparatorwidth="1">
+              <cl:rows length="30" unit="PIXEL"/>
+              <cl:columns length="125"/>
+              <cl:columns length="18" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+              <cl:columns length="125" shadetype="NONE" shadecolor="transparent"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-6c333456" scrollable="false" hspace="16px" vspace="17px" top-margin="8px" right-margin="8px" bottom-margin="8px" left-margin="8px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="136" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-4ec754eb" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-359dc7f8" spacing="16"/>
+    </cl:group>
+    <cl:group std:sid="group-8f6541c3" id="grpFooter" class="conts-footer">
+      <cl:verticaldata std:sid="v-data-33ab0364" width="992px" height="59px" autosize="height"/>
+      <cl:group std:sid="group-f3d7a659">
+        <cl:verticaldata std:sid="v-data-d687d2fa" width="1070px" height="28px" autosize="height"/>
+        <cl:button std:sid="button-e610e9e9" id="btn1" value="닫기">
+          <cl:listener std:sid="listener-ba051dee" name="click" handler="onBtn1Click"/>
+          <cl:flowlayoutdata std:sid="f-data-b4ec3581" width="74px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:button std:sid="button-c4f815fe" id="btn2" class="primary" value="입력">
+          <cl:listener std:sid="listener-63da41db" name="click" handler="onBtn2Click"/>
+          <cl:flowlayoutdata std:sid="f-data-1c88303c" width="74px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-1364edba" scrollable="false" hspacing="4" vspacing="4" halign="right"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-03e3e74c" spacing="0"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-dd1070ec" spacing="12" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

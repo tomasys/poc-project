@@ -1,0 +1,68 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/0-1.프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-376f4261" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-01a5a5fb" id="EXB-DIV" name="EXB-DIV" width="600px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-c875d7b3" id="EXB-PART" name="EXB-PART" width="0px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-90321062"/>
+    <cl:appspec title="코드 생성 : 시연화면"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="wrap">
+    <cl:group std:sid="group-648ab6f2" id="grpChild" class="sch-filter-box">
+      <std:metadata>
+        <std:property key="template-uuid" value="ced8aa06-0be6-4966-954d-2fe3acc0398b"/>
+        <std:property key="template-rev" value="4"/>
+      </std:metadata>
+      <cl:attribute name="mobile-column-count" value="2"/>
+      <cl:verticaldata std:sid="v-data-77236de2" width="982px" height="54px" autosize="height"/>
+      <cl:group std:sid="group-df612196">
+        <cl:formdata std:sid="f-data-990543cf" width="100" height="23" row="0" col="0" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-76c41bfd" class="label" value="Label">
+          <cl:formdata std:sid="f-data-bf4c02b6" row="0" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-8bf746b0">
+          <cl:formdata std:sid="f-data-832a853b" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-f745a671" scrollable="false" hspace="8px" vspace="0px">
+          <cl:rows length="28"/>
+          <cl:columns length="100" autoSizing="true" shadecolor="transparent" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="true" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-84966c3d" class="search-button-group">
+        <cl:formdata std:sid="f-data-1c7496a5" row="0" col="1"/>
+        <cl:button std:sid="button-2787823e" id="btnSearch" class="primary btn-search" value="조회" icon="0">
+          <cl:flowlayoutdata std:sid="f-data-1fb5d4ae" width="86px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-bdd676a6" scrollable="false" vspacing="0" halign="right" valign="middle" linewrap="false"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-6fe70bc3" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+        <cl:columns length="200" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" minlength="0" syncminlength="false"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-1d023d04" id="grpData" class="conts-wrap">
+      <cl:verticaldata std:sid="v-data-7d249dd0" width="976px" height="75px" autosize="height"/>
+      <cl:group std:sid="group-82e7dff5" class="conts-wrap">
+        <cl:verticaldata std:sid="v-data-3073226f" width="976px" height="90px" autosize="height"/>
+        <cl:button std:sid="button-f98ac746" id="btnCreateCode" value="코드 생성">
+          <cl:listener std:sid="listener-b14a8b35" name="click" handler="onBtnCreateCodeClick"/>
+          <cl:verticaldata std:sid="v-data-151f2315" width="52px" height="30px"/>
+        </cl:button>
+        <cl:verticallayout std:sid="v-layout-ae98c6ba" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-83bceee9" spacing="16"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-2b40a939" spacing="16" leftmargin="24" rightmargin="24" topmargin="16" bottommargin="24"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="740"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="./print.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() { 
+				document.body.innerHTML = sessionStorage.getItem("print-content");	
+			
+				sessionStorage.removeItem("print-content");
+				
+				setTimeout(function(){
+					print();
+					window.focus();
+	
+					var appVersion = navigator.appVersion.toLowerCase();
+					var isIE = (appVersion.indexOf("msie") > -1 || appVersion.indexOf("trident") > -1);
+					var isEdge = appVersion.indexOf("edg") != -1 ;
+					if (isIE || isEdge) {
+						document.close();
+						window.close();
+					} else {
+						window.addEventListener("afterprint", function (event) {
+							document.close();
+							window.close();
+						});
+					}
+				}, 100);
+			})
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

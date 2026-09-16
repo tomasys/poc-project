@@ -1,0 +1,43 @@
+{
+	"wrap" : {
+		"submission": {
+			"action": "https://google.co.kr/sub1",
+			"method": "post",
+			"userAttr": {
+				"hello": "world"
+			},
+			"comment": "서비스1"
+		},
+		"response": {
+			"linked": false,
+			"format": "responsedata",
+			"data": {
+				"dsUserList": {
+					"dataControl": "dsUserList",
+					"isAdd": true,					
+					"linked": false,
+					"comment" : "사용자 목록",
+					"format": "array",
+					"data": {
+						"name": {
+							"format": "string",
+							"comment": "이름"							
+						},
+						"age": {
+							"format": "decimal",
+							"comment": "나이"
+						},
+						"email": {
+							"format": "string",
+							"comment": "이메일"							
+						},
+						"mobile": {
+							"format": "string",
+							"comment": "전화번호"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,425 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-279132c9" version="1.0.5186">
+  <head std:sid="head-03dc3db3">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/3.혼합/F_그리드(좌)+폼.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-52e16233" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="true" customHeight="842" customWidth="800" active="true"/>
+    <screen std:sid="screen-f31bc34f" id="EXB-DIV" name="EXB-DIV" width="600px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-e2b6fd7a" id="EXB-PART" name="EXB-PART" width="0px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-2a220fa7">
+      <cl:dataset std:sid="d-set-a1c9ad14" id="dsData">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="지역" std:sid="d-column-e0fb3415" info="지역" name="REGION"/>
+          <cl:datacolumn comment="매매 건수" std:sid="d-column-4ec75a8b" info="매매 건수" name="SALE_CNT" datatype="number"/>
+          <cl:datacolumn comment="전세 건수" std:sid="d-column-c6a89853" info="전세 건수" name="JEONSE_CNT" datatype="number"/>
+          <cl:datacolumn comment="월세 건수" std:sid="d-column-c2145b4c" info="월세 건수" name="MONTH_RENT_CNT" datatype="number" displayonly="false"/>
+          <cl:datacolumn comment="시장상태" std:sid="d-column-0bf824ea" info="시장상태" name="MKT_STTS"/>
+          <cl:datacolumn comment="위험등급" std:sid="d-column-9872fcca" info="위험등급" name="RISK_LVL"/>
+          <cl:datacolumn comment="증감률" std:sid="d-column-e4ff4eb4" info="증감률" name="CHNGE_RT" datatype="string" displayonly="false"/>
+          <cl:datacolumn comment="조사기준월" std:sid="d-column-91e6cc4f" info="조사기준월" name="SURVEY_DT"/>
+          <cl:datacolumn comment="주요 이슈" std:sid="d-column-5e991ca3" info="주요 이슈" name="MAJOR_ISSUE"/>
+          <cl:datacolumn comment="시장 분석 내용" std:sid="d-column-6cd2dd0b" info="시장 분석 내용" name="ANALYSIS_COMMENT"/>
+          <cl:datacolumn comment="담당 센터" std:sid="d-column-caee5f81" info="담당 센터" name="ANALYSIS_CENTER_NM"/>
+          <cl:datacolumn comment="최종 갱신일" std:sid="d-column-039c1239" info="최종 갱신일" name="UPD_DT"/>
+          <cl:datacolumn comment="미분양 세대수" std:sid="d-column-e0b0ad76" info="미분양 세대수" name="UNSOLD_UNITS"/>
+          <cl:datacolumn comment="평균 매매가" std:sid="d-column-01412ea3" info="평균 매매가" name="AVG_SALE_PRICE"/>
+          <cl:datacolumn comment="평균 전세가" std:sid="d-column-e546d165" info="평균 전세가" name="AVG_JEONSE_PRICE"/>
+          <cl:datacolumn comment="향후 전망" std:sid="d-column-438b8a2e" info="향후 전망" name="FORECAST"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="REGION"><![CDATA[서울]]></cl:datavalue>
+            <cl:datavalue columnname="SALE_CNT"><![CDATA[1240]]></cl:datavalue>
+            <cl:datavalue columnname="JEONSE_CNT"><![CDATA[980]]></cl:datavalue>
+            <cl:datavalue columnname="MONTH_RENT_CNT"><![CDATA[53]]></cl:datavalue>
+            <cl:datavalue columnname="MKT_STTS"><![CDATA[상승]]></cl:datavalue>
+            <cl:datavalue columnname="RISK_LVL"><![CDATA[주의]]></cl:datavalue>
+            <cl:datavalue columnname="CHNGE_RT"><![CDATA[4.2]]></cl:datavalue>
+            <cl:datavalue columnname="SURVEY_DT"><![CDATA[2026-04]]></cl:datavalue>
+            <cl:datavalue columnname="MAJOR_ISSUE"><![CDATA[재건축 단지 중심 거래 증가]]></cl:datavalue>
+            <cl:datavalue columnname="ANALYSIS_COMMENT"><![CDATA[강남권 재건축 단지를 중심으로 매매 거래가 증가하는 추세]]></cl:datavalue>
+            <cl:datavalue columnname="ANALYSIS_CENTER_NM"><![CDATA[수도권시장분석센터]]></cl:datavalue>
+            <cl:datavalue columnname="UPD_DT"><![CDATA[2026-05-01]]></cl:datavalue>
+            <cl:datavalue columnname="UNSOLD_UNITS"><![CDATA[210]]></cl:datavalue>
+            <cl:datavalue columnname="AVG_SALE_PRICE"><![CDATA[135000]]></cl:datavalue>
+            <cl:datavalue columnname="AVG_JEONSE_PRICE"><![CDATA[72000]]></cl:datavalue>
+            <cl:datavalue columnname="FORECAST"><![CDATA[단기 상승세 지속 전망]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="REGION"><![CDATA[경기]]></cl:datavalue>
+            <cl:datavalue columnname="SALE_CNT"><![CDATA[1830]]></cl:datavalue>
+            <cl:datavalue columnname="JEONSE_CNT"><![CDATA[1450]]></cl:datavalue>
+            <cl:datavalue columnname="MONTH_RENT_CNT"><![CDATA[86]]></cl:datavalue>
+            <cl:datavalue columnname="MKT_STTS"><![CDATA[상승]]></cl:datavalue>
+            <cl:datavalue columnname="RISK_LVL"><![CDATA[관심]]></cl:datavalue>
+            <cl:datavalue columnname="CHNGE_RT"><![CDATA[5.8]]></cl:datavalue>
+            <cl:datavalue columnname="SURVEY_DT"><![CDATA[2026-04]]></cl:datavalue>
+            <cl:datavalue columnname="MAJOR_ISSUE"><![CDATA[신도시 거래량 증가]]></cl:datavalue>
+            <cl:datavalue columnname="ANALYSIS_COMMENT"><![CDATA[GTX 노선 영향으로 주요 신도시 거래량이 증가]]></cl:datavalue>
+            <cl:datavalue columnname="ANALYSIS_CENTER_NM"><![CDATA[수도권시장분석센터]]></cl:datavalue>
+            <cl:datavalue columnname="UPD_DT"><![CDATA[2026-05-01]]></cl:datavalue>
+            <cl:datavalue columnname="UNSOLD_UNITS"><![CDATA[1240]]></cl:datavalue>
+            <cl:datavalue columnname="AVG_SALE_PRICE"><![CDATA[98000]]></cl:datavalue>
+            <cl:datavalue columnname="AVG_JEONSE_PRICE"><![CDATA[54000]]></cl:datavalue>
+            <cl:datavalue columnname="FORECAST"><![CDATA[교통 호재 중심 상승 전망]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="REGION"><![CDATA[인천]]></cl:datavalue>
+            <cl:datavalue columnname="SALE_CNT"><![CDATA[680]]></cl:datavalue>
+            <cl:datavalue columnname="JEONSE_CNT"><![CDATA[520]]></cl:datavalue>
+            <cl:datavalue columnname="MONTH_RENT_CNT"><![CDATA[31]]></cl:datavalue>
+            <cl:datavalue columnname="MKT_STTS"><![CDATA[보합]]></cl:datavalue>
+            <cl:datavalue columnname="RISK_LVL"><![CDATA[관심]]></cl:datavalue>
+            <cl:datavalue columnname="CHNGE_RT"><![CDATA[2.1]]></cl:datavalue>
+            <cl:datavalue columnname="SURVEY_DT"><![CDATA[2026-04]]></cl:datavalue>
+            <cl:datavalue columnname="MAJOR_ISSUE"><![CDATA[신규 입주 물량 확대]]></cl:datavalue>
+            <cl:datavalue columnname="ANALYSIS_COMMENT"><![CDATA[송도 및 검단 지역 신규 입주 영향으로 전세 물량 증가]]></cl:datavalue>
+            <cl:datavalue columnname="ANALYSIS_CENTER_NM"><![CDATA[수도권시장분석센터]]></cl:datavalue>
+            <cl:datavalue columnname="UPD_DT"><![CDATA[2026-05-01]]></cl:datavalue>
+            <cl:datavalue columnname="UNSOLD_UNITS"><![CDATA[860]]></cl:datavalue>
+            <cl:datavalue columnname="AVG_SALE_PRICE"><![CDATA[62000]]></cl:datavalue>
+            <cl:datavalue columnname="AVG_JEONSE_PRICE"><![CDATA[34000]]></cl:datavalue>
+            <cl:datavalue columnname="FORECAST"><![CDATA[보합세 유지 전망]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="REGION"><![CDATA[부산]]></cl:datavalue>
+            <cl:datavalue columnname="SALE_CNT"><![CDATA[590]]></cl:datavalue>
+            <cl:datavalue columnname="JEONSE_CNT"><![CDATA[430]]></cl:datavalue>
+            <cl:datavalue columnname="MONTH_RENT_CNT"><![CDATA[28]]></cl:datavalue>
+            <cl:datavalue columnname="MKT_STTS"><![CDATA[하락]]></cl:datavalue>
+            <cl:datavalue columnname="RISK_LVL"><![CDATA[경계]]></cl:datavalue>
+            <cl:datavalue columnname="CHNGE_RT"><![CDATA[-1.2]]></cl:datavalue>
+            <cl:datavalue columnname="SURVEY_DT"><![CDATA[2026-04]]></cl:datavalue>
+            <cl:datavalue columnname="MAJOR_ISSUE"><![CDATA[미분양 증가 지속]]></cl:datavalue>
+            <cl:datavalue columnname="ANALYSIS_COMMENT"><![CDATA[일부 지역 중심 미분양 물량 증가로 거래 위축]]></cl:datavalue>
+            <cl:datavalue columnname="ANALYSIS_CENTER_NM"><![CDATA[영남시장분석센터]]></cl:datavalue>
+            <cl:datavalue columnname="UPD_DT"><![CDATA[2026-05-01]]></cl:datavalue>
+            <cl:datavalue columnname="UNSOLD_UNITS"><![CDATA[1540]]></cl:datavalue>
+            <cl:datavalue columnname="AVG_SALE_PRICE"><![CDATA[71000]]></cl:datavalue>
+            <cl:datavalue columnname="AVG_JEONSE_PRICE"><![CDATA[39000]]></cl:datavalue>
+            <cl:datavalue columnname="FORECAST"><![CDATA[약세 흐름 지속 전망]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="REGION"><![CDATA[대구]]></cl:datavalue>
+            <cl:datavalue columnname="SALE_CNT"><![CDATA[430]]></cl:datavalue>
+            <cl:datavalue columnname="JEONSE_CNT"><![CDATA[320]]></cl:datavalue>
+            <cl:datavalue columnname="MONTH_RENT_CNT"><![CDATA[21]]></cl:datavalue>
+            <cl:datavalue columnname="MKT_STTS"><![CDATA[하락]]></cl:datavalue>
+            <cl:datavalue columnname="RISK_LVL"><![CDATA[경계]]></cl:datavalue>
+            <cl:datavalue columnname="CHNGE_RT"><![CDATA[-3.5]]></cl:datavalue>
+            <cl:datavalue columnname="SURVEY_DT"><![CDATA[2026-04]]></cl:datavalue>
+            <cl:datavalue columnname="MAJOR_ISSUE"><![CDATA[거래 감소세 지속]]></cl:datavalue>
+            <cl:datavalue columnname="ANALYSIS_COMMENT"><![CDATA[공급 증가 영향으로 거래량 감소 및 가격 조정 진행]]></cl:datavalue>
+            <cl:datavalue columnname="ANALYSIS_CENTER_NM"><![CDATA[영남시장분석센터]]></cl:datavalue>
+            <cl:datavalue columnname="UPD_DT"><![CDATA[2026-05-01]]></cl:datavalue>
+            <cl:datavalue columnname="UNSOLD_UNITS"><![CDATA[2210]]></cl:datavalue>
+            <cl:datavalue columnname="AVG_SALE_PRICE"><![CDATA[58000]]></cl:datavalue>
+            <cl:datavalue columnname="AVG_JEONSE_PRICE"><![CDATA[31000]]></cl:datavalue>
+            <cl:datavalue columnname="FORECAST"><![CDATA[단기 조정 가능성 존재]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-2b253228" id="dmSearch">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c18687bd" name="param1"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec dev-comment="화면 템플릿 생성&#xD;&#xA;UI 템플릿 배치&#xD;&#xA;차트 데이터셋 생성&#xD;&#xA;그리드 바인딩, 그리드 UDC 연결&#xD;&#xA;Chart UDC 연결" title="템플릿 기반 화면 생성"/>
+  </head>
+  <body std:sid="body-8b55795a" class="wrap" clipcontent="true" childcombinatorclass="f_base">
+    <cl:udc std:sid="ud-control-81187a41" type="udc.com.udcComAppHeader">
+      <cl:formdata std:sid="f-data-dae6ff83" row="0" col="0"/>
+    </cl:udc>
+    <cl:group std:sid="group-5013bd10" id="grpSearch" class="sch-filter-box">
+      <cl:formdata std:sid="f-data-b0e364a4" row="1" col="0"/>
+      <cl:group std:sid="group-92db3248">
+        <cl:formdata std:sid="f-data-b696c163" width="100" height="35" row="0" col="0" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-99f650d2" class="label required" value="지역">
+          <cl:formdata std:sid="f-data-ef01e531" row="0" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-6c076401" class="required">
+          <cl:datamapbind property="value" datacontrolid="dmSearch" columnname="param1"/>
+          <cl:formdata std:sid="f-data-bc47611f" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-4d5e64e4" scrollable="false" hspace="4px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="28" unit="PIXEL"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="true" shadecolor="transparent" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-9e3eb8f4" class="search-button-group">
+        <cl:formdata std:sid="f-data-514666af" row="0" col="1"/>
+        <cl:button std:sid="button-6c0c118d" id="btnSearch" class="primary btn-search" value="조회" icon="0">
+          <cl:flowlayoutdata std:sid="f-data-f639ec43" width="86px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-9cd5cb95" scrollable="false" vspacing="0" halign="right" valign="middle" linewrap="false"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-90608010" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="true" minlength="0" syncminlength="false"/>
+        <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-7875afb3" id="grpData" class="conts-area">
+      <cl:formdata std:sid="f-data-44cff6b7" row="2" col="0" rowspan="1" colspan="1"/>
+      <cl:group std:sid="group-3536da3a" class="division-group">
+        <cl:verticaldata std:sid="v-data-e39cc117" width="976px" height="682px" autosize="height"/>
+        <cl:group std:sid="group-fd9afd7a" id="grp3" class="conts-wrap">
+          <std:metadata>
+            <std:property key="template-uuid" value="f91b19be-4854-4d7d-b7e1-c43b9a18b816"/>
+            <std:property key="template-rev" value="14"/>
+          </std:metadata>
+          <cl:formdata std:sid="f-data-872abe48" width="100" height="210" row="0" col="1" rowspan="1" colspan="1"/>
+          <cl:udc std:sid="ud-control-b56cc63e" id="udcComFormTitle2" type="udc.com.udcComFormTitle">
+            <cl:formdata std:sid="f-data-4f27f721" row="0" col="0"/>
+            <cl:property name="title" value="상세 거래 현황" type="string"/>
+          </cl:udc>
+          <cl:group std:sid="group-c1ace8ca" id="grp4" class="form">
+            <cl:attribute name="table-min-height" value=""/>
+            <cl:attribute name="mobile-column-count" value="1"/>
+            <cl:attribute name="tablet-column-count" value="2"/>
+            <cl:selectioncontext selectionProvider="grdList"/>
+            <cl:formdata std:sid="f-data-901fae00" row="1" col="0"/>
+            <cl:output std:sid="output-f2ab4292" id="opt1" class="label" value="지역">
+              <cl:formdata std:sid="f-data-8ccf1024" row="0" col="0"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-1a749e93" id="ipb1">
+              <cl:relativebind property="value" columnname="REGION"/>
+              <cl:formdata std:sid="f-data-b3217eca" row="0" col="1"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-a0c7e613" id="opt9" class="label" value="매매 건수">
+              <cl:formdata std:sid="f-data-b48dc391" row="0" col="2"/>
+            </cl:output>
+            <cl:numbereditor std:sid="n-editor-2c746f30" id="nbe7">
+              <cl:relativebind property="value" columnname="SALE_CNT"/>
+              <cl:formdata std:sid="f-data-84d7fb8c" row="0" col="3"/>
+            </cl:numbereditor>
+            <cl:output std:sid="output-fb0524c2" id="opt2" class="label" value="전세 건수">
+              <cl:formdata std:sid="f-data-c4f093e8" row="1" col="0"/>
+            </cl:output>
+            <cl:numbereditor std:sid="n-editor-a0066b82" id="nbe8">
+              <cl:relativebind property="value" columnname="JEONSE_CNT"/>
+              <cl:formdata std:sid="f-data-66d38a2a" row="1" col="1"/>
+            </cl:numbereditor>
+            <cl:output std:sid="output-f169225a" id="opt10" class="label" value="월세 건수">
+              <cl:formdata std:sid="f-data-b3dd5cfd" row="1" col="2"/>
+            </cl:output>
+            <cl:numbereditor std:sid="n-editor-4d07b315" id="nbe9">
+              <cl:relativebind property="value" columnname="MONTH_RENT_CNT"/>
+              <cl:formdata std:sid="f-data-7d0b2edf" row="1" col="3"/>
+            </cl:numbereditor>
+            <cl:output std:sid="output-14fd971a" id="opt3" class="label" value="시장 상태">
+              <cl:formdata std:sid="f-data-8994d533" row="2" col="0"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-f22dba0d" id="ipb3">
+              <cl:relativebind property="value" columnname="MKT_STTS"/>
+              <cl:formdata std:sid="f-data-b3505843" row="2" col="1"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-17ebe346" id="opt11" class="label" value="위험등급">
+              <cl:formdata std:sid="f-data-2d3dbebf" row="2" col="2"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-0313463e" id="ipb11">
+              <cl:relativebind property="value" columnname="RISK_LVL"/>
+              <cl:formdata std:sid="f-data-6e12a2bf" row="2" col="3"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-5e5f5c51" id="opt4" class="label" value="증감률">
+              <cl:formdata std:sid="f-data-b490ca99" row="3" col="0"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-710d364c" id="ipb4">
+              <cl:relativebind property="value" columnname="CHNGE_RT"/>
+              <cl:formdata std:sid="f-data-c28f4a2e" row="3" col="1"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-2fd099fe" id="opt12" class="label" value="조사기준월">
+              <cl:formdata std:sid="f-data-d62bd51e" row="3" col="2"/>
+            </cl:output>
+            <cl:dateinput std:sid="d-input-0d9e7940" id="dti1">
+              <cl:relativebind property="value" columnname="SURVEY_DT"/>
+              <cl:formdata std:sid="f-data-f1588e33" row="3" col="3"/>
+            </cl:dateinput>
+            <cl:output std:sid="output-32deeaa8" id="opt5" class="label" value="주요 이슈">
+              <cl:formdata std:sid="f-data-1f7208cf" row="4" col="0"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-4f100b59" id="ipb5">
+              <cl:relativebind property="value" columnname="MAJOR_ISSUE"/>
+              <cl:formdata std:sid="f-data-26d7fb35" row="4" col="1" rowspan="1" colspan="1"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-87b4346b" id="opt6" class="label" value="담당 센터">
+              <cl:formdata std:sid="f-data-ecd1da4b" row="4" col="2"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-4748591f" id="ipb6">
+              <cl:relativebind property="value" columnname="ANALYSIS_CENTER_NM"/>
+              <cl:formdata std:sid="f-data-68f7e8e7" row="4" col="3"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-57dcaf34" id="opt13" class="label" value="시장 분석 내용">
+              <cl:formdata std:sid="f-data-fa4bf84c" row="5" col="0"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-af9b65f8" id="ipb13">
+              <cl:relativebind property="value" columnname="ANALYSIS_COMMENT"/>
+              <cl:formdata std:sid="f-data-f7bfb3e5" row="5" col="1" rowspan="1" colspan="1"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-ffcff610" id="opt14" class="label" value="최종 갱신일">
+              <cl:formdata std:sid="f-data-f0f97d78" row="5" col="2"/>
+            </cl:output>
+            <cl:dateinput std:sid="d-input-f04772fd" id="dti2">
+              <cl:relativebind property="value" columnname="UPD_DT"/>
+              <cl:formdata std:sid="f-data-396465d5" row="5" col="3"/>
+            </cl:dateinput>
+            <cl:output std:sid="output-f1bf149c" id="opt7" class="label" value="미분양 세대수">
+              <cl:formdata std:sid="f-data-d1164f62" row="6" col="0"/>
+            </cl:output>
+            <cl:numbereditor std:sid="n-editor-acbe3829" id="nbe6">
+              <cl:relativebind property="value" columnname="UNSOLD_UNITS"/>
+              <cl:formdata std:sid="f-data-5c9c906f" row="6" col="1"/>
+            </cl:numbereditor>
+            <cl:output std:sid="output-578a0d7f" id="opt15" class="label" value="평균 매매가">
+              <cl:formdata std:sid="f-data-3638a605" row="6" col="2"/>
+            </cl:output>
+            <cl:numbereditor std:sid="n-editor-915551ee" id="nbe3">
+              <cl:relativebind property="value" columnname="AVG_SALE_PRICE"/>
+              <cl:formdata std:sid="f-data-40bcec3c" row="6" col="3"/>
+            </cl:numbereditor>
+            <cl:output std:sid="output-c952571d" id="opt8" class="label" value="평균 전세가">
+              <cl:formdata std:sid="f-data-c0ac0533" row="7" col="0"/>
+            </cl:output>
+            <cl:numbereditor std:sid="n-editor-e50108ec" id="nbe1">
+              <cl:relativebind property="value" columnname="AVG_JEONSE_PRICE"/>
+              <cl:formdata std:sid="f-data-2b27827f" row="7" col="1"/>
+            </cl:numbereditor>
+            <cl:output std:sid="output-6cc85147" id="opt16" class="label" value="향후 전망">
+              <cl:formdata std:sid="f-data-9c91df78" row="7" col="2"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-f2503ed5" id="ipb16">
+              <cl:relativebind property="value" columnname="FORECAST"/>
+              <cl:formdata std:sid="f-data-8f7d22e7" row="7" col="3"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-e907f3f2" id="opt17" class="label" value="차트">
+              <cl:formdata std:sid="f-data-a56b4959" row="8" col="0"/>
+            </cl:output>
+            <cl:group std:sid="group-41e9ead3">
+              <cl:formdata std:sid="f-data-9522e327" row="8" col="1" rowspan="1" colspan="3"/>
+              <cl:udc std:sid="ud-control-2cd91433" id="cmnchart1" type="udc.cmn.chart.cmnChart">
+                <cl:formdata std:sid="f-data-76e02235" row="0" col="0" rowspan="1" colspan="3"/>
+                <cl:property name="dataSet" value="dsData" type="control"/>
+                <cl:property name="categoryColNm" value="REGION" type="string"/>
+                <cl:property name="valueColNms" value="SALE_CNT,JEONSE_CNT" type="string"/>
+                <cl:property name="useDragValueChange" value="true" type="boolean"/>
+                <cl:property name="viewSumText" value="true" type="boolean"/>
+              </cl:udc>
+              <cl:formlayout std:sid="f-layout-1798e272" scrollable="false" hspace="16px" vspace="17px" hseparatorwidth="1">
+                <cl:rows length="300" unit="PIXEL" autoSizing="true" shadecolor="transparent" syncminlength="true"/>
+                <cl:columns length="1" unit="FRACTION"/>
+                <cl:columns length="120" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:formlayout std:sid="f-layout-20c0a969" scrollable="false" hspace="16px" vspace="17px" top-margin="8px" right-margin="8px" bottom-margin="8px" left-margin="8px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+              <cl:rows length="28" unit="PIXEL"/>
+              <cl:rows length="28" unit="PIXEL"/>
+              <cl:rows length="28" unit="PIXEL"/>
+              <cl:rows length="28" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+              <cl:rows length="28" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+              <cl:rows length="28" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+              <cl:rows length="28" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+              <cl:rows length="28" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+              <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="true"/>
+              <cl:columns length="120" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" syncminlength="false"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="120" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" syncminlength="false"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-5892eada" scrollable="false" hspace="8px" vspace="8px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+            <cl:rows length="28" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-7fafe6d8" id="grp6" class="conts-wrap">
+          <cl:formdata std:sid="f-data-b820eda9" row="0" col="0"/>
+          <cl:group std:sid="group-f75cd45a" id="grp7">
+            <cl:formdata std:sid="f-data-0f14060b" row="0" col="0"/>
+            <cl:udc std:sid="ud-control-9af55cf3" id="udcComGridTitle1" type="udc.com.udcComGridTitle">
+              <cl:formdata std:sid="f-data-5a0765cc" row="0" col="0"/>
+              <cl:property name="ctrl" value="grdList" type="control"/>
+            </cl:udc>
+            <cl:group std:sid="group-319101d3" id="grp8" class="title-button-group">
+              <cl:formdata std:sid="f-data-459f4d77" row="0" col="1"/>
+              <cl:flowlayout std:sid="f-layout-a1f5aa04" scrollable="false" halign="right"/>
+            </cl:group>
+            <cl:formlayout std:sid="f-layout-b735756d" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:grid std:sid="grid-9bbf308a" id="grdList" fieldLabel="지역별 부동산 거래 현황" readonly="true" datasetid="dsData" resizablecolumns="all" columnMovable="true">
+            <cl:formdata std:sid="f-data-c43fc091" row="1" col="0"/>
+            <cl:gridcolumn std:sid="g-column-245af606" width="50px"/>
+            <cl:gridcolumn std:sid="g-column-0fb47ead"/>
+            <cl:gridcolumn std:sid="g-column-a5a0f524"/>
+            <cl:gridcolumn std:sid="g-column-911229f7"/>
+            <cl:gridcolumn std:sid="g-column-b390ae16"/>
+            <cl:gridcolumn std:sid="g-column-c994c626"/>
+            <cl:gridheader std:sid="gh-band-b4bac388">
+              <cl:gridrow std:sid="g-row-23cba4ed" height="44px"/>
+              <cl:gridcell std:sid="gh-cell-5262dc8e" rowindex="0" colindex="0" sortable="false" filterable="false"/>
+              <cl:gridcell std:sid="gh-cell-f9c2ba3c" rowindex="0" colindex="1" targetcolumnname="REGION" sortable="false" filterable="false" text="지역"/>
+              <cl:gridcell std:sid="gh-cell-9248ec2d" rowindex="0" colindex="2" targetcolumnname="SALE_CNT" sortable="false" filterable="false" text="매매 건수"/>
+              <cl:gridcell std:sid="gh-cell-5dd85e14" rowindex="0" colindex="3" targetcolumnname="JEONSE_CNT" sortable="false" filterable="false" text="전세 건수"/>
+              <cl:gridcell std:sid="gh-cell-566f0d81" rowindex="0" colindex="4" targetcolumnname="MONTH_RENT_CNT" sortable="false" filterable="false" text="월세 건수"/>
+              <cl:gridcell std:sid="gh-cell-6cf82fd3" rowindex="0" colindex="5" targetcolumnname="MKT_STTS" sortable="false" filterable="false" text="시장상태"/>
+            </cl:gridheader>
+            <cl:griddetail std:sid="gd-band-0b2622fb">
+              <cl:gridrow std:sid="g-row-ecff1acf" height="45px"/>
+              <cl:gridcell std:sid="gd-cell-a29f9e82" rowindex="0" colindex="0" columntype="rowindex"/>
+              <cl:gridcell std:sid="gd-cell-d8ab827e" rowindex="0" colindex="1" columnname="REGION"/>
+              <cl:gridcell std:sid="gd-cell-e996018b" rowindex="0" colindex="2" columnname="SALE_CNT">
+                <cl:numbereditor std:sid="n-editor-584728fc" id="nbe2">
+                  <cl:celldata std:sid="c-data-1818cfb0"/>
+                </cl:numbereditor>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gd-cell-57f4ac7b" rowindex="0" colindex="3" columnname="JEONSE_CNT">
+                <cl:numbereditor std:sid="n-editor-0e1d29eb" id="nbe4">
+                  <cl:celldata std:sid="c-data-791270e1"/>
+                </cl:numbereditor>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gd-cell-e6560f57" rowindex="0" colindex="4" columnname="MONTH_RENT_CNT">
+                <cl:numbereditor std:sid="n-editor-9c752d07" id="nbe5">
+                  <cl:celldata std:sid="c-data-618b3bc6"/>
+                </cl:numbereditor>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gd-cell-4285a924" rowindex="0" colindex="5" columnname="MKT_STTS"/>
+            </cl:griddetail>
+          </cl:grid>
+          <cl:formlayout std:sid="f-layout-e9c30f59" scrollable="false" hspace="8px" vspace="8px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+            <cl:rows length="1" unit="FRACTION" autoSizing="true" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-4e7d7dce" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="2" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-d83da391" spacing="16"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-c9ad2d4b" scrollable="true" hspace="0px" vspace="16px" top-margin="16px" right-margin="24px" bottom-margin="24px" left-margin="24px">
+      <cl:rows length="26" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+      <cl:rows length="58" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

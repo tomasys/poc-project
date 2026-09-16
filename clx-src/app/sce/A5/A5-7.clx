@@ -1,0 +1,147 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/0-1.프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-7ee9816b" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="true" customHeight="771" customWidth="800" active="true"/>
+    <screen std:sid="screen-26a1592e" id="EXB-DIV" name="EXB-DIV" width="600px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-a6269884" id="EXB-PART" name="EXB-PART" width="0px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-90321062">
+      <cl:dataset comment="프로세스 목록" std:sid="d-set-b3583db0" id="dsProcess">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="" std:sid="d-column-2f730985" name="TITLE"/>
+          <cl:datacolumn std:sid="d-column-19d5f90d" name="TITLE_RIGHT_TEXT"/>
+          <cl:datacolumn comment="" std:sid="d-column-98bd1c36" name="SUB_TITLE"/>
+          <cl:datacolumn comment="" std:sid="d-column-575b6fa0" name="DELIMITER" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-1e66f193" name="CONT" datatype="string"/>
+          <cl:datacolumn comment="" std:sid="d-column-623f0a90" name="KEY_CODE"/>
+          <cl:datacolumn std:sid="d-column-32c753d5" name="SUB_CODE"/>
+          <cl:datacolumn comment="" std:sid="d-column-5e0f52f8" name="TARGET_CTRL"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">목적</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+            <cl:datavalue columnname="TITLE_RIGHT_TEXT"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[리포트 Tool을 자체 지원하는가]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">검증 조건</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">-</cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[리포팅 Tool 연동을 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE">시나리오</cl:datavalue>
+            <cl:datavalue columnname="SUB_TITLE"/>
+            <cl:datavalue columnname="DELIMITER">○</cl:datavalue>
+            <cl:datavalue columnname="CONT">측정</cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE">　</cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL">　</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="TITLE"><![CDATA[시나리오]]></cl:datavalue>
+            <cl:datavalue columnname="DELIMITER"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="CONT"><![CDATA[third-party 프로젝트에서 연동되는 리포팅 Tool을 확인한다.]]></cl:datavalue>
+            <cl:datavalue columnname="KEY_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="SUB_CODE"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="TARGET_CTRL"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-c956c335" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-d6a69078" name="COMPANY" defaultvalue="TOMATOSYSTEM"/>
+          <cl:datacolumn std:sid="d-column-636f5cbf" name="PARAM1" datatype="string" defaultvalue="eXbuilder6"/>
+          <cl:datacolumn std:sid="d-column-1cfdb7eb" name="PARAM2" defaultvalue="Admin"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="리포트 Tool 지원"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="wrap">
+    <cl:listener std:sid="listener-22d67980" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-8c71e0ab" id="udcComAppHeader" type="udc.com.udcComAppHeader">
+      <cl:formdata std:sid="f-data-5e51d127" row="0" col="0"/>
+      <cl:property name="title" value="5.7 리포트 Tool 지원" type="string"/>
+      <cl:property name="isExpandAllPocProcess" value="true" type="boolean"/>
+    </cl:udc>
+    <cl:group std:sid="group-be39b9f1" id="grpData" class="conts-area">
+      <cl:formdata std:sid="f-data-aa52609e" width="100" height="29" row="1" col="0"/>
+      <cl:group std:sid="group-7e5559d4" id="grpGoverning" class="governing">
+        <cl:formdata std:sid="f-data-5e594479" width="100" height="29" row="0" col="0" rowspan="1" colspan="2"/>
+        <cl:output std:sid="output-6fb83195" id="opt2" class="tit" value="리포트 Tool 연동 지원">
+          <cl:verticaldata std:sid="v-data-d68a450b" width="100px" height="28px" autosize="height"/>
+        </cl:output>
+        <cl:output std:sid="output-5953dfd4" id="opt3" class="txt" displayexp="&quot;eXBuilder6는 &quot; + sstr(&quot;리포트 솔루션 연동&quot;, [&quot;fw-bold&quot;]) + &quot;을 위해, 임베디드 페이지, 쉘 등 특수 컨트롤을 제공하며 &quot; + sstr(&quot;OZ, Clip, Crownix, Ubi&quot;, [&quot;fw-bold&quot;]) + &quot;등 HTML5 기반의 모든 리포트 솔루션 연동을 지원합니다.&quot;&#xD;&#xA;">
+          <cl:verticaldata std:sid="v-data-6574ec63" width="1218px" height="59px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-62f1ecf3" scrollable="false" spacing="8"/>
+      </cl:group>
+      <cl:group std:sid="group-81321ba0" class="conts-wrap">
+        <cl:formdata std:sid="f-data-3babd71a" row="1" col="0" rowspan="1" colspan="2"/>
+        <cl:udc std:sid="ud-control-d8811afb" id="udcozreport1" type="udc.exam.udcOzReport">
+          <cl:formdata std:sid="f-data-924b58ad" row="0" col="0"/>
+          <cl:property name="datamapProp" value="dmParam" type="control"/>
+          <cl:property name="filePath" value="tomatosystem.ozr" type="string"/>
+          <cl:property name="odinames" value="sample" type="string"/>
+          <cl:property name="zoom" value="95" type="number"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-4aa5ccbe" id="udcclipreport1" type="udc.exam.udcClipReport">
+          <cl:formdata std:sid="f-data-9815f4fc" row="0" col="1"/>
+          <cl:property name="filePath" value="Clip.crf" type="string"/>
+          <cl:property name="defaultRatio" value="75%" type="enumeration"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-5e793fd4" scrollable="false" hspace="8px" vspace="8px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-cf18482c" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="129" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-d0880515" scrollable="false" hspace="0px" vspace="16px" top-margin="16px" right-margin="24px" bottom-margin="24px" left-margin="24px">
+      <cl:rows length="40" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="740"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

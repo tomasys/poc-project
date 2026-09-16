@@ -1,0 +1,130 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-279132c9" version="1.0.5186">
+  <head std:sid="head-03dc3db3">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반화면/2.폼/F_폼(좌)+폼.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-c88bcf0c" id="EXB-FULL" name="EXB-FULL" width="1580px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-f9873c6e" id="EXB-DIV" name="EXB-DIV" width="1128px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-303436c8" id="EXB-PART" name="EXB-PART" width="672px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-2a220fa7">
+      <cl:dataset std:sid="d-set-fa346331" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-d735223e" name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[치솟는 밥상 물가.&#xD;&#xA;10년만에 찾아온 에그플레이션 우려...]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[이상 기후, 코로나 펜데믹 등 농산물 공급 차질로 인해 고공행진 중인 농산물 가격]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[국제 농산물 가격 상승으로 소비자 물가까지 상승 압박 증가]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-899f3217" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-2b584c67" name="title"/>
+          <cl:datacolumn std:sid="d-column-3cdb8e22" name="dt_regdate"/>
+          <cl:datacolumn std:sid="d-column-71cac6e1" name="penname"/>
+          <cl:datacolumn std:sid="d-column-e6e98217" name="fname"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="CMS 미리보기"/>
+  </head>
+  <body std:sid="body-8b55795a" class="conts-wrap" clipcontent="true" childcombinatorclass="f_base">
+    <cl:listener std:sid="listener-5300e6b5" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-1a3d7d57" id="grpMain" removeOnBuild="true">
+      <cl:verticaldata std:sid="v-data-eda523e3" width="324px" height="421px" autosize="height"/>
+      <cl:output std:sid="output-2085baaf" class="tit h3" value="미국 장기국체를 가장&#xD;&#xA;단순 명확하게 투자할 수 있는 펀드!">
+        <cl:verticaldata std:sid="v-data-aa20e180" width="100px" height="69px" autosize="height"/>
+      </cl:output>
+      <cl:group std:sid="group-0b077753">
+        <cl:verticaldata std:sid="v-data-018e3354" width="400px" height="20px"/>
+        <cl:output std:sid="output-ac9930cb" value="2024.05.01">
+          <cl:formdata std:sid="f-data-b192f579" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-417c5d06" value="펀드솔루션팀">
+          <cl:formdata std:sid="f-data-31cbc1ab" row="0" col="1"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-41001a85" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:output std:sid="output-cd22a042" value="">
+        <cl:verticaldata std:sid="v-data-1ba7f029" width="100px" height="20px"/>
+      </cl:output>
+      <cl:img std:sid="image-c0d78415">
+        <cl:verticaldata std:sid="v-data-89df48f5" width="90px" height="200px"/>
+      </cl:img>
+      <cl:verticallayout std:sid="v-layout-bb37be33"/>
+    </cl:group>
+    <cl:group std:sid="group-72b25b6d" id="grpSummary" class="border-t-2 border-solid border-black" removeOnBuild="true">
+      <cl:verticaldata std:sid="v-data-5cbf5297" width="324px" height="124px" autosize="height"/>
+      <cl:grid std:sid="grid-e6592714" id="grd1" class="table-white row-top" datasetid="ds1" autorowheight="all">
+        <cl:formdata std:sid="f-data-fd71c21f" row="0" col="1"/>
+        <cl:gridcolumn std:sid="g-column-6bd4e1a9"/>
+        <cl:griddetail std:sid="gd-band-1b9023fe">
+          <cl:gridrow std:sid="g-row-c88c97b9" height="32px"/>
+          <cl:gridcell std:sid="gd-cell-4d829290" rowindex="0" colindex="0" columnname="value">
+            <cl:output std:sid="output-3198d641" style="text-align:left;">
+              <cl:expbind property="class" category="CLASS" expression="rowIndex == 0 ? &quot;tit h5&quot; : &quot;text-gray-500&quot;"/>
+              <cl:celldata std:sid="c-data-b7b61adc" topSpacing="8.0" bottomSpacing="8.0" leftSpacing="0.0" rightSpacing="0.0"/>
+            </cl:output>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:output std:sid="output-3abb6272" class="tit h5" value="01">
+        <cl:formdata std:sid="f-data-22ceaf21" valign="TOP" height="32" topSpacing="8.0" row="0" col="0"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-480b334a" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-f859fdf9" id="subtitle1" class="subtitle" removeOnBuild="true" value="물가 상승의 견인차&#xD;&#xA;농업 기업 ETF 'DBA'. 'MOO'">
+      <cl:verticaldata std:sid="v-data-7856a4c4" width="324px" height="37px" autosize="height"/>
+    </cl:output>
+    <cl:htmlsnippet std:sid="htmlsnippet-75214c92" id="snp1" removeOnBuild="true" value="&lt;p>ㅁㄴㅇㄻ&lt;u>ㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇ&lt;/u>&lt;strong>&lt;u>ㄻ&lt;/u>ㄴ&lt;/strong>ㅇㄻㄴㅇㄹ&lt;/p>">
+      <cl:verticaldata std:sid="v-data-7162a41b" width="324px" height="20px" autosize="height"/>
+    </cl:htmlsnippet>
+    <cl:accordion std:sid="accordion-71d2e519" id="ac1" class="acc-caution" removeOnBuild="true">
+      <cl:verticaldata std:sid="v-data-655963fd" width="200px" height="300px" autosize="height"/>
+      <cl:sectionitem std:sid="s-item-06c8c8d9" title="꼭!확인해주세요">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-55f35a4d">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:output std:sid="output-b27dfd02" value="당사 콘텐츠는 개별종목에 대한 추천이 아니며 투자판단의 최종 책임은 고객 본인에게 있습니다. 어떠한 경우에도 콘텐츠에서 제공되는 내용이 고객의 투자 결과에 대한 법적 책임소재의 증빙자료로 사용할 수 없습니다">
+            <cl:verticaldata std:sid="v-data-4fd5de5b" width="100px" height="20px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-d5d11c2f"/>
+        </cl:group>
+      </cl:sectionitem>
+    </cl:accordion>
+    <cl:group std:sid="group-459e0374" removeOnBuild="true">
+      <cl:verticaldata std:sid="v-data-0f185049" width="1532px" height="49px" autosize="height"/>
+      <cl:output std:sid="output-ab99083b" class="tit h5" value="Output">
+        <cl:verticaldata std:sid="v-data-819bf64e" width="100px" height="20px" autosize="height"/>
+      </cl:output>
+      <cl:htmlsnippet std:sid="htmlsnippet-0cffe524" id="snp2" value="&lt;p>ㅁㄴㅇㄻ&lt;u>ㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇ&lt;/u>&lt;strong>&lt;u>ㄻ&lt;/u>ㄴ&lt;/strong>ㅇㄻㄴㅇㄹ&lt;/p>">
+        <cl:verticaldata std:sid="v-data-28be797e" width="1532px" height="20px" autosize="height"/>
+      </cl:htmlsnippet>
+      <cl:verticallayout std:sid="v-layout-b22ee934" spacing="16"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-6b1eea2a" spacing="8" leftmargin="16" rightmargin="16" topmargin="16" bottommargin="16"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

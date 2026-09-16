@@ -1,0 +1,102 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-93862321" version="1.0.5424">
+  <head std:sid="head-e18bb6dc">
+    <screen std:sid="screen-c31b0373" id="EXB-POP[1024]" name="EXB-POP[1024]" width="1024px" height="576px" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-695413ab" id="EXB-POP[800]" name="EXB-POP[800]" width="800px" height="480px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-3e452a74" id="EXB-POP[480]" name="EXB-POP[480]" width="480px" height="320px" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-ea893a28">
+      <cl:dataset std:sid="d-set-7097c4f3" id="dsData">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="ID" std:sid="d-column-b49608df" name="id"/>
+          <cl:datacolumn comment="FIRST_NAME" std:sid="d-column-ae3d24db" name="first_name"/>
+          <cl:datacolumn comment="LAST_NAME" std:sid="d-column-785b8a1b" name="last_name"/>
+          <cl:datacolumn comment="EMAIL" std:sid="d-column-76df4ee8" name="email"/>
+          <cl:datacolumn comment="GENDER" std:sid="d-column-48f80496" name="gender"/>
+          <cl:datacolumn comment="UNIVERSITY" std:sid="d-column-b2913561" name="university"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-7aac6ea2" id="subRetrieve" action="app/sce/A7/data/MOCK_DATA.json">
+        <cl:responsedata dataid="dsData"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-d7f9b575" class="pop wrap" childcombinatorclass="f_base">
+    <cl:listener std:sid="listener-126ece9a" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-a47f66c3" id="grpData" class="conts-area">
+      <cl:formdata std:sid="f-data-8c8dd0d1" row="0" col="0"/>
+      <cl:group std:sid="group-95660505" class="conts-wrap">
+        <cl:formdata std:sid="f-data-65050a3c" row="0" col="0" rowspan="2" colspan="1"/>
+        <cl:udc std:sid="ud-control-832e3ad2" id="udcComFormTitle1" type="udc.com.udcComFormTitle">
+          <cl:formdata std:sid="f-data-df333347" row="0" col="0"/>
+          <cl:property name="title" value="ActiveX 호환, 선택 데이터 내보내기" type="string"/>
+        </cl:udc>
+        <cl:grid std:sid="grid-0129ac0b" id="grd1" datasetid="dsData">
+          <cl:formdata std:sid="f-data-7f419ba5" row="1" col="0" rowspan="1" colspan="1"/>
+          <cl:gridcolumn std:sid="g-column-e478c2cf" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-ae30785c" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-ee061dd5" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-cc6758e3" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-bc1a6cee" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-23a90043" width="120px"/>
+          <cl:gridheader std:sid="gh-band-09402d45">
+            <cl:gridrow std:sid="g-row-c8b49406" height="44px"/>
+            <cl:gridcell std:sid="gh-cell-15f149d3" rowindex="0" colindex="0" targetcolumnname="id" sortable="false" filterable="false" text="ID"/>
+            <cl:gridcell std:sid="gh-cell-96960214" rowindex="0" colindex="1" targetcolumnname="first_name" sortable="false" filterable="false" text="FIRST_NAME"/>
+            <cl:gridcell std:sid="gh-cell-b7275d41" rowindex="0" colindex="2" targetcolumnname="last_name" sortable="false" filterable="false" text="LAST_NAME"/>
+            <cl:gridcell std:sid="gh-cell-064ea9d4" rowindex="0" colindex="3" targetcolumnname="email" sortable="false" filterable="false" text="EMAIL"/>
+            <cl:gridcell std:sid="gh-cell-79b55e0e" rowindex="0" colindex="4" targetcolumnname="gender" sortable="false" filterable="false" text="GENDER"/>
+            <cl:gridcell std:sid="gh-cell-1f09dc5c" rowindex="0" colindex="5" targetcolumnname="university" sortable="false" filterable="false" text="UNIVERSITY"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-59c4bca3">
+            <cl:gridrow std:sid="g-row-59f36640" height="45px"/>
+            <cl:gridcell std:sid="gd-cell-cdafa746" rowindex="0" colindex="0" columnname="id"/>
+            <cl:gridcell std:sid="gd-cell-c6c42cc8" rowindex="0" colindex="1" columnname="first_name"/>
+            <cl:gridcell std:sid="gd-cell-6aea4e0e" rowindex="0" colindex="2" columnname="last_name"/>
+            <cl:gridcell std:sid="gd-cell-219eb18e" rowindex="0" colindex="3" columnname="email"/>
+            <cl:gridcell std:sid="gd-cell-05733139" rowindex="0" colindex="4" columnname="gender"/>
+            <cl:gridcell std:sid="gd-cell-0e915ad7" rowindex="0" colindex="5" columnname="university"/>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-4024bb84" scrollable="false" hspace="0px" vspace="8px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+          <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-1b1a3c26" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-218ad0e4" class="conts-footer">
+      <cl:formdata std:sid="f-data-c3b14d79" row="1" col="0" rowspan="1" colspan="1"/>
+      <cl:group std:sid="group-f3d7a659" id="grpFooter">
+        <cl:formdata std:sid="f-data-af0cc2b7" row="0" col="0"/>
+        <cl:button std:sid="button-e610e9e9" id="btn1" value="닫기">
+          <cl:listener std:sid="listener-897313a8" name="click" handler="onBtn1Click"/>
+          <cl:flowlayoutdata std:sid="f-data-b4ec3581" width="74px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:button std:sid="button-c4f815fe" id="btn2" class="primary" value="선택">
+          <cl:listener std:sid="listener-f9741497" name="click" handler="onBtn2Click"/>
+          <cl:flowlayoutdata std:sid="f-data-1c88303c" width="74px" height="28px" autosize="width"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-1364edba" scrollable="false" hspacing="4" vspacing="4" halign="right"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-2f4128bb" scrollable="false" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION" autoSizing="true"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-a71f4840" scrollable="false" hspace="0px" vspace="12px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="50" unit="PIXEL" autoSizing="true"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

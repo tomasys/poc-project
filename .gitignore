@@ -1,0 +1,5 @@
+/clx-build/
+
+# CSV / TSV 데이터 파일 제외
+*.csv
+*.tsv

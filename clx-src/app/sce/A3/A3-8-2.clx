@@ -1,0 +1,99 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b2e24a61" version="1.0.5542">
+  <head std:sid="head-ee58bef2">
+    <std:metadata>
+      <std:property key="template-file" value="templates/poc/빈페이지_폼.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-56a257a5" id="EXB-FULL" name="EXB-FULL" width="1024px" height="768px" useCustomWidth="false" useCustomHeight="true" customHeight="404" customWidth="800" active="true"/>
+    <screen std:sid="screen-7851c5f3" id="EXB-DIV" name="EXB-DIV" width="600px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-e1bf73b2" id="EXB-PART" name="EXB-PART" width="0px" height="768px" useCustomWidth="true" useCustomHeight="false" customHeight="600" customWidth="375"/>
+    <cl:model std:sid="model-3ce95ac2">
+      <cl:dataset std:sid="d-set-00f9f248" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="고객제외조건" std:sid="d-column-1338b6ba" name="column1"/>
+          <cl:datacolumn comment="사용여부" std:sid="d-column-602203cd" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[고객제외조건을 작성합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[Y]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-e4f66bc9" class="scenario-panel">
+    <cl:listener std:sid="listener-20a2ba99" name="init" handler="onBodyInit"/>
+    <cl:listener std:sid="listener-2ad95c83" name="load" handler="onBodyLoad"/>
+    <cl:textarea std:sid="t-area-53150da9" id="txa2" readonly="true" value="■ 개요&#xD;&#xA;영업점캠페인의 고객제외조건을 설정하는 단계입니다.&#xD;&#xA;&#xD;&#xA;■ 고객제외조건&#xD;&#xA;추출된 고객제외조건리스트를 표시하고, 고객제외조건을 추가,수정,삭제를 할 수 있습니다.">
+      <cl:formdata std:sid="f-data-abe2ad77" row="0" col="1"/>
+    </cl:textarea>
+    <cl:group std:sid="group-6765d9f2" id="grp6">
+      <cl:formdata std:sid="f-data-9e2aca9c" width="100" height="-61" row="0" col="0"/>
+      <cl:grid std:sid="grid-b80bbeb4" id="grdList" datasetid="ds1" autofit="1, 2" resizablecolumns="all" columnMovable="true">
+        <cl:formdata std:sid="f-data-67952502" row="1" col="0"/>
+        <cl:gridcolumn std:sid="g-column-62045305" width="50px"/>
+        <cl:gridcolumn std:sid="g-column-aa65d1d5" width="300px"/>
+        <cl:gridcolumn std:sid="g-column-76093117"/>
+        <cl:gridheader std:sid="gh-band-fb14092a">
+          <cl:gridrow std:sid="g-row-14aed69b" height="44px"/>
+          <cl:gridcell std:sid="gh-cell-204ff998" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+          <cl:gridcell std:sid="gh-cell-7f3c5500" rowindex="0" colindex="1" targetcolumnname="column1" sortable="false" filterable="false" text="고객제외조건"/>
+          <cl:gridcell std:sid="gh-cell-083aae6e" rowindex="0" colindex="2" targetcolumnname="column2" sortable="false" filterable="false" text="사용여부"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-881716f3">
+          <cl:gridrow std:sid="g-row-bf290d31" height="45px"/>
+          <cl:gridcell std:sid="gd-cell-a2d512ee" rowindex="0" colindex="0" columntype="checkbox"/>
+          <cl:gridcell std:sid="gd-cell-2c1e19a8" rowindex="0" colindex="1" columnname="column1">
+            <cl:inputbox std:sid="i-box-3e33e510" id="ipb1">
+              <cl:celldata std:sid="c-data-bcab75dc" topSpacing="3.0" bottomSpacing="3.0" leftSpacing="6.0" rightSpacing="6.0"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-e5056282" rowindex="0" colindex="2" columnname="column2">
+            <cl:radiobutton std:sid="r-button-7956eded" id="rdb1">
+              <cl:celldata std:sid="c-data-bac3b65c"/>
+              <cl:item std:sid="item-fe40a58f" label="Y" value="Y" tooltip=""/>
+              <cl:item std:sid="item-8a67fc4d" label="N" value="N"/>
+            </cl:radiobutton>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:group std:sid="group-f75cd45a" id="grp1">
+        <cl:formdata std:sid="f-data-6537630a" row="0" col="0"/>
+        <cl:udc std:sid="ud-control-9af55cf3" id="udcComGridTitle1" type="udc.com.udcComGridTitle">
+          <cl:formdata std:sid="f-data-5a0765cc" row="0" col="0"/>
+          <cl:property name="ctrl" value="grdList" type="control"/>
+          <cl:property name="title" value="고객제외조건" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-319101d3" id="grp2" class="title-button-group">
+          <cl:formdata std:sid="f-data-459f4d77" row="0" col="1"/>
+          <cl:udc std:sid="ud-control-fa4a1dd5" id="udccomgridcudbtns1" type="udc.com.udcComGridCudBtns">
+            <cl:flowlayoutdata std:sid="f-data-b9d398f8" width="345px" height="28px" autosize="width" allownewline="false"/>
+            <cl:property name="grid" value="grdList" type="control"/>
+          </cl:udc>
+          <cl:flowlayout std:sid="f-layout-a1f5aa04" scrollable="false" hspacing="4" vspacing="4" halign="right"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-b735756d" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="363" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-c7868adc" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="28" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" syncminlength="true"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-dfe0cdc0" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="300" unit="PIXEL"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,364 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-279132c9" version="1.0.5186">
+  <head std:sid="head-03dc3db3">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반화면/2.폼/F_폼(좌)+폼.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-c88bcf0c" id="EXB-FULL" name="EXB-FULL" width="1580px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-f9873c6e" id="EXB-DIV" name="EXB-DIV" width="1128px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-303436c8" id="EXB-PART" name="EXB-PART" width="672px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-2a220fa7">
+      <cl:dataset std:sid="d-set-cdf21c23" id="dsFileList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-2e5a99bc" name="f_seq"/>
+          <cl:datacolumn std:sid="d-column-eb5272aa" name="f_attach_no"/>
+          <cl:datacolumn std:sid="d-column-f2f7c5a8" name="f_fname"/>
+          <cl:datacolumn std:sid="d-column-06c85453" name="f_sname"/>
+          <cl:datacolumn std:sid="d-column-48c3c10b" name="f_dir"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-5696cb34" id="dsContent">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-323879d0" name="type"/>
+          <cl:datacolumn std:sid="d-column-7ea9323d" name="value"/>
+          <cl:datacolumn std:sid="d-column-3501696d" name="hasSub"/>
+          <cl:datacolumn std:sid="d-column-38f085c5" name="sub_value"/>
+          <cl:datacolumn std:sid="d-column-489a66c3" name="id" displayonly="true"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-7917ca2e" id="dsSub">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-0467e244" name="value"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-a962f290" id="dmResult">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-3d2500f8" name="seq"/>
+          <cl:datacolumn comment="담당팀" std:sid="d-column-9f04d5d0" name="penname" defaultvalue=""/>
+          <cl:datacolumn comment="메인타이틀" std:sid="d-column-b717b54c" name="title"/>
+          <cl:datacolumn comment="" std:sid="d-column-02e1720f" name="jsonData"/>
+          <cl:datacolumn comment="입력일" std:sid="d-column-a085fb15" name="dt_regdate" defaultvalue=""/>
+          <cl:datacolumn comment="" std:sid="d-column-901665a8" name="viewcnt" defaultvalue=""/>
+          <cl:datacolumn comment="이미지파일명?" std:sid="d-column-04efba13" info="" name="fname" defaultvalue=""/>
+          <cl:datacolumn comment="이미지파일명?" std:sid="d-column-06050e2f" info="" name="sname" defaultvalue=""/>
+          <cl:datacolumn comment="이미지경로" std:sid="d-column-918da88e" name="dir" defaultvalue=""/>
+          <cl:datacolumn std:sid="d-column-c58a0e64" name="cc_viewtype" defaultvalue=""/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-152ed77d" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-50c23e74" name="seq"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:matrix-submission std:sid="m-submission-402a447a" id="msm1" async="true" withCredentials="false" method="post" action="app/src/data/CMSDetail.json">
+        <cl:matrix>
+          <cl:request type="object"/>
+          <cl:response type="object">
+            <cl:data key="resultCode">
+              <cl:pathref columnName="resultCode"/>
+            </cl:data>
+            <cl:data key="resultMessage">
+              <cl:pathref columnName="resultMessage"/>
+            </cl:data>
+            <cl:data key="outputData">
+              <cl:complex type="object">
+                <cl:data key="outRec1">
+                  <cl:complex dataControl="dmResult" type="object">
+                    <cl:data key="seq">
+                      <cl:pathref columnName="seq"/>
+                    </cl:data>
+                    <cl:data key="penname">
+                      <cl:pathref columnName="penname"/>
+                    </cl:data>
+                    <cl:data key="title">
+                      <cl:pathref columnName="title"/>
+                    </cl:data>
+                    <cl:data key="jsonData">
+                      <cl:pathref columnName="jsonData"/>
+                    </cl:data>
+                    <cl:data key="dt_regdate">
+                      <cl:pathref columnName="dt_regdate"/>
+                    </cl:data>
+                    <cl:data key="viewcnt">
+                      <cl:pathref columnName="viewcnt"/>
+                    </cl:data>
+                    <cl:data key="fname">
+                      <cl:pathref columnName="fname"/>
+                    </cl:data>
+                    <cl:data key="sname">
+                      <cl:pathref columnName="sname"/>
+                    </cl:data>
+                    <cl:data key="dir">
+                      <cl:pathref columnName="dir"/>
+                    </cl:data>
+                    <cl:data key="cc_viewtype">
+                      <cl:pathref columnName="cc_viewtype"/>
+                    </cl:data>
+                    <cl:data key="fileList">
+                      <cl:complex dataControl="dsFileList" type="array">
+                        <cl:data key="f_seq">
+                          <cl:pathref columnName="f_seq"/>
+                        </cl:data>
+                        <cl:data key="f_attach_no">
+                          <cl:pathref columnName="f_attach_no"/>
+                        </cl:data>
+                        <cl:data key="f_fname">
+                          <cl:pathref columnName="f_fname"/>
+                        </cl:data>
+                        <cl:data key="f_sname">
+                          <cl:pathref columnName="f_sname"/>
+                        </cl:data>
+                        <cl:data key="f_dir">
+                          <cl:pathref columnName="f_dir"/>
+                        </cl:data>
+                      </cl:complex>
+                    </cl:data>
+                  </cl:complex>
+                </cl:data>
+              </cl:complex>
+            </cl:data>
+          </cl:response>
+        </cl:matrix>
+      </cl:matrix-submission>
+      <cl:matrix-submission std:sid="m-submission-3a1fdd02" id="subRealList" async="true" withCredentials="false" method="post" action="http://172.29.221.69:1445/mts/os/v1/ct/CTgetTrendView">
+        <cl:matrix>
+          <cl:request type="object"/>
+          <cl:response type="object">
+            <cl:data key="resultCode">
+              <cl:pathref columnName="resultCode"/>
+            </cl:data>
+            <cl:data key="resultMessage">
+              <cl:pathref columnName="resultMessage"/>
+            </cl:data>
+            <cl:data key="outputData">
+              <cl:complex type="object">
+                <cl:data key="outRec1">
+                  <cl:complex dataControl="dmResult" type="object">
+                    <cl:data key="seq">
+                      <cl:pathref columnName="seq"/>
+                    </cl:data>
+                    <cl:data key="penname">
+                      <cl:pathref columnName="penname"/>
+                    </cl:data>
+                    <cl:data key="title">
+                      <cl:pathref columnName="title"/>
+                    </cl:data>
+                    <cl:data key="jsonData">
+                      <cl:pathref columnName="jsonData"/>
+                    </cl:data>
+                    <cl:data key="dt_regdate">
+                      <cl:pathref columnName="dt_regdate"/>
+                    </cl:data>
+                    <cl:data key="viewcnt">
+                      <cl:pathref columnName="viewcnt"/>
+                    </cl:data>
+                    <cl:data key="fname">
+                      <cl:pathref columnName="fname"/>
+                    </cl:data>
+                    <cl:data key="sname">
+                      <cl:pathref columnName="sname"/>
+                    </cl:data>
+                    <cl:data key="dir">
+                      <cl:pathref columnName="dir"/>
+                    </cl:data>
+                    <cl:data key="cc_viewtype">
+                      <cl:pathref columnName="cc_viewtype"/>
+                    </cl:data>
+                    <cl:data key="fileList">
+                      <cl:complex dataControl="dsFileList" type="array">
+                        <cl:data key="f_seq">
+                          <cl:pathref columnName="f_seq"/>
+                        </cl:data>
+                        <cl:data key="f_attach_no">
+                          <cl:pathref columnName="f_attach_no"/>
+                        </cl:data>
+                        <cl:data key="f_fname">
+                          <cl:pathref columnName="f_fname"/>
+                        </cl:data>
+                        <cl:data key="f_sname">
+                          <cl:pathref columnName="f_sname"/>
+                        </cl:data>
+                        <cl:data key="f_dir">
+                          <cl:pathref columnName="f_dir"/>
+                        </cl:data>
+                      </cl:complex>
+                    </cl:data>
+                  </cl:complex>
+                </cl:data>
+              </cl:complex>
+            </cl:data>
+          </cl:response>
+        </cl:matrix>
+      </cl:matrix-submission>
+      <cl:submission std:sid="submission-13c77823" id="sms1" action="http://172.29.221.69:1445/mts/os/v1/ct/CTgetTrendView" mediatype="multipart/form-data;simple">
+        <cl:requestdata dataid="dmParam"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="CMS 생성페이지"/>
+  </head>
+  <body std:sid="body-8b55795a" class="wrap" clipcontent="true" childcombinatorclass="f_base">
+    <cl:listener std:sid="listener-d85c0c7b" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-848cb4a0" class="cms-grid-content" clipcontent="false">
+      <cl:formdata std:sid="f-data-5b5dc33c" row="0" col="0"/>
+      <cl:group std:sid="group-b9db5edc" class="content-title-box">
+        <std:metadata>
+          <std:property key="template-uuid" value="59042279-5672-436a-9140-2aece17954cd"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:formdata std:sid="f-data-f038ecf7" row="0" col="0"/>
+        <cl:output std:sid="output-5f5427f7" class="cms-title" value="컨텐츠 생성">
+          <std:metadata>
+            <std:property key="template-uuid" value="95e7aa60-138f-4e03-88d2-df85b0d21d4d"/>
+            <std:property key="template-rev" value="1"/>
+          </std:metadata>
+          <cl:formdata std:sid="f-data-356c3b23" row="0" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-13c2ab36">
+          <cl:formdata std:sid="f-data-85df08ac" row="0" col="1"/>
+          <cl:flowlayout std:sid="f-layout-8776e83a" halign="right"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-29f65b96" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:grid std:sid="grid-307dbec5" id="grd1" datasetid="dsContent">
+        <cl:listener std:sid="listener-1a6ffff8" name="cell-click" handler="onGrd1CellClick"/>
+        <cl:formdata std:sid="f-data-2115346b" row="1" col="0"/>
+        <cl:gridcolumn std:sid="g-column-0d9c6768" width="200px"/>
+        <cl:griddetail std:sid="gd-band-f1b6674e">
+          <cl:gridrow std:sid="g-row-2bd34206" height="36px"/>
+          <cl:gridrow std:sid="g-row-983c2674" height="45px"/>
+          <cl:gridcell std:sid="gd-cell-f7631fed" rowindex="0" colindex="0" class="sand" columnname="type">
+            <cl:output std:sid="output-c6c7ebbb" class="sand top" value="Output">
+              <cl:celldata std:sid="c-data-d8ade00c" valign="BOTTOM" height="32"/>
+            </cl:output>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-bb151e67" rowindex="1" colindex="0" columnname="value">
+            <cl:output std:sid="output-ce5cd537" class="sand bottom" value="Output" ellipsis="true">
+              <cl:celldata std:sid="c-data-7b9adbf6" valign="TOP" height="32"/>
+            </cl:output>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:formlayout std:sid="f-layout-0c10ffa1" scrollable="false" hspace="8px" vspace="8px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+        <cl:rows length="32" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-64e4998e" id="grpEdit" class="cms-content" clipcontent="false">
+      <cl:formdata std:sid="f-data-72bfb675" row="0" col="1" rowspan="1" colspan="1"/>
+      <cl:group std:sid="group-d222e14d" class="content-title-box">
+        <std:metadata>
+          <std:property key="template-uuid" value="59042279-5672-436a-9140-2aece17954cd"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:formdata std:sid="f-data-a7af7508" row="0" col="0"/>
+        <cl:output std:sid="output-18ad7c7b" class="cms-title" value="컨텐츠 입력">
+          <std:metadata>
+            <std:property key="template-uuid" value="95e7aa60-138f-4e03-88d2-df85b0d21d4d"/>
+            <std:property key="template-rev" value="1"/>
+          </std:metadata>
+          <cl:formdata std:sid="f-data-4caf4339" row="0" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-3bfbeabc">
+          <cl:formdata std:sid="f-data-02825d1a" row="0" col="1"/>
+          <cl:button std:sid="button-3061fdf1" value="순서변경">
+            <cl:listener std:sid="listener-fd1c84ab" name="click" handler="onButtonClick2"/>
+            <cl:flowlayoutdata std:sid="f-data-f364f8f9" width="85px" height="32px" autosize="width"/>
+          </cl:button>
+          <cl:button std:sid="button-b801745a" value="미리보기">
+            <cl:listener std:sid="listener-8041359e" name="click" handler="onButtonClick"/>
+            <cl:flowlayoutdata std:sid="f-data-4133f054" width="100px" height="32px" autosize="width"/>
+          </cl:button>
+          <cl:flowlayout std:sid="f-layout-facaf75b" halign="right"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-6a01704e" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-3536da3a" id="grpData" class="conts-area">
+        <cl:listener std:sid="listener-5f80cb56" name="mouseleave" handler="onGrpDataMouseleave"/>
+        <cl:formdata std:sid="f-data-05824a66" row="1" col="0"/>
+        <cl:udc std:sid="ud-control-64d6f462" id="mngMain" type="udc.stock.mng.udcMngMain">
+          <cl:verticaldata std:sid="v-data-315adc5d" width="600px" height="340px" autosize="height"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-54047dc2" spacing="16" leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0"/>
+      </cl:group>
+      <cl:group std:sid="group-a60464c3" id="grpAdd">
+        <cl:formdata std:sid="f-data-364243d9" row="2" col="0" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-64bb430b" class="border border-solid border-primary">
+          <cl:formdata std:sid="f-data-0302f2f7" valign="CENTER" height="1" row="0" col="0"/>
+        </cl:output>
+        <cl:button std:sid="button-9e2c768f" id="btnInsert" class="icon" icon="0">
+          <cl:listener std:sid="listener-59faa0e1" name="click" handler="onBtnInsertClick"/>
+          <cl:formdata std:sid="f-data-38851b38" row="0" col="1"/>
+          <cl:iconstyle class="icon ico-plus"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-235a6978" scrollable="false" user-resizing-mode="standard" hspace="0px" vspace="0px">
+          <cl:rows length="1" unit="FRACTION" hidden="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="18" unit="PIXEL" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-03c8adab" scrollable="true" user-resizing-mode="standard" hspace="8px" vspace="8px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+        <cl:rows length="32" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="28" unit="PIXEL" hidden="true"/>
+        <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-7d38084e" class="cms-preview">
+      <cl:formdata std:sid="f-data-3ffe46fb" row="0" col="2" rowspan="1" colspan="1"/>
+      <cl:group std:sid="group-f66c478e" class="content-title-box">
+        <std:metadata>
+          <std:property key="template-uuid" value="59042279-5672-436a-9140-2aece17954cd"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:formdata std:sid="f-data-ea933f48" row="0" col="0"/>
+        <cl:output std:sid="output-5cb8419f" class="cms-title" value="컨텐츠 미리보기">
+          <std:metadata>
+            <std:property key="template-uuid" value="95e7aa60-138f-4e03-88d2-df85b0d21d4d"/>
+            <std:property key="template-rev" value="1"/>
+          </std:metadata>
+          <cl:formdata std:sid="f-data-d15ba785" row="0" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-379a5528">
+          <cl:formdata std:sid="f-data-6a0fdad4" row="0" col="1"/>
+          <cl:button std:sid="button-bf83e8e1" class="btn-save" value="저장" icon="0">
+            <cl:listener std:sid="listener-720a9470" name="click" handler="onButtonClick3"/>
+            <cl:flowlayoutdata std:sid="f-data-734e5b36" width="100px" height="32px" autosize="width"/>
+          </cl:button>
+          <cl:flowlayout std:sid="f-layout-98f5188f" halign="right"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-d13ff0c9" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:embeddedapp std:sid="e-app-f2901c15" id="ea1" class="conts-area">
+        <cl:formdata std:sid="f-data-0371d166" row="1" col="0" rowspan="1" colspan="1"/>
+      </cl:embeddedapp>
+      <cl:formlayout std:sid="f-layout-3619af7e" scrollable="true" user-resizing-mode="standard" hspace="8px" vspace="8px" top-margin="16px" right-margin="16px" bottom-margin="16px" left-margin="16px">
+        <cl:rows length="32" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" shadecolor="transparent" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-c9ad2d4b" user-resizing-mode="standard" hspace="0px" vspace="0px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="400" unit="PIXEL" hidden="true"/>
+      <cl:columns length="2" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+      <cl:columns length="3" unit="FRACTION" shadetype="NONE" shadecolor="transparent" minlength="400"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
