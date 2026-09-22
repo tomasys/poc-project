@@ -113,7 +113,7 @@
       <cl:attribute name="mobile-v-spacing" value="8"/>
       <cl:attribute name="tablet-v-spacing" value="8"/>
       <cl:formdata std:sid="f-data-842fada1" row="1" col="0"/>
-      <cl:udc std:sid="ud-control-e8170684" id="udcdashitem81" type="udc.cmn.dashboard.udcDashItem8">
+      <cl:udc std:sid="ud-control-e8170684" id="udcdashitem81" fieldLabel="test 속성변경" type="udc.cmn.dashboard.udcDashItem8">
         <cl:datamapbind property="name" datacontrolid="dmUserInfo" columnname="userNm"/>
         <cl:formdata std:sid="f-data-ad2eb3f1" row="0" col="8" rowspan="5" colspan="4"/>
       </cl:udc>
