@@ -11,7 +11,7 @@
  */
 function onBtnCloseClick(e) {
 	var btnClose = e.control;
-	app.close(); //
+	app.close(); // test
 }
 
 /*
